@@ -1,0 +1,184 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Eatery Burns Lake Restaurant Landing Page - Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Apply warm, rustic visual theme with amber/terracotta/brown palette, serif headings, sans-serif body text, and cozy textures throughout the entire site",
+      "acceptanceCriteria": [
+        "Warm amber/terracotta/brown palette is used consistently across all sections",
+        "Typography uses a serif or slab-serif for headings and a clean sans-serif for body text",
+        "No cold blues or generic white-on-white layouts",
+        "Visual style feels cohesive from Hero to Call to Action"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom warm color palette (amber, terracotta, deep wood brown shades) and configure custom font families for serif/slab-serif headings and sans-serif body text"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Import Google Fonts or local fonts for warm serif headings and readable sans-serif body. Add global styles for warm background textures (subtle noise or gradient), set default text colors to warm tones, and apply consistent spacing utilities"
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build Hero section with headline, subheading, 'View Menu' scroll button, and 'Call Now' tel: link button",
+      "acceptanceCriteria": [
+        "Hero section is the first visible section on the page",
+        "Headline and subheading text match exactly",
+        "'View Menu' button smoothly scrolls to the Menu section",
+        "'Call Now' button opens the phone dialer with +1 250-251-5445"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero component rendering headline '🔥 Cozy Dining Experience in the Heart of Burns Lake', subheading 'Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.', a 'View Menu' button that scrolls smoothly to #menu-section, and a 'Call Now' button linking to tel:+12502515445. Use the generated hero background image at frontend/public/assets/generated/hero-bg.dim_1440x800.jpg as a full-width background with overlay"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Hero component at the top of the page layout, above all other sections"
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build About Us section with heading, description, and three highlighted features (rating, pricing, music)",
+      "acceptanceCriteria": [
+        "About Us section renders below the Hero",
+        "All three feature highlights (rating, pricing, music) are displayed as distinct visual callouts",
+        "Section body text matches the provided copy"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutUs.tsx",
+          "operation": "create",
+          "description": "Create AboutUs component with heading 'Welcome to Eatery Burns Lake', description text about Yellowhead Highway location, cozy atmosphere, fireplace seating, and live music. Render three feature highlights as distinct visual cards or callouts: '⭐ Rated 4.5 stars by our guests', '💲 Affordable pricing – $10–20 per person', '🎵 Live music & welcoming environment'. Apply warm theme styling"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render AboutUs component below Hero section in the main page layout"
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Menu section with heading, four category cards, price note, and call-for-specials prompt",
+      "acceptanceCriteria": [
+        "Menu section has a clear heading and subheading",
+        "All four food/drink categories are listed",
+        "Price range note and call-for-specials prompt are displayed",
+        "Section has an anchor ID so the Hero 'View Menu' button can scroll to it"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Menu.tsx",
+          "operation": "create",
+          "description": "Create Menu component with id='menu-section' for scroll targeting. Render heading 'Our Menu' and subheading 'We serve a variety of delicious dishes made fresh daily.' Display four menu categories as visual cards: 'Breakfast favorites', 'Hearty lunch options', 'Comfort dinners', 'Fresh hot chocolate & warm beverages'. Include price note '💲 Most meals range between $10–20' and prompt '👉 Call us for today's specials!' with warm theme styling"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Menu component below AboutUs section in the main page layout"
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build 'Why Visit Us?' Experience section with four feature highlights and closing tagline",
+      "acceptanceCriteria": [
+        "Experience section renders all four highlights as distinct visual items (icons + text)",
+        "Closing tagline paragraph is displayed below the highlights",
+        "Section heading is 'Why Visit Us?'"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Experience.tsx",
+          "operation": "create",
+          "description": "Create Experience component with heading 'Why Visit Us?' Display four feature highlights as distinct visual items with icons and text: '🔥 Cozy fireplace seating', '🎶 Live music atmosphere', '👨‍👩‍👧‍👦 Family-friendly environment', '🚗 Easy highway access location'. Include closing line 'Perfect for casual dining, small gatherings, or a relaxing meal in Burns Lake.' Apply warm theme styling"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Experience component below Menu section in the main page layout"
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build Location section with address, clickable phone link, hours, and highway access note",
+      "acceptanceCriteria": [
+        "Address, phone number, and hours are all displayed",
+        "Phone number is a clickable tel:+12502515445 link",
+        "Supplementary note about highway access is shown"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Location.tsx",
+          "operation": "create",
+          "description": "Create Location component with heading 'Visit Us'. Display address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' as clickable tel:+12502515445 link, hours '🕒 Opens daily at 7:00 AM', and note 'Conveniently located along Yellowhead Highway for easy access.' Apply warm theme styling"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Location component below Experience section in the main page layout"
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build Call to Action section with heading, prominent clickable phone number, and closing message",
+      "acceptanceCriteria": [
+        "CTA section is the last section before the footer",
+        "Phone number is large, prominent, and clickable",
+        "Heading, subtext, and closing line match the provided copy",
+        "Section uses a visually distinct background to stand out as a CTA"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CallToAction.tsx",
+          "operation": "create",
+          "description": "Create CallToAction component with heading 'Ready to Dine With Us?', subtext 'Call now to reserve your table or ask about today's specials.', prominently displayed phone number '📞 +1 250-251-5445' as large clickable tel:+12502515445 link, and closing line 'We look forward to welcoming you!' Use a visually distinct warm background (deeper terracotta or amber gradient) to stand out"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render CallToAction component as the final section below Location, before any footer content"
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Render generated hero background image and restaurant logo as static assets in Hero and header",
+      "acceptanceCriteria": [
+        "Hero background image is displayed as the Hero section's full-width background",
+        "Logo appears in the top navigation/header area",
+        "Images are loaded from frontend/public/assets/generated"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create Header component rendering the restaurant logo from frontend/public/assets/generated/eatery-logo.dim_300x300.png in the top navigation/header area. Include restaurant name 'Eatery Burns Lake' alongside or within the logo. Apply warm theme styling with appropriate background"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Header component at the very top of the page, above Hero section"
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update Hero component to use frontend/public/assets/generated/hero-bg.dim_1440x800.jpg as the full-width background image with appropriate overlay for text readability"
+        }
+      ]
+    }
+  ]
+}

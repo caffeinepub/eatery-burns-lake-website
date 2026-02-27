@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with warm amber/terracotta/brown OKLCH color tokens for light/dark modes, imports Playfair Display (serif headings) and Lato (body) from Google Fonts, and defines utility classes for warm textures and text shadows.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom font families (Playfair Display, Lato), warm color palettes (wood, amber, terra), custom border radii, and warm box-shadow tokens.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with logo, restaurant name, smooth-scroll nav links, and a Call Now button; becomes opaque on scroll and includes a responsive mobile hamburger menu.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with the generated background image, warm dark overlay, headline, subheading, View Menu scroll button, and Call Now tel: link button.",
+  "frontend/src/components/AboutUs.tsx": "About Us section with heading, description copy, and three feature highlight cards (rating, pricing, live music) in a two-column layout.",
+  "frontend/src/components/Menu.tsx": "Menu section with four category cards (breakfast, lunch, dinner, beverages), a price range banner, and a prominent Call for Specials CTA button.",
+  "frontend/src/components/Experience.tsx": "Dark warm-toned \"Why Visit Us?\" section with four feature highlight cards and a closing italic tagline quote.",
+  "frontend/src/components/Location.tsx": "Location section with three info cards (address, phone, hours) and a full address note; phone number is a clickable tel: link.",
+  "frontend/src/components/CallToAction.tsx": "Visually distinct terracotta CTA section with heading, subtext, large clickable phone number button, and closing welcome message.",
+  "frontend/src/components/Footer.tsx": "Footer with brand info, quick-scroll nav links, contact details, copyright year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Root app component that composes all page sections (Header, Hero, AboutUs, Menu, Experience, Location, CallToAction, Footer) in order.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks; no backend queries needed for this static landing page."
+}

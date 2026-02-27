@@ -1,0 +1,178 @@
+{
+  "kind": "build_request",
+  "title": "Eatery Burns Lake Restaurant Landing Page",
+  "projectName": "Eatery Burns Lake",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Apply a warm, rustic visual theme throughout the entire site: rich amber/terracotta/deep wood-brown color palette, warm serif or slab-serif headings paired with readable sans-serif body text, cozy texture-inspired backgrounds (subtle noise or warm gradient), and consistent spacing that feels welcoming and inviting. Enforce this theme across all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Warm amber/terracotta/brown palette is used consistently across all sections",
+        "Typography uses a serif or slab-serif for headings and a clean sans-serif for body text",
+        "No cold blues or generic white-on-white layouts",
+        "Visual style feels cohesive from Hero to Call to Action"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a Hero section at the top of the page with the headline '🔥 Cozy Dining Experience in the Heart of Burns Lake', subheading 'Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.', a 'View Menu' button that scrolls to the Menu section, and a 'Call Now' button that triggers tel:+12502515445.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "HERO SECTION (Top of Website)",
+          "Button 1: View Menu",
+          "Button 2: Call Now"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section is the first visible section on the page",
+        "Headline and subheading text match exactly",
+        "'View Menu' button smoothly scrolls to the Menu section",
+        "'Call Now' button opens the phone dialer with +1 250-251-5445"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build an About Us section with the heading 'Welcome to Eatery Burns Lake', the description text about the Yellowhead Highway location, cozy atmosphere, fireplace seating, and live music. Include three highlighted features: '⭐ Rated 4.5 stars by our guests', '💲 Affordable pricing – $10–20 per person', and '🎵 Live music & welcoming environment'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "ABOUT US SECTION",
+          "Welcome to Eatery Burns Lake"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About Us section renders below the Hero",
+        "All three feature highlights (rating, pricing, music) are displayed as distinct visual callouts",
+        "Section body text matches the provided copy"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build a Menu section with the heading 'Our Menu' and subheading 'We serve a variety of delicious dishes made fresh daily.' Display four menu categories as visual cards or list items: 'Breakfast favorites', 'Hearty lunch options', 'Comfort dinners', and 'Fresh hot chocolate & warm beverages'. Include a price note '💲 Most meals range between $10–20' and a prompt '👉 Call us for today's specials!'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "MENU SECTION",
+          "Our Menu"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Menu section has a clear heading and subheading",
+        "All four food/drink categories are listed",
+        "Price range note and call-for-specials prompt are displayed",
+        "Section has an anchor ID so the Hero 'View Menu' button can scroll to it"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build a 'Why Visit Us?' Experience section with four feature highlights: '🔥 Cozy fireplace seating', '🎶 Live music atmosphere', '👨‍👩‍👧‍👦 Family-friendly environment', and '🚗 Easy highway access location'. Include the closing line: 'Perfect for casual dining, small gatherings, or a relaxing meal in Burns Lake.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "EXPERIENCE SECTION",
+          "Why Visit Us?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Experience section renders all four highlights as distinct visual items (icons + text)",
+        "Closing tagline paragraph is displayed below the highlights",
+        "Section heading is 'Why Visit Us?'"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a Location section with the heading 'Visit Us' showing: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' (as a clickable tel: link), and hours '🕒 Opens daily at 7:00 AM'. Include the note 'Conveniently located along Yellowhead Highway for easy access.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "LOCATION SECTION",
+          "Visit Us",
+          "321 Yellowhead Hwy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Address, phone number, and hours are all displayed",
+        "Phone number is a clickable tel:+12502515445 link",
+        "Supplementary note about highway access is shown"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Build a Call to Action section at the bottom of the page with the heading 'Ready to Dine With Us?', the subtext 'Call now to reserve your table or ask about today's specials.', a prominently displayed phone number '📞 +1 250-251-5445' as a clickable tel: link, and the closing line 'We look forward to welcoming you!'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "CALL TO ACTION SECTION",
+          "Ready to Dine With Us?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "CTA section is the last section before the footer",
+        "Phone number is large, prominent, and clickable",
+        "Heading, subtext, and closing line match the provided copy",
+        "Section uses a visually distinct background to stand out as a CTA"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Render the generated hero background image (hero-bg.dim_1440x800.jpg) and restaurant logo (eatery-logo.dim_300x300.png) as static assets in the frontend. Use the hero background image in the Hero section and the logo in the site header/navbar.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero background image is displayed as the Hero section's full-width background",
+        "Logo appears in the top navigation/header area",
+        "Images are loaded from frontend/public/assets/generated"
+      ]
+    }
+  ],
+  "constraints": [
+    "All phone number links must use tel:+12502515445",
+    "Do not add any backend logic — this is a purely static informational landing page",
+    "All content text must match the copy provided by the user exactly"
+  ],
+  "nonGoals": [
+    "Online ordering or reservations form",
+    "Backend data storage or CMS",
+    "User authentication",
+    "Real-time features",
+    "Interactive map or geolocation integration",
+    "Dynamic menu management system"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Warm, cozy restaurant interior at night with fireplace glow, wooden tables, warm amber lighting, and a rustic inviting atmosphere — wide landscape shot (hero-bg.dim_1440x800.jpg)",
+      "Rustic circular restaurant logo with stylized flame icon and bold text 'Eatery Burns Lake' on a warm brown background (eatery-logo.dim_300x300.png)"
+    ],
+    "edits": []
+  }
+}

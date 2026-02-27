@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as a placeholder backend with no logic implemented.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (theme, hero, about, menu, etc.) to their source files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON document containing one-sentence summaries of each frontend source file for build planning reference.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH CSS custom properties for light and dark color themes used by shadcn-ui components.",
+  "frontend/index.html": "HTML entry point for the React app, setting the page title to 'Eatery Burns Lake Website' and mounting the app at #root.",
+  "frontend/src/App.tsx": "Root React component that composes all page sections—Header, Hero, AboutUs, Menu, Experience, Location, CallToAction, and Footer—in order.",
+  "frontend/src/components/AboutUs.tsx": "About Us section displaying a heading, descriptive copy about the restaurant, and three feature highlight cards for rating, pricing, and live music.",
+  "frontend/src/components/CallToAction.tsx": "Terracotta-gradient CTA section with a heading, subtext, a large clickable phone number button, and a closing welcome message.",
+  "frontend/src/components/Experience.tsx": "Dark warm-toned 'Why Visit Us?' section with four feature cards (fireplace, live music, family-friendly, highway access) and a closing italic tagline.",
+  "frontend/src/components/Footer.tsx": "Footer with brand info, smooth-scroll quick links, contact details, copyright notice, and a caffeine.ai attribution link with UTM tracking.",
+  "frontend/src/components/Header.tsx": "Fixed navigation header with scroll-aware background, smooth-scroll nav links, a call button, and a responsive mobile menu toggle.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with a background image, gradient overlays, headline, and CTA buttons to view the menu or call the restaurant.",
+  "frontend/src/components/Location.tsx": "Location section displaying address, phone, and hours in info cards, plus a highway address note for Eatery Burns Lake.",
+  "frontend/src/components/Menu.tsx": "Menu section showing four category cards (breakfast, lunch, dinner, beverages) and a price/CTA banner with a call-for-specials link.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an ICP backend actor (anonymous or authenticated) using React Query, invalidating dependent queries when the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity context and provider for ICP authentication, exposing login/clear functions, identity state, and login status.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file with no active queries, reserved for future backend integration on this static landing page.",
+  "frontend/src/index.css": "Global CSS file that imports Google Fonts (Playfair Display, Lato), sets up Tailwind directives, and defines a warm amber/terracotta/wood-brown color palette via CSS custom properties for both light and dark modes, plus utility classes for fonts, text shadows, and background textures.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with QueryClientProvider (React Query) and InternetIdentityProvider for authentication context.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom fonts (Playfair Display, Lato), oklch-based color tokens mapped to CSS variables, and semantic warm-palette color scales (wood, amber), with plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state descriptor for the Eatery Burns Lake restaurant landing page, documenting architecture, business details, existing feature implementations, image requirements, and known issues across versioned sections (Hero, About, Menu, Experience, Location, CTA)."
+}

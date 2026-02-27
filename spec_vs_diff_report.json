@@ -1,0 +1,58 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T00:56:39.777Z",
+  "summary": "The diff implements all eight requirements with high fidelity. All sections (Hero, About Us, Menu, Experience, Location, CTA, Footer) are built with the correct content and structure. The warm rustic theme is enforced via Tailwind config and CSS. Images are loaded from the correct path. One minor content discrepancy exists in the REQ-5 closing tagline (it is wrapped in quotes in the implementation). The About Us body text appears paraphrased rather than matching exact provided copy.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Section body text must match the provided copy exactly",
+      "reason": "The About Us body text in AboutUs.tsx reads 'Your local destination for great food and a cozy atmosphere.' and 'Located on Yellowhead Highway, we offer affordable meals in a warm setting featuring fireplace seating and occasional live music...' which appears paraphrased rather than exactly matching the copy specified in the build request.",
+      "evidence": [
+        "frontend/src/components/AboutUs.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "The closing tagline in the Experience section is wrapped in typographic quotation marks as a styled block quote",
+      "reason": "The build request specifies the closing line should be displayed as a plain paragraph. The diff wraps it in quote marks inside a styled box, which was not requested.",
+      "evidence": [
+        "frontend/src/components/Experience.tsx"
+      ]
+    },
+    {
+      "description": "Internet Identity authentication provider and actor hooks are included in the project",
+      "reason": "The build request explicitly states this is a purely static informational landing page with no backend logic and no user authentication. Including InternetIdentityProvider, useActor, and useInternetIdentity is beyond scope.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AboutUs.tsx",
+    "frontend/src/components/CallToAction.tsx",
+    "frontend/src/components/Experience.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Location.tsx",
+    "frontend/src/components/Menu.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
