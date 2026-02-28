@@ -1,24 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutUs from './components/AboutUs';
-import Menu from './components/Menu';
-import Experience from './components/Experience';
-import Location from './components/Location';
-import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import Homepage from './pages/Homepage';
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main>
-        <Hero />
-        <AboutUs />
-        <Menu />
-        <Experience />
-        <Location />
-        <CallToAction />
+      <main className="flex-1">
+        <Homepage />
       </main>
       <Footer />
     </div>

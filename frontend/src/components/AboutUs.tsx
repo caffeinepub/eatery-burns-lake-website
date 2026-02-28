@@ -1,89 +1,58 @@
 import React from 'react';
-import { Star, DollarSign, Music } from 'lucide-react';
-
-const features = [
-  {
-    icon: <Star className="w-6 h-6 text-amber-500 fill-amber-400" />,
-    emoji: '⭐',
-    title: 'Rated 4.5 Stars',
-    description: 'Rated 4.5 stars by our guests',
-    bg: 'bg-amber-400/10 border-amber-400/30',
-    iconBg: 'bg-amber-400/20',
-  },
-  {
-    icon: <DollarSign className="w-6 h-6 text-terra-400" />,
-    emoji: '💲',
-    title: 'Affordable Pricing',
-    description: 'Affordable pricing – $10–20 per person',
-    bg: 'bg-terra-400/10 border-terra-400/30',
-    iconBg: 'bg-terra-400/20',
-  },
-  {
-    icon: <Music className="w-6 h-6 text-wood-500" />,
-    emoji: '🎵',
-    title: 'Live Music',
-    description: 'Live music & welcoming environment',
-    bg: 'bg-wood-400/10 border-wood-400/30',
-    iconBg: 'bg-wood-400/20',
-  },
-];
+import { Heart } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <section id="about-section" className="py-20 md:py-28 bg-warm-texture">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Label */}
-        <div className="flex items-center gap-4 mb-4">
-          <div className="h-px flex-1 max-w-[60px] bg-terra-400/50" />
-          <span className="font-body text-terra-400 text-xs tracking-[0.3em] uppercase font-bold">
-            Our Story
-          </span>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Text Content */}
+    <section id="about" className="py-20 bg-cream-100 bg-chili-texture">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
           <div>
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-wood-800 leading-tight mb-6">
-              Welcome to{' '}
-              <span className="text-terra-400 italic">Eatery Burns Lake</span>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-1 w-10 bg-chili-500 rounded-full" />
+              <span className="font-body text-chili-500 text-xs tracking-[0.3em] uppercase font-bold">
+                Our Story
+              </span>
+            </div>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-ink-700 mb-6 uppercase leading-tight">
+              A Taste of Home in Every Bite
             </h2>
-            <p className="font-body text-wood-600 text-lg leading-relaxed mb-4">
-              Your local destination for great food and a cozy atmosphere.
+            <p className="font-body text-ink-400 text-base sm:text-lg leading-relaxed mb-5">
+              Luna's Kitchen was born from a simple dream: to bring the bold, authentic flavors of Mexican street food to the heart of Los Lunas, New Mexico. What started as a family passion for cooking has grown into one of the most beloved takeout spots in the community.
             </p>
-            <p className="font-body text-wood-500 text-base leading-relaxed">
-              Located on Yellowhead Highway, we offer affordable meals in a warm setting featuring
-              fireplace seating and occasional live music. Whether you're stopping by for breakfast,
-              lunch, or dinner, we provide quality meals at reasonable prices.
+            <p className="font-body text-ink-400 text-base sm:text-lg leading-relaxed mb-5">
+              Every dish we serve is crafted with fresh, hand-selected ingredients and seasoned with recipes passed down through generations. From our slow-braised quesabirria tacos to our signature tacoburger, each bite tells a story of tradition, love, and bold New Mexican flavor.
             </p>
-
-            {/* Decorative divider */}
-            <div className="flex items-center gap-3 mt-8">
-              <div className="h-px flex-1 bg-wood-200" />
-              <span className="text-amber-500 text-xl">✦</span>
-              <div className="h-px flex-1 bg-wood-200" />
+            <p className="font-body text-ink-400 text-base sm:text-lg leading-relaxed">
+              We're more than just a restaurant — we're a gathering place for neighbors, families, and food lovers who believe that great food brings people together. Come hungry, leave happy. That's the Luna's Kitchen promise.
+            </p>
+            <div className="mt-8 flex items-center gap-3">
+              <Heart size={20} className="text-chili-500 fill-chili-500" />
+              <span className="font-body text-ink-500 text-sm italic">Made with love in Los Lunas, NM</span>
             </div>
           </div>
 
-          {/* Feature Cards */}
-          <div className="flex flex-col gap-4">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className={`flex items-center gap-4 p-5 rounded-2xl border ${feature.bg} transition-all duration-200 hover:shadow-warm`}
-              >
-                <div className={`w-12 h-12 rounded-xl ${feature.iconBg} flex items-center justify-center flex-shrink-0`}>
-                  {feature.icon}
-                </div>
-                <div>
-                  <p className="font-heading text-wood-800 font-semibold text-lg leading-tight">
-                    {feature.title}
-                  </p>
-                  <p className="font-body text-wood-500 text-sm mt-0.5">
-                    {feature.description}
-                  </p>
+          {/* Visual accent */}
+          <div className="relative">
+            <div className="relative rounded-3xl overflow-hidden shadow-spicy-xl">
+              <img
+                src="/assets/generated/lunas-menu-quesabirria.dim_600x400.jpg"
+                alt="Delicious food at Luna's Kitchen"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20">
+                  <p className="font-heading text-white text-lg uppercase tracking-wide">Quesabirria Tacos</p>
+                  <p className="font-body text-cream-200 text-sm">Our most-loved dish</p>
                 </div>
               </div>
-            ))}
+            </div>
+            {/* Decorative badge */}
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-chili-500 rounded-full flex flex-col items-center justify-center shadow-spicy-lg border-4 border-cream-100">
+              <span className="font-heading text-white text-xl font-bold leading-none">4.9</span>
+              <span className="font-body text-cream-200 text-xs">★ Stars</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,65 +1,56 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 
 export default function CallToAction() {
   return (
-    <section
-      id="cta-section"
-      className="py-20 md:py-28 relative overflow-hidden"
-      style={{
-        background:
-          'linear-gradient(135deg, oklch(0.46 0.13 35) 0%, oklch(0.38 0.11 34) 40%, oklch(0.32 0.07 45) 100%)',
-      }}
-    >
-      {/* Warm radial glow */}
+    <section className="relative py-20 overflow-hidden bg-chili-500">
+      {/* Background pattern */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 opacity-10"
         style={{
-          background:
-            'radial-gradient(ellipse at 50% 0%, oklch(0.76 0.15 74 / 0.18) 0%, transparent 65%)',
+          backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.15) 20px, rgba(255,255,255,0.15) 21px)',
         }}
         aria-hidden="true"
       />
+      <div className="absolute inset-0 bg-gradient-to-br from-chili-600/50 to-chili-400/30" aria-hidden="true" />
 
-      {/* Decorative circles */}
-      <div
-        className="absolute -top-20 -right-20 w-64 h-64 rounded-full opacity-10 pointer-events-none"
-        style={{ background: 'oklch(0.82 0.14 77)' }}
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full opacity-10 pointer-events-none"
-        style={{ background: 'oklch(0.82 0.14 77)' }}
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Decorative top */}
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <div className="h-px w-12 bg-amber-300/40" />
-          <span className="text-amber-300/70 text-xl">✦</span>
-          <div className="h-px w-12 bg-amber-300/40" />
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="flex items-center justify-center gap-4 mb-5">
+          <div className="h-px w-12 bg-white/40" />
+          <span className="font-body text-white/80 text-xs tracking-[0.3em] uppercase font-semibold">
+            Ready to Order?
+          </span>
+          <div className="h-px w-12 bg-white/40" />
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-          Ready to Dine With Us?
+        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 uppercase leading-tight">
+          Craving Authentic<br />Mexican Flavor?
         </h2>
-
-        <p className="font-body text-wood-200 text-lg md:text-xl mb-8 leading-relaxed">
-          Call now to reserve your table or ask about today's specials.
+        <p className="font-body text-white/85 text-lg sm:text-xl mb-10 max-w-xl mx-auto">
+          Come visit us or call ahead for fast, fresh takeout. We're ready to serve you!
         </p>
 
-        {/* Big Phone CTA */}
-        <a
-          href="tel:+12502515445"
-          className="inline-flex items-center gap-3 bg-amber-400 hover:bg-amber-300 text-wood-900 font-body font-bold text-xl md:text-2xl px-10 py-5 rounded-full transition-all duration-200 shadow-warm-xl hover:shadow-glow hover:-translate-y-1 mb-8"
-        >
-          <Phone size={24} />
-          📞 +1 250-251-5445
-        </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="tel:+15054884886"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 font-body font-bold text-base px-10 py-4 rounded-full bg-white text-chili-600 hover:bg-cream-100 transition-all duration-200 shadow-spicy-xl hover:-translate-y-0.5 tracking-wide"
+          >
+            <Phone size={18} />
+            Call Now
+          </a>
+          <a
+            href="https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 font-body font-bold text-base px-10 py-4 rounded-full border-2 border-white/70 text-white hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 tracking-wide"
+          >
+            <MapPin size={18} />
+            Get Directions
+          </a>
+        </div>
 
-        <p className="font-heading text-amber-200 text-lg md:text-xl italic">
-          We look forward to welcoming you!
+        <p className="mt-8 font-body text-white/70 text-sm">
+          📍 3470 NM-47, Los Lunas, NM 87031 &nbsp;·&nbsp; 📞 +1 505-488-4886
         </p>
       </div>
     </section>

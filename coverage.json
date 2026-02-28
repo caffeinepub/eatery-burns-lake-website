@@ -1,208 +1,170 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-27T00:56:39.780Z",
+  "generatedAt": "2026-02-28T12:20:10.781Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 8,
-    "implemented": 8,
+    "total": 9,
+    "implemented": 9,
     "items": [
       {
-        "id": "REQ-1",
-        "summary": "Apply a warm, rustic visual theme throughout the entire site: rich amber/terracotta/deep wood-brown color palette, warm serif or slab-serif headings paired with readable sans-serif body text, cozy texture-inspired backgrounds (subtle noise or warm gradient), and consistent spacing that feels welcoming and inviting. Enforce this theme across all sections.",
+        "id": "REQ-14",
+        "summary": "Completely rebuild the site for Luna's Kitchen. Replace all Eatery Burns Lake content, branding, and styling. Apply a warm, vibrant Mexican street-food visual theme with a bold color palette of deep red, orange, black, and cream. Use modern typography with authentic Mexican-inspired accents. Update the HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM'. The site should be a single-page layout (no sub-routes needed) with a sticky header showing the Luna's Kitchen logo/name and a 'Call Now' nav button linking to tel:+15054884886. Remove all Eatery Burns Lake pages and routing.",
         "status": "implemented",
         "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/index.css",
           "frontend/tailwind.config.js",
-          "frontend/src/index.css"
+          "frontend/src/App.tsx",
+          "frontend/src/components/Header.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/MenuPage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
         ],
         "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/index.css",
           "frontend/tailwind.config.js",
-          "frontend/src/index.css"
+          "frontend/src/App.tsx",
+          "frontend/src/components/Header.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/MenuPage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
         ]
       },
       {
-        "id": "REQ-2",
-        "summary": "Build a Hero section at the top of the page with the headline '🔥 Cozy Dining Experience in the Heart of Burns Lake', subheading 'Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.', a 'View Menu' button that scrolls to the Menu section, and a 'Call Now' button that triggers tel:+12502515445.",
+        "id": "REQ-15",
+        "summary": "Build a full-screen Hero section at the top of the page using the generated hero background image (lunas-hero-bg.dim_1440x800.jpg). Display the headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as a future-ready placeholder button).",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Hero.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/Hero.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-3",
-        "summary": "Build an About Us section with the heading 'Welcome to Eatery Burns Lake', the description text about the Yellowhead Highway location, cozy atmosphere, fireplace seating, and live music. Include three highlighted features: '⭐ Rated 4.5 stars by our guests', '💲 Affordable pricing – $10–20 per person', and '🎵 Live music & welcoming environment'.",
+        "id": "REQ-16",
+        "summary": "Build an About section with a heading such as 'Our Story' and a short story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and a go-to spot for tacos, burritos, and more.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/AboutUs.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/AboutUs.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-4",
-        "summary": "Build a Menu section with the heading 'Our Menu' and subheading 'We serve a variety of delicious dishes made fresh daily.' Display four menu categories as visual cards or list items: 'Breakfast favorites', 'Hearty lunch options', 'Comfort dinners', and 'Fresh hot chocolate & warm beverages'. Include a price note '💲 Most meals range between $10–20' and a prompt '👉 Call us for today's specials!'",
+        "id": "REQ-17",
+        "summary": "Build a Featured Menu section with the heading 'Featured Menu' or 'Our Favorites'. Display six visually attractive food cards using the generated food card images (lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) for the following items with short appetizing descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.'",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Menu.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/Menu.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-5",
-        "summary": "Build a 'Why Visit Us?' Experience section with four feature highlights: '🔥 Cozy fireplace seating', '🎶 Live music atmosphere', '👨‍👩‍👧‍👦 Family-friendly environment', and '🚗 Easy highway access location'. Include the closing line: 'Perfect for casual dining, small gatherings, or a relaxing meal in Burns Lake.'",
+        "id": "REQ-18",
+        "summary": "Build a 'Why Choose Us' section highlighting five key selling points with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Experience.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/Experience.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-6",
-        "summary": "Build a Location section with the heading 'Visit Us' showing: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' (as a clickable tel: link), and hours '🕒 Opens daily at 7:00 AM'. Include the note 'Conveniently located along Yellowhead Highway for easy access.'",
+        "id": "REQ-19",
+        "summary": "Build a Reviews section displaying three sample customer testimonials. Each testimonial should include a customer name, star rating (5 stars), and a review quote. Sample reviews: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Reviews.tsx",
+          "frontend/src/pages/Homepage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Reviews.tsx",
+          "frontend/src/pages/Homepage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Build a Location & Hours section with the heading 'Find Us'. Display the address '📍 3470 NM-47, Los Lunas, NM 87031, United States', the phone number '📞 +1 505-488-4886' as a clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with a 'Closed now' status indicator. Include an embedded Google Maps iframe pointing to the address (3470 NM-47, Los Lunas, NM 87031). The map iframe src should use: https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Location.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/Location.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-7",
-        "summary": "Build a Call to Action section at the bottom of the page with the heading 'Ready to Dine With Us?', the subtext 'Call now to reserve your table or ask about today's specials.', a prominently displayed phone number '📞 +1 250-251-5445' as a clickable tel: link, and the closing line 'We look forward to welcoming you!'",
+        "id": "REQ-21",
+        "summary": "Build a Call-to-Action Footer section just above the site footer with the heading 'Craving Authentic Mexican Flavor?' and a subtext prompt like 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Below this, render the main site footer with social media icon links (Facebook, Instagram — placeholder hrefs), a copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address in small text.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/CallToAction.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/Homepage.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/CallToAction.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/Homepage.tsx"
         ]
       },
       {
-        "id": "REQ-8",
-        "summary": "Render the generated hero background image (hero-bg.dim_1440x800.jpg) and restaurant logo (eatery-logo.dim_300x300.png) as static assets in the frontend. Use the hero background image in the Hero section and the logo in the site header/navbar.",
+        "id": "REQ-22",
+        "summary": "Render the generated hero background image (lunas-hero-bg.dim_1440x800.jpg) and the six food card images (lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) and the restaurant logo (lunas-logo.dim_300x300.png) as static assets from frontend/public/assets/generated. Use the hero image in the Hero section, the food images in the Featured Menu cards, and the logo in the site header.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/components/Hero.tsx"
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Menu.tsx",
+          "frontend/src/components/Header.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/components/Hero.tsx"
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Menu.tsx",
+          "frontend/src/components/Header.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
-    "backend/main.mo",
+    "backend/blob-storage/Mixin.mo",
+    "backend/blob-storage/Storage.mo",
     "build-request.json",
-    "build-template/Dockerfile",
-    "build-template/LICENSE",
-    "build-template/README.md",
-    "build-template/deploy.sh",
-    "build-template/icp.yaml",
-    "build-template/package.json",
-    "build-template/pnpm-lock.yaml",
-    "build-template/pnpm-workspace.yaml",
-    "build-template/scripts/prune-unused-images.js",
-    "build-template/scripts/resize-images.js",
-    "build-template/src/backend/canister.yaml",
-    "build-template/src/backend/system-idl/aaaaa-aa.did",
-    "build-template/src/frontend/canister.yaml",
-    "build-template/src/frontend/components.json",
-    "build-template/src/frontend/env.json",
-    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
-    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
-    "build-template/src/frontend/eslint.config.js",
-    "build-template/src/frontend/package.json",
-    "build-template/src/frontend/postcss.config.js",
-    "build-template/src/frontend/src/components/ui/accordion.tsx",
-    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
-    "build-template/src/frontend/src/components/ui/alert.tsx",
-    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
-    "build-template/src/frontend/src/components/ui/avatar.tsx",
-    "build-template/src/frontend/src/components/ui/badge.tsx",
-    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
-    "build-template/src/frontend/src/components/ui/button.tsx",
-    "build-template/src/frontend/src/components/ui/calendar.tsx",
-    "build-template/src/frontend/src/components/ui/card.tsx",
-    "build-template/src/frontend/src/components/ui/carousel.tsx",
-    "build-template/src/frontend/src/components/ui/chart.tsx",
-    "build-template/src/frontend/src/components/ui/checkbox.tsx",
-    "build-template/src/frontend/src/components/ui/collapsible.tsx",
-    "build-template/src/frontend/src/components/ui/command.tsx",
-    "build-template/src/frontend/src/components/ui/context-menu.tsx",
-    "build-template/src/frontend/src/components/ui/dialog.tsx",
-    "build-template/src/frontend/src/components/ui/drawer.tsx",
-    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
-    "build-template/src/frontend/src/components/ui/form.tsx",
-    "build-template/src/frontend/src/components/ui/hover-card.tsx",
-    "build-template/src/frontend/src/components/ui/input-otp.tsx",
-    "build-template/src/frontend/src/components/ui/input.tsx",
-    "build-template/src/frontend/src/components/ui/label.tsx",
-    "build-template/src/frontend/src/components/ui/menubar.tsx",
-    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
-    "build-template/src/frontend/src/components/ui/pagination.tsx",
-    "build-template/src/frontend/src/components/ui/popover.tsx",
-    "build-template/src/frontend/src/components/ui/progress.tsx",
-    "build-template/src/frontend/src/components/ui/radio-group.tsx",
-    "build-template/src/frontend/src/components/ui/resizable.tsx",
-    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
-    "build-template/src/frontend/src/components/ui/select.tsx",
-    "build-template/src/frontend/src/components/ui/separator.tsx",
-    "build-template/src/frontend/src/components/ui/sheet.tsx",
-    "build-template/src/frontend/src/components/ui/sidebar.tsx",
-    "build-template/src/frontend/src/components/ui/skeleton.tsx",
-    "build-template/src/frontend/src/components/ui/slider.tsx",
-    "build-template/src/frontend/src/components/ui/sonner.tsx",
-    "build-template/src/frontend/src/components/ui/switch.tsx",
-    "build-template/src/frontend/src/components/ui/table.tsx",
-    "build-template/src/frontend/src/components/ui/tabs.tsx",
-    "build-template/src/frontend/src/components/ui/textarea.tsx",
-    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
-    "build-template/src/frontend/src/components/ui/toggle.tsx",
-    "build-template/src/frontend/src/components/ui/tooltip.tsx",
-    "build-template/src/frontend/src/hooks/use-mobile.tsx",
-    "build-template/src/frontend/src/lib/utils.ts",
-    "build-template/src/frontend/tsconfig.json",
-    "build-template/src/frontend/vite.config.js",
-    "build-template/tsconfig.json",
     "caffeine.lock.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/index.css",
     "frontend/index.html",
-    "frontend/public/assets/generated/eatery-logo.dim_300x300.png",
-    "frontend/public/assets/generated/hero-bg.dim_1440x800.jpg",
+    "frontend/public/assets/generated/lunas-hero-bg.dim_1440x800.jpg",
+    "frontend/public/assets/generated/lunas-logo.dim_300x300.png",
+    "frontend/public/assets/generated/lunas-menu-burgers.dim_600x400.jpg",
+    "frontend/public/assets/generated/lunas-menu-burritos.dim_600x400.jpg",
+    "frontend/public/assets/generated/lunas-menu-quesabirria.dim_600x400.jpg",
+    "frontend/public/assets/generated/lunas-menu-quesadillas.dim_600x400.jpg",
+    "frontend/public/assets/generated/lunas-menu-tacoburger.dim_600x400.jpg",
+    "frontend/public/assets/generated/lunas-menu-tacos.dim_600x400.jpg",
     "frontend/src/App.tsx",
-    "frontend/src/backend.d.ts",
-    "frontend/src/backend.ts",
     "frontend/src/components/AboutUs.tsx",
     "frontend/src/components/CallToAction.tsx",
     "frontend/src/components/Experience.tsx",
@@ -211,16 +173,12 @@
     "frontend/src/components/Hero.tsx",
     "frontend/src/components/Location.tsx",
     "frontend/src/components/Menu.tsx",
-    "frontend/src/config.ts",
-    "frontend/src/declarations/backend.did.d.ts",
-    "frontend/src/declarations/backend.did.js",
-    "frontend/src/hooks/useActor.ts",
-    "frontend/src/hooks/useInternetIdentity.ts",
-    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/components/Reviews.tsx",
     "frontend/src/index.css",
-    "frontend/src/main.tsx",
-    "frontend/src/ui-summary.json",
-    "frontend/src/utils/StorageClient.ts",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/Homepage.tsx",
+    "frontend/src/pages/MenuPage.tsx",
     "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",

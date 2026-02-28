@@ -1,94 +1,91 @@
 import React from 'react';
-import { Phone, ChevronDown } from 'lucide-react';
+import { Phone, MapPin, ShoppingBag } from 'lucide-react';
 
 export default function Hero() {
-  const scrollToMenu = () => {
-    const el = document.getElementById('menu-section');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const scrollToAbout = () => {
-    const el = document.getElementById('about-section');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/generated/hero-bg.dim_1440x800.jpg')" }}
+        style={{ backgroundImage: "url('/assets/generated/lunas-hero-bg.dim_1440x800.jpg')" }}
         aria-hidden="true"
       />
-
-      {/* Warm overlay — deep amber-to-brown gradient */}
+      {/* Dark overlay */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(160deg, rgba(30,15,5,0.72) 0%, rgba(60,25,8,0.65) 40%, rgba(20,10,3,0.80) 100%)',
+            'linear-gradient(160deg, rgba(10,5,3,0.78) 0%, rgba(30,10,5,0.70) 40%, rgba(8,4,2,0.85) 100%)',
         }}
         aria-hidden="true"
       />
-
-      {/* Warm glow at bottom */}
+      {/* Bottom gradient */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-48"
-        style={{
-          background:
-            'linear-gradient(to top, rgba(140,60,15,0.35) 0%, transparent 100%)',
-        }}
+        className="absolute bottom-0 left-0 right-0 h-56"
+        style={{ background: 'linear-gradient(to top, rgba(10,5,3,0.90) 0%, transparent 100%)' }}
         aria-hidden="true"
       />
+      {/* Top red accent bar */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-chili-500 via-salsa-400 to-chili-500" aria-hidden="true" />
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        {/* Decorative line */}
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-24">
+        {/* Eyebrow */}
         <div className="flex items-center justify-center gap-4 mb-6">
-          <div className="h-px w-12 bg-amber-400/60" />
-          <span className="font-body text-amber-300/80 text-xs tracking-[0.3em] uppercase">
-            Burns Lake, BC
+          <div className="h-px w-12 bg-salsa-400/60" />
+          <span className="font-body text-salsa-400 text-xs tracking-[0.35em] uppercase font-semibold">
+            Los Lunas, New Mexico
           </span>
-          <div className="h-px w-12 bg-amber-400/60" />
+          <div className="h-px w-12 bg-salsa-400/60" />
         </div>
 
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-shadow-warm">
-          🔥 Cozy Dining Experience
-          <span className="block text-amber-300 italic mt-1">
-            in the Heart of Burns Lake
-          </span>
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 text-shadow-bold uppercase tracking-wide">
+          Authentic Flavor.<br />
+          <span className="text-salsa-400">Fresh Ingredients.</span><br />
+          Made with Love.
         </h1>
 
-        <p className="font-body text-wood-100 text-lg sm:text-xl md:text-2xl leading-relaxed mb-10 max-w-2xl mx-auto opacity-90">
-          Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.
+        <p className="font-body text-cream-200 text-lg sm:text-xl md:text-2xl leading-relaxed mb-10 max-w-2xl mx-auto opacity-90">
+          Los Lunas' Favorite Spot for Tacos, Burritos &amp; Burgers.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={scrollToMenu}
-            className="w-full sm:w-auto font-body font-bold text-base px-8 py-4 rounded-full bg-amber-500 hover:bg-amber-400 text-wood-900 transition-all duration-200 shadow-warm-lg hover:shadow-glow hover:-translate-y-0.5 tracking-wide"
-          >
-            View Menu
-          </button>
           <a
-            href="tel:+12502515445"
-            className="w-full sm:w-auto font-body font-bold text-base px-8 py-4 rounded-full border-2 border-white/60 hover:border-amber-300 text-white hover:text-amber-300 transition-all duration-200 hover:-translate-y-0.5 tracking-wide text-center"
+            href="tel:+15054884886"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 font-body font-bold text-base px-8 py-4 rounded-full bg-chili-500 hover:bg-chili-400 text-white transition-all duration-200 shadow-spicy-lg hover:shadow-glow hover:-translate-y-0.5 tracking-wide"
           >
-            <Phone size={16} className="inline mr-2 -mt-0.5" />
+            <Phone size={18} />
             Call Now
           </a>
+          <a
+            href="https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 font-body font-bold text-base px-8 py-4 rounded-full bg-salsa-400 hover:bg-salsa-300 text-ink-900 transition-all duration-200 shadow-spicy hover:shadow-spicy-lg hover:-translate-y-0.5 tracking-wide"
+          >
+            <MapPin size={18} />
+            Get Directions
+          </a>
+          <button
+            onClick={() => alert('Online ordering coming soon! Call us at +1 505-488-4886 to place your order.')}
+            className="w-full sm:w-auto flex items-center justify-center gap-2 font-body font-bold text-base px-8 py-4 rounded-full border-2 border-white/50 hover:border-cream-200 text-white hover:text-cream-100 transition-all duration-200 hover:-translate-y-0.5 tracking-wide"
+          >
+            <ShoppingBag size={18} />
+            Order Takeout
+          </button>
         </div>
 
-        {/* Scroll hint */}
-        <button
-          onClick={scrollToAbout}
-          className="mt-16 flex flex-col items-center gap-2 text-white/50 hover:text-amber-300/80 transition-colors mx-auto"
-          aria-label="Scroll down"
-        >
-          <span className="font-body text-xs tracking-widest uppercase">Discover More</span>
-          <ChevronDown size={20} className="animate-bounce" />
-        </button>
+        {/* Rating badge */}
+        <div className="mt-10 flex items-center justify-center gap-2">
+          <div className="flex items-center gap-1">
+            {[1,2,3,4,5].map((s) => (
+              <span key={s} className="text-salsa-400 text-lg">★</span>
+            ))}
+          </div>
+          <span className="font-body text-cream-200 text-sm">
+            <strong className="text-white">4.9</strong> stars · 137 reviews
+          </span>
+        </div>
       </div>
     </section>
   );

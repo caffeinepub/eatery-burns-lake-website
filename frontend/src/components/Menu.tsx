@@ -1,100 +1,118 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
 
-const menuCategories = [
+const menuItems = [
   {
-    emoji: '🍳',
-    title: 'Breakfast Favorites',
-    description: 'Start your morning right with our hearty breakfast selections, made fresh every day.',
-    color: 'border-t-amber-500',
-    bg: 'bg-amber-400/5 hover:bg-amber-400/10',
+    name: 'Quesabirria Tacos',
+    description: 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.',
+    image: '/assets/generated/lunas-menu-quesabirria.dim_600x400.jpg',
+    tag: 'Fan Favorite',
+    tagColor: 'bg-chili-500',
   },
   {
-    emoji: '🥗',
-    title: 'Hearty Lunch Options',
-    description: 'Satisfying midday meals to keep you fueled for the rest of your day.',
-    color: 'border-t-terra-400',
-    bg: 'bg-terra-400/5 hover:bg-terra-400/10',
+    name: 'Tacos',
+    description: 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.',
+    image: '/assets/generated/lunas-menu-tacos.dim_600x400.jpg',
+    tag: 'Classic',
+    tagColor: 'bg-salsa-500',
   },
   {
-    emoji: '🍲',
-    title: 'Comfort Dinners',
-    description: 'Warm, soul-satisfying dinners perfect for winding down after a long day.',
-    color: 'border-t-wood-500',
-    bg: 'bg-wood-400/5 hover:bg-wood-400/10',
+    name: 'Burritos',
+    description: 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.',
+    image: '/assets/generated/lunas-menu-burritos.dim_600x400.jpg',
+    tag: 'Hearty',
+    tagColor: 'bg-chili-600',
   },
   {
-    emoji: '☕',
-    title: 'Fresh Hot Chocolate & Warm Beverages',
-    description: 'Cozy up with our selection of hot drinks — perfect for any time of day.',
-    color: 'border-t-amber-700',
-    bg: 'bg-amber-700/5 hover:bg-amber-700/10',
+    name: 'Quesadillas',
+    description: 'Golden, crispy tortillas filled with melted cheese and savory toppings.',
+    image: '/assets/generated/lunas-menu-quesadillas.dim_600x400.jpg',
+    tag: 'Crispy',
+    tagColor: 'bg-salsa-400',
+  },
+  {
+    name: 'Tacoburger',
+    description: 'Where the taco meets the burger — bold, juicy, and totally unique to Luna\'s Kitchen.',
+    image: '/assets/generated/lunas-menu-tacoburger.dim_600x400.jpg',
+    tag: 'Signature',
+    tagColor: 'bg-chili-500',
+  },
+  {
+    name: 'Burgers',
+    description: 'Handcrafted beef burgers with fresh toppings and house-made sauces.',
+    image: '/assets/generated/lunas-menu-burgers.dim_600x400.jpg',
+    tag: 'Juicy',
+    tagColor: 'bg-salsa-500',
   },
 ];
 
 export default function Menu() {
   return (
-    <section
-      id="menu-section"
-      className="py-20 md:py-28"
-      style={{
-        background:
-          'linear-gradient(180deg, oklch(0.97 0.015 75) 0%, oklch(0.93 0.025 70) 100%)',
-      }}
-    >
+    <section id="menu" className="py-20 bg-ink-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-12 bg-terra-400/50" />
-            <span className="font-body text-terra-400 text-xs tracking-[0.3em] uppercase font-bold">
-              What We Serve
+            <div className="h-px w-10 bg-salsa-400/50" />
+            <span className="font-body text-salsa-400 text-xs tracking-[0.3em] uppercase font-bold">
+              From Our Kitchen
             </span>
-            <div className="h-px w-12 bg-terra-400/50" />
+            <div className="h-px w-10 bg-salsa-400/50" />
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-wood-800 mb-4">
-            Our Menu
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 uppercase">
+            Our Favorites
           </h2>
-          <p className="font-body text-wood-500 text-lg max-w-xl mx-auto">
-            We serve a variety of delicious dishes made fresh daily.
+          <p className="font-body text-ink-200 text-base max-w-xl mx-auto">
+            Bold flavors, fresh ingredients — these are the dishes Los Lunas keeps coming back for.
           </p>
         </div>
 
-        {/* Menu Category Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {menuCategories.map((item) => (
+        {/* Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {menuItems.map((item) => (
             <div
-              key={item.title}
-              className={`${item.bg} ${item.color} border border-wood-200 border-t-4 rounded-2xl p-6 transition-all duration-200 hover:shadow-warm hover:-translate-y-1 cursor-default`}
+              key={item.name}
+              className="group bg-ink-700 rounded-2xl overflow-hidden border border-ink-600/50 hover:border-salsa-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-spicy-xl"
             >
-              <div className="text-4xl mb-4">{item.emoji}</div>
-              <h3 className="font-heading text-wood-800 font-semibold text-lg leading-snug mb-2">
-                {item.title}
-              </h3>
-              <p className="font-body text-wood-500 text-sm leading-relaxed">
-                {item.description}
-              </p>
+              {/* Image */}
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent" />
+                {/* Tag */}
+                <div className="absolute top-3 right-3">
+                  <span className={`font-body text-xs font-bold text-white ${item.tagColor} px-2.5 py-1 rounded-full tracking-wide`}>
+                    {item.tag}
+                  </span>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-5">
+                <h3 className="font-heading text-xl font-bold text-white mb-2 uppercase tracking-wide group-hover:text-salsa-400 transition-colors">
+                  {item.name}
+                </h3>
+                <p className="font-body text-ink-200 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+
+              {/* Bottom accent */}
+              <div className="h-0.5 bg-gradient-to-r from-chili-500 to-salsa-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           ))}
         </div>
 
-        {/* Price & CTA Banner */}
-        <div className="bg-wood-700 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-warm-xl">
-          <div className="text-center md:text-left">
-            <p className="font-heading text-amber-300 text-xl md:text-2xl font-semibold mb-1">
-              💲 Most meals range between $10–20
-            </p>
-            <p className="font-body text-wood-200 text-base">
-              Quality food at prices that won't break the bank.
-            </p>
+        {/* Price range note */}
+        <div className="mt-12 text-center">
+          <div className="inline-flex items-center gap-3 bg-ink-700/60 border border-salsa-400/30 rounded-full px-6 py-3">
+            <span className="text-salsa-400 text-lg">💰</span>
+            <span className="font-body text-cream-200 text-sm">
+              Affordable pricing: <strong className="text-white">$10–$20 per person</strong>
+            </span>
           </div>
-          <a
-            href="tel:+12502515445"
-            className="flex-shrink-0 flex items-center gap-2 bg-terra-400 hover:bg-terra-300 text-white font-body font-bold text-base px-7 py-3.5 rounded-full transition-all duration-200 shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 whitespace-nowrap"
-          >
-            <Phone size={16} />
-            👉 Call for Today's Specials!
-          </a>
         </div>
       </div>
     </section>

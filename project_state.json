@@ -1,14 +1,15 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
-  "summary": "Restaurant landing page website for Eatery Burns Lake — a cozy dining spot in Burns Lake, BC on Yellowhead Highway. The site includes a Hero section, About Us, Menu, Experience/Why Visit, Location, and Call to Action sections.",
+  "projectStateVersion": 7,
+  "summary": "Modern, mobile-friendly website for Luna's Kitchen — a takeout restaurant in Los Lunas, New Mexico. Warm vibrant Mexican street-food theme with bold colors (deep red, orange, black, cream). Single-page site with Hero, About, Featured Menu, Why Choose Us, Reviews, Location & Hours, and CTA Footer sections.",
   "architectural_notes": [
-    "Single-page restaurant website with sections: Hero, About Us, Menu, Experience, Location, CTA",
-    "Business: Eatery Burns Lake, 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8 | Phone: +1 250-251-5445 | Opens daily at 7:00 AM"
+    "Business: Luna's Kitchen, 3470 NM-47, Los Lunas, NM 87031 | Phone: +1 505-488-4886 | Opens at 9:00 AM | Rating: 4.9 stars (137 reviews) | Price: $10–20",
+    "Theme: warm vibrant Mexican street-food style, bold colors (deep red, orange, black, cream), modern typography with Mexican-inspired accents",
+    "SEO target: 'Best Tacos in Los Lunas NM'; no AI chatbot; future-ready for online ordering integration"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Warm, cozy restaurant interior at night with fireplace glow, wooden tables, warm amber lighting, and a rustic inviting atmosphere — wide landscape shot (hero-bg.dim_1440x800.jpg)\n- Rustic circular restaurant logo with stylized flame icon and bold text 'Eatery Burns Lake' on a warm brown background (eatery-logo.dim_300x300.png)",
+  "imageRequirements": "## Required Images\n- Vibrant close-up hero photo of quesabirria tacos with consommé dipping broth, warm orange-red lighting, rustic wooden table, steam rising, appetizing street-food atmosphere (lunas-hero-bg.dim_1440x800.jpg)\n- Luna's Kitchen circular logo with bold Mexican-inspired typography, deep red and orange colors, cream background, taco or pepper icon accent (lunas-logo.dim_300x300.png)\n- Close-up food photo of quesabirria tacos with melted cheese and consommé broth bowl, vibrant warm tones (lunas-menu-quesabirria.dim_600x400.jpg)\n- Close-up food photo of two street tacos with cilantro, onion, lime wedge on a warm wooden surface (lunas-menu-tacos.dim_600x400.jpg)\n- Close-up food photo of a large burrito stuffed with rice and beans, cut in half showing filling, warm tones (lunas-menu-burritos.dim_600x400.jpg)\n- Close-up food photo of a golden crispy quesadilla cut into wedges with a side of salsa, appetizing presentation (lunas-menu-quesadillas.dim_600x400.jpg)\n- Close-up food photo of a tacoburger — a beef burger patty served in a taco shell with fresh toppings, bold and colorful presentation (lunas-menu-tacoburger.dim_600x400.jpg)\n- Close-up food photo of a juicy handcrafted beef burger with fresh lettuce, tomato, and sauce on a brioche bun, warm lighting (lunas-menu-burgers.dim_600x400.jpg)",
   "existing_features": [
     {
       "id": "feature-apply-a-warm-rustic-visual-theme-throughout-the-entire-site-rich-amber-terracotta-deep-wood-brown-color-palette-warm-serif-or-slab-serif-headings-paired-with-readable-sans-serif-body-text-cozy-texture-inspired-backgrounds-subtle-noise-or-warm-gradient-and-consistent-spacing-that-feels-welcoming-and-inviting-enforce-this-theme-across-all-sections",
@@ -73,42 +74,160 @@
         "REQ-8"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-site-as-a-multi-page-react-application-with-four-distinct-pages-homepage-menu-about-and-contact-implement-client-side-routing-so-each-page-is-accessible-via-its-own-route-menu-about-contact-update-the-header-navigation-to-include-links-to-all-four-pages",
+      "title": "Rebuild the site as a multi-page React application with four distinct pages: Homepage, Menu, About, and Contact. Implement client-side routing so each page is accessible via its own route (/, /menu, /about, /contact). Update the Header navigation to include links to all four pages.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-homepage-in-a-luxury-premium-style-with-the-following-content-1-hero-section-with-headline-fresh-comfort-food-handcrafted-coffee-in-the-heart-of-burns-lake-subheading-welcoming-copy-address-321-yellowhead-hwy-burns-lake-bc-phone-1-250-251-5445-a-view-menu-button-linking-to-menu-and-a-call-now-button-triggering-tel-12502515445-2-a-cozy-local-experience-feature-grid-with-icons-and-labels-fireplace-ambience-live-music-evenings-premium-coffee-specialty-drinks-homemade-6oz-gourmet-burgers-family-friendly-atmosphere-fully-wheelchair-accessible-free-street-parking-closing-with-perfect-for-breakfast-lunch-or-a-relaxed-casual-dinner-3-featured-favorites-section-with-four-dish-cards-classic-burger-23-homemade-6oz-beef-patty-fresh-toppings-served-with-crispy-fries-eatery-poutine-20-crispy-fries-homemade-gravy-cheese-curds-topped-with-beef-and-fresh-garnish-danish-meatball-sandwich-13-a-flavorful-local-favorite-crafted-with-care-chicken-caesar-wrap-16-crispy-chicken-bacon-romaine-house-caesar-dressing",
+      "title": "Redesign the Homepage (/) in a luxury/premium style with the following content: (1) Hero section with headline 'Fresh Comfort Food & Handcrafted Coffee in the Heart of Burns Lake', subheading welcoming copy, address '📍 321 Yellowhead Hwy, Burns Lake, BC', phone '📞 +1 250-251-5445', a 'View Menu' button linking to /menu, and a 'Call Now' button triggering tel:+12502515445. (2) 'A Cozy Local Experience' feature grid with icons and labels: 🔥 Fireplace Ambience, 🎵 Live Music Evenings, ☕ Premium Coffee & Specialty Drinks, 🍔 Homemade 6oz Gourmet Burgers, 👨‍👩‍👧 Family Friendly Atmosphere, ♿ Fully Wheelchair Accessible, 🚗 Free Street Parking — closing with 'Perfect for breakfast, lunch, or a relaxed casual dinner.' (3) 'Featured Favorites' section with four dish cards: Classic Burger ($23) — Homemade 6oz beef patty, fresh toppings, served with crispy fries; Eatery Poutine ($20) — Crispy fries, homemade gravy, cheese curds, topped with beef and fresh garnish; Danish Meatball Sandwich ($13) — A flavorful local favorite crafted with care; Chicken Caesar Wrap ($16) — Crispy chicken, bacon, romaine & house Caesar dressing.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dedicated-menu-page-menu-with-a-clean-premium-layout-and-the-following-categories-and-items-1-sandwiches-13-each-danish-meatball-flaeske-steg-cranberry-turkey-chicken-bacon-beef-dip-2-burgers-23-each-all-served-with-fries-classic-fun-guy-blue-cheese-3-snacks-sides-jalapeno-poppers-12-mozzarella-sticks-12-spinach-dip-10-fries-8-sweet-potato-fries-12-4-poutine-classic-16-eatery-poutine-20-5-salads-wraps-greek-bowl-19-chicken-caesar-salad-15-chipotle-wrap-16-chicken-caesar-wrap-16-6-coffee-beverages-drip-coffee-3-75-americano-6-50-latte-6-75-mocha-7-25-cappuccino-6-75-affogato-7-75-with-note-seasonal-specialty-drinks-available",
+      "title": "Build a dedicated Menu page (/menu) with a clean premium layout and the following categories and items: (1) Sandwiches – $13 each: Danish Meatball, Flaeske Steg, Cranberry Turkey, Chicken Bacon, Beef Dip. (2) Burgers – $23 each (all served with fries): Classic, Fun Guy, Blue Cheese. (3) Snacks & Sides: Jalapeno Poppers $12, Mozzarella Sticks $12, Spinach Dip $10, Fries $8, Sweet Potato Fries $12. (4) Poutine: Classic $16, Eatery Poutine $20. (5) Salads & Wraps: Greek Bowl $19, Chicken Caesar Salad $15, Chipotle Wrap $16, Chicken Caesar Wrap $16. (6) Coffee & Beverages: Drip Coffee $3.75, Americano $6.50, Latte $6.75, Mocha $7.25, Cappuccino $6.75, Affogato $7.75 — with note 'Seasonal & specialty drinks available.'",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dedicated-about-page-about-with-an-our-story-section-containing-the-copy-eatery-burns-lake-is-proud-to-serve-the-burns-lake-community-with-freshly-prepared-meals-and-a-welcoming-atmosphere-whether-you-re-stopping-in-for-a-morning-coffee-enjoying-a-quick-lunch-or-relaxing-with-friends-our-goal-is-simple-quality-food-friendly-service-and-a-comfortable-dining-experience-with-live-music-a-cozy-fireplace-and-family-friendly-seating-we-strive-to-create-a-space-where-everyone-feels-at-home",
+      "title": "Build a dedicated About page (/about) with an 'Our Story' section containing the copy: 'Eatery Burns Lake is proud to serve the Burns Lake community with freshly prepared meals and a welcoming atmosphere. Whether you're stopping in for a morning coffee, enjoying a quick lunch, or relaxing with friends, our goal is simple — quality food, friendly service, and a comfortable dining experience. With live music, a cozy fireplace, and family-friendly seating, we strive to create a space where everyone feels at home.'",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dedicated-contact-page-contact-with-the-following-information-address-321-yellowhead-hwy-burns-lake-bc-v8j-4k8-canada-phone-1-250-251-5445-as-a-clickable-tel-12502515445-link-weekly-hours-displayed-as-monday-7am-2pm-tuesday-9am-2pm-wednesday-7am-2pm-thursday-7am-2pm-friday-7am-2pm-saturday-closed-sunday-closed-and-a-note-free-street-parking-available",
+      "title": "Build a dedicated Contact page (/contact) with the following information: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' as a clickable tel:+12502515445 link, weekly hours displayed as: Monday 7am–2pm, Tuesday 9am–2pm, Wednesday 7am–2pm, Thursday 7am–2pm, Friday 7am–2pm, Saturday Closed, Sunday Closed, and a note 'Free street parking available.'",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-rebuild-the-site-for-luna-s-kitchen-replace-all-eatery-burns-lake-content-branding-and-styling-apply-a-warm-vibrant-mexican-street-food-visual-theme-with-a-bold-color-palette-of-deep-red-orange-black-and-cream-use-modern-typography-with-authentic-mexican-inspired-accents-update-the-html-title-to-luna-s-kitchen-best-tacos-in-los-lunas-nm-the-site-should-be-a-single-page-layout-no-sub-routes-needed-with-a-sticky-header-showing-the-luna-s-kitchen-logo-name-and-a-call-now-nav-button-linking-to-tel-15054884886-remove-all-eatery-burns-lake-pages-and-routing",
+      "title": "Completely rebuild the site for Luna's Kitchen. Replace all Eatery Burns Lake content, branding, and styling. Apply a warm, vibrant Mexican street-food visual theme with a bold color palette of deep red, orange, black, and cream. Use modern typography with authentic Mexican-inspired accents. Update the HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM'. The site should be a single-page layout (no sub-routes needed) with a sticky header showing the Luna's Kitchen logo/name and a 'Call Now' nav button linking to tel:+15054884886. Remove all Eatery Burns Lake pages and routing.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-full-screen-hero-section-at-the-top-of-the-page-using-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-display-the-headline-authentic-flavor-fresh-ingredients-made-with-love-and-subheadline-los-lunas-favorite-spot-for-tacos-burritos-burgers-include-three-cta-buttons-call-now-linking-to-tel-15054884886-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-and-order-takeout-styled-as-a-future-ready-placeholder-button",
+      "title": "Build a full-screen Hero section at the top of the page using the generated hero background image (lunas-hero-bg.dim_1440x800.jpg). Display the headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as a future-ready placeholder button).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-section-with-a-heading-such-as-our-story-and-a-short-story-style-paragraph-describing-luna-s-kitchen-as-a-locally-loved-takeout-restaurant-in-los-lunas-new-mexico-known-for-bold-authentic-mexican-flavors-fresh-daily-ingredients-and-warm-friendly-service-mention-it-is-a-community-favorite-and-a-go-to-spot-for-tacos-burritos-and-more",
+      "title": "Build an About section with a heading such as 'Our Story' and a short story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and a go-to spot for tacos, burritos, and more.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-featured-menu-section-with-the-heading-featured-menu-or-our-favorites-display-six-visually-attractive-food-cards-using-the-generated-food-card-images-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-for-the-following-items-with-short-appetizing-descriptions-1-quesabirria-tacos-slow-braised-beef-birria-melty-cheese-consomm-dipping-broth-a-true-mexican-classic-2-tacos-seasoned-meats-fresh-cilantro-onion-and-a-squeeze-of-lime-on-warm-tortillas-3-burritos-stuffed-with-rice-beans-cheese-and-your-choice-of-protein-big-flavors-big-portions-4-quesadillas-golden-crispy-tortillas-filled-with-melted-cheese-and-savory-toppings-5-tacoburger-where-the-taco-meets-the-burger-bold-juicy-and-totally-unique-to-luna-s-kitchen-6-burgers-handcrafted-beef-burgers-with-fresh-toppings-and-house-made-sauces",
+      "title": "Build a Featured Menu section with the heading 'Featured Menu' or 'Our Favorites'. Display six visually attractive food cards using the generated food card images (lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) for the following items with short appetizing descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.'",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-choose-us-section-highlighting-five-key-selling-points-with-icons-4-9-star-customer-rating-137-reviews-affordable-pricing-10-20-per-person-fast-takeout-service-fresh-ingredients-used-daily-and-family-friendly-atmosphere",
+      "title": "Build a 'Why Choose Us' section highlighting five key selling points with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-reviews-section-displaying-three-sample-customer-testimonials-each-testimonial-should-include-a-customer-name-star-rating-5-stars-and-a-review-quote-sample-reviews-1-maria-g-the-quesabirria-tacos-are-absolutely-incredible-the-consomm-is-so-flavorful-best-mexican-food-in-los-lunas-by-far-2-james-r-huge-portions-amazing-prices-the-burritos-are-stuffed-to-the-brim-and-taste-homemade-we-come-here-every-week-3-sofia-l-super-friendly-staff-and-the-food-is-always-fresh-the-tacoburger-is-something-you-have-to-try-completely-unique",
+      "title": "Build a Reviews section displaying three sample customer testimonials. Each testimonial should include a customer name, star rating (5 stars), and a review quote. Sample reviews: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!'",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-location-hours-section-with-the-heading-find-us-display-the-address-3470-nm-47-los-lunas-nm-87031-united-states-the-phone-number-1-505-488-4886-as-a-clickable-tel-15054884886-link-and-business-hours-showing-opens-at-9-00-am-with-a-closed-now-status-indicator-include-an-embedded-google-maps-iframe-pointing-to-the-address-3470-nm-47-los-lunas-nm-87031-the-map-iframe-src-should-use-https-maps-google-com-maps-q-3470-nm-47-los-lunas-nm-87031-output-embed",
+      "title": "Build a Location & Hours section with the heading 'Find Us'. Display the address '📍 3470 NM-47, Los Lunas, NM 87031, United States', the phone number '📞 +1 505-488-4886' as a clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with a 'Closed now' status indicator. Include an embedded Google Maps iframe pointing to the address (3470 NM-47, Los Lunas, NM 87031). The map iframe src should use: https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-call-to-action-footer-section-just-above-the-site-footer-with-the-heading-craving-authentic-mexican-flavor-and-a-subtext-prompt-like-come-visit-us-or-call-ahead-for-fast-fresh-takeout-include-two-buttons-call-now-linking-to-tel-15054884886-and-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-below-this-render-the-main-site-footer-with-social-media-icon-links-facebook-instagram-placeholder-hrefs-a-copyright-line-2024-luna-s-kitchen-all-rights-reserved-and-the-address-in-small-text",
+      "title": "Build a Call-to-Action Footer section just above the site footer with the heading 'Craving Authentic Mexican Flavor?' and a subtext prompt like 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Below this, render the main site footer with social media icon links (Facebook, Instagram — placeholder hrefs), a copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address in small text.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-and-the-six-food-card-images-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-and-the-restaurant-logo-lunas-logo-dim-300x300-png-as-static-assets-from-frontend-public-assets-generated-use-the-hero-image-in-the-hero-section-the-food-images-in-the-featured-menu-cards-and-the-logo-in-the-site-header",
+      "title": "Render the generated hero background image (lunas-hero-bg.dim_1440x800.jpg) and the six food card images (lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) and the restaurant logo (lunas-logo.dim_300x300.png) as static assets from frontend/public/assets/generated. Use the hero image in the Hero section, the food images in the Featured Menu cards, and the logo in the site header.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
-      "id": "AR-1",
-      "summary": "Hero section with headline, subheading, View Menu and Call Now buttons",
+      "id": "AR-11",
+      "summary": "Hero section with headline 'Authentic Flavor. Fresh Ingredients. Made with Love.', subheadline about tacos/burritos/burgers, and CTA buttons: Call Now, Get Directions, Order Takeout",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-2",
-      "summary": "About Us section with description, star rating, pricing, and live music highlights",
+      "id": "AR-12",
+      "summary": "About section with story-style paragraph about Luna's Kitchen as a locally loved takeout spot known for bold flavors, fresh ingredients, and friendly service",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-3",
-      "summary": "Menu section listing breakfast, lunch, dinner, and beverages with price range info",
+      "id": "AR-13",
+      "summary": "Featured Menu section with food cards for: Quesabirria Tacos, Tacos, Burritos, Quesadillas, Tacoburger, Burgers — each with short appetizing descriptions",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-4",
-      "summary": "Experience/Why Visit section highlighting fireplace seating, live music, family-friendly, and highway access",
+      "id": "AR-14",
+      "summary": "Why Choose Us section highlighting 4.9-star rating, affordable pricing ($10–20), fast takeout, fresh ingredients, family-friendly atmosphere",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-5",
-      "summary": "Location section with address (321 Yellowhead Hwy), phone (+1 250-251-5445), and opening hours (7AM daily)",
+      "id": "AR-15",
+      "summary": "Reviews section with sample customer testimonials about great flavor, generous portions, and friendly service",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-6",
-      "summary": "Call to Action section with phone number and reservation prompt",
+      "id": "AR-16",
+      "summary": "Location & Hours section with address (3470 NM-47, Los Lunas, NM 87031), embedded Google Maps, business hours (Opens at 9:00 AM), and click-to-call phone +1 505-488-4886",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "CTA Footer 'Craving Authentic Mexican Flavor?' with Call Now and Get Directions buttons, social media icons, and copyright footer",
       "reqIds": [],
       "status": "pending"
     }

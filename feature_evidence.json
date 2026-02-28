@@ -2,10 +2,17 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-apply-a-warm-rustic-visual-theme-throughout-the-entire-site-rich-amber-terracotta-deep-wood-brown-color-palette-warm-serif-or-slab-serif-headings-paired-with-readable-sans-serif-body-text-cozy-texture-inspired-backgrounds-subtle-noise-or-warm-gradient-and-consistent-spacing-that-feels-welcoming-and-inviting-enforce-this-theme-across-all-sections",
-      "featureTitle": "Apply a warm, rustic visual theme throughout the entire site: rich amber/terracotta/deep wood-brown color palette, warm serif or slab-serif headings paired with readable sans-serif body text, cozy texture-inspired backgrounds (subtle noise or warm gradient), and consistent spacing that feels welcoming and inviting. Enforce this theme across all sections.",
+      "featureId": "feature-completely-rebuild-the-site-for-luna-s-kitchen-replace-all-eatery-burns-lake-content-branding-and-styling-apply-a-warm-vibrant-mexican-street-food-visual-theme-with-a-bold-color-palette-of-deep-red-orange-black-and-cream-use-modern-typography-with-authentic-mexican-inspired-accents-update-the-html-title-to-luna-s-kitchen-best-tacos-in-los-lunas-nm-the-site-should-be-a-single-page-layout-no-sub-routes-needed-with-a-sticky-header-showing-the-luna-s-kitchen-logo-name-and-a-call-now-nav-button-linking-to-tel-15054884886-remove-all-eatery-burns-lake-pages-and-routing",
+      "featureTitle": "Completely rebuild the site for Luna's Kitchen. Replace all Eatery Burns Lake content, branding, and styling. Apply a warm, vibrant Mexican street-food visual theme with a bold color palette of deep red, orange, black, and cream. Use modern typography with authentic Mexican-inspired accents. Update the HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM'. The site should be a single-page layout (no sub-routes needed) with a sticky header showing the Luna's Kitchen logo/name and a 'Call Now' nav button linking to tel:+15054884886. Remove all Eatery Burns Lake pages and routing.",
       "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx",
         "frontend/src/index.css",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/MenuPage.tsx",
         "frontend/tailwind.config.js"
       ],
       "components": [
@@ -13,56 +20,161 @@
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-1"
+        "REQ-14"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-a-hero-section-at-the-top-of-the-page-with-the-headline-cozy-dining-experience-in-the-heart-of-burns-lake-subheading-enjoy-delicious-meals-warm-fireplace-seating-and-live-music-at-eatery-burns-lake-a-view-menu-button-that-scrolls-to-the-menu-section-and-a-call-now-button-that-triggers-tel-12502515445",
-      "featureTitle": "Build a Hero section at the top of the page with the headline '🔥 Cozy Dining Experience in the Heart of Burns Lake', subheading 'Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.', a 'View Menu' button that scrolls to the Menu section, and a 'Call Now' button that triggers tel:+12502515445.",
+      "featureId": "feature-build-a-full-screen-hero-section-at-the-top-of-the-page-using-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-display-the-headline-authentic-flavor-fresh-ingredients-made-with-love-and-subheadline-los-lunas-favorite-spot-for-tacos-burritos-burgers-include-three-cta-buttons-call-now-linking-to-tel-15054884886-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-and-order-takeout-styled-as-a-future-ready-placeholder-button",
+      "featureTitle": "Build a full-screen Hero section at the top of the page using the generated hero background image (lunas-hero-bg.dim_1440x800.jpg). Display the headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as a future-ready placeholder button).",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Hero.tsx"
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/pages/Homepage.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-2"
+        "REQ-15"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-an-about-us-section-with-the-heading-welcome-to-eatery-burns-lake-the-description-text-about-the-yellowhead-highway-location-cozy-atmosphere-fireplace-seating-and-live-music-include-three-highlighted-features-rated-4-5-stars-by-our-guests-affordable-pricing-10-20-per-person-and-live-music-welcoming-environment",
-      "featureTitle": "Build an About Us section with the heading 'Welcome to Eatery Burns Lake', the description text about the Yellowhead Highway location, cozy atmosphere, fireplace seating, and live music. Include three highlighted features: '⭐ Rated 4.5 stars by our guests', '💲 Affordable pricing – $10–20 per person', and '🎵 Live music & welcoming environment'.",
+      "featureId": "feature-build-an-about-section-with-a-heading-such-as-our-story-and-a-short-story-style-paragraph-describing-luna-s-kitchen-as-a-locally-loved-takeout-restaurant-in-los-lunas-new-mexico-known-for-bold-authentic-mexican-flavors-fresh-daily-ingredients-and-warm-friendly-service-mention-it-is-a-community-favorite-and-a-go-to-spot-for-tacos-burritos-and-more",
+      "featureTitle": "Build an About section with a heading such as 'Our Story' and a short story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and a go-to spot for tacos, burritos, and more.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AboutUs.tsx"
+        "frontend/src/components/AboutUs.tsx",
+        "frontend/src/pages/Homepage.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-3"
+        "REQ-16"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-a-menu-section-with-the-heading-our-menu-and-subheading-we-serve-a-variety-of-delicious-dishes-made-fresh-daily-display-four-menu-categories-as-visual-cards-or-list-items-breakfast-favorites-hearty-lunch-options-comfort-dinners-and-fresh-hot-chocolate-warm-beverages-include-a-price-note-most-meals-range-between-10-20-and-a-prompt-call-us-for-today-s-specials",
-      "featureTitle": "Build a Menu section with the heading 'Our Menu' and subheading 'We serve a variety of delicious dishes made fresh daily.' Display four menu categories as visual cards or list items: 'Breakfast favorites', 'Hearty lunch options', 'Comfort dinners', and 'Fresh hot chocolate & warm beverages'. Include a price note '💲 Most meals range between $10–20' and a prompt '👉 Call us for today's specials!'",
+      "featureId": "feature-build-a-featured-menu-section-with-the-heading-featured-menu-or-our-favorites-display-six-visually-attractive-food-cards-using-the-generated-food-card-images-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-for-the-following-items-with-short-appetizing-descriptions-1-quesabirria-tacos-slow-braised-beef-birria-melty-cheese-consomm-dipping-broth-a-true-mexican-classic-2-tacos-seasoned-meats-fresh-cilantro-onion-and-a-squeeze-of-lime-on-warm-tortillas-3-burritos-stuffed-with-rice-beans-cheese-and-your-choice-of-protein-big-flavors-big-portions-4-quesadillas-golden-crispy-tortillas-filled-with-melted-cheese-and-savory-toppings-5-tacoburger-where-the-taco-meets-the-burger-bold-juicy-and-totally-unique-to-luna-s-kitchen-6-burgers-handcrafted-beef-burgers-with-fresh-toppings-and-house-made-sauces",
+      "featureTitle": "Build a Featured Menu section with the heading 'Featured Menu' or 'Our Favorites'. Display six visually attractive food cards using the generated food card images (lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) for the following items with short appetizing descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.'",
       "files": [
-        "frontend/src/App.tsx",
+        "frontend/src/components/Menu.tsx",
+        "frontend/src/pages/Homepage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-why-choose-us-section-highlighting-five-key-selling-points-with-icons-4-9-star-customer-rating-137-reviews-affordable-pricing-10-20-per-person-fast-takeout-service-fresh-ingredients-used-daily-and-family-friendly-atmosphere",
+      "featureTitle": "Build a 'Why Choose Us' section highlighting five key selling points with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere.",
+      "files": [
+        "frontend/src/components/Experience.tsx",
+        "frontend/src/pages/Homepage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-reviews-section-displaying-three-sample-customer-testimonials-each-testimonial-should-include-a-customer-name-star-rating-5-stars-and-a-review-quote-sample-reviews-1-maria-g-the-quesabirria-tacos-are-absolutely-incredible-the-consomm-is-so-flavorful-best-mexican-food-in-los-lunas-by-far-2-james-r-huge-portions-amazing-prices-the-burritos-are-stuffed-to-the-brim-and-taste-homemade-we-come-here-every-week-3-sofia-l-super-friendly-staff-and-the-food-is-always-fresh-the-tacoburger-is-something-you-have-to-try-completely-unique",
+      "featureTitle": "Build a Reviews section displaying three sample customer testimonials. Each testimonial should include a customer name, star rating (5 stars), and a review quote. Sample reviews: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!'",
+      "files": [
+        "frontend/src/components/Reviews.tsx",
+        "frontend/src/pages/Homepage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-location-hours-section-with-the-heading-find-us-display-the-address-3470-nm-47-los-lunas-nm-87031-united-states-the-phone-number-1-505-488-4886-as-a-clickable-tel-15054884886-link-and-business-hours-showing-opens-at-9-00-am-with-a-closed-now-status-indicator-include-an-embedded-google-maps-iframe-pointing-to-the-address-3470-nm-47-los-lunas-nm-87031-the-map-iframe-src-should-use-https-maps-google-com-maps-q-3470-nm-47-los-lunas-nm-87031-output-embed",
+      "featureTitle": "Build a Location & Hours section with the heading 'Find Us'. Display the address '📍 3470 NM-47, Los Lunas, NM 87031, United States', the phone number '📞 +1 505-488-4886' as a clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with a 'Closed now' status indicator. Include an embedded Google Maps iframe pointing to the address (3470 NM-47, Los Lunas, NM 87031). The map iframe src should use: https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed",
+      "files": [
+        "frontend/src/components/Location.tsx",
+        "frontend/src/pages/Homepage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-call-to-action-footer-section-just-above-the-site-footer-with-the-heading-craving-authentic-mexican-flavor-and-a-subtext-prompt-like-come-visit-us-or-call-ahead-for-fast-fresh-takeout-include-two-buttons-call-now-linking-to-tel-15054884886-and-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-below-this-render-the-main-site-footer-with-social-media-icon-links-facebook-instagram-placeholder-hrefs-a-copyright-line-2024-luna-s-kitchen-all-rights-reserved-and-the-address-in-small-text",
+      "featureTitle": "Build a Call-to-Action Footer section just above the site footer with the heading 'Craving Authentic Mexican Flavor?' and a subtext prompt like 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Below this, render the main site footer with social media icon links (Facebook, Instagram — placeholder hrefs), a copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address in small text.",
+      "files": [
+        "frontend/src/components/CallToAction.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/pages/Homepage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-and-the-six-food-card-images-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-and-the-restaurant-logo-lunas-logo-dim-300x300-png-as-static-assets-from-frontend-public-assets-generated-use-the-hero-image-in-the-hero-section-the-food-images-in-the-featured-menu-cards-and-the-logo-in-the-site-header",
+      "featureTitle": "Render the generated hero background image (lunas-hero-bg.dim_1440x800.jpg) and the six food card images (lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) and the restaurant logo (lunas-logo.dim_300x300.png) as static assets from frontend/public/assets/generated. Use the hero image in the Hero section, the food images in the Featured Menu cards, and the logo in the site header.",
+      "files": [
+        "frontend/src/components/Header.tsx",
+        "frontend/src/components/Hero.tsx",
         "frontend/src/components/Menu.tsx"
       ],
       "components": [
@@ -70,87 +182,11 @@
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-why-visit-us-experience-section-with-four-feature-highlights-cozy-fireplace-seating-live-music-atmosphere-family-friendly-environment-and-easy-highway-access-location-include-the-closing-line-perfect-for-casual-dining-small-gatherings-or-a-relaxing-meal-in-burns-lake",
-      "featureTitle": "Build a 'Why Visit Us?' Experience section with four feature highlights: '🔥 Cozy fireplace seating', '🎶 Live music atmosphere', '👨‍👩‍👧‍👦 Family-friendly environment', and '🚗 Easy highway access location'. Include the closing line: 'Perfect for casual dining, small gatherings, or a relaxing meal in Burns Lake.'",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Experience.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-location-section-with-the-heading-visit-us-showing-address-321-yellowhead-hwy-burns-lake-bc-v8j-4k8-canada-phone-1-250-251-5445-as-a-clickable-tel-link-and-hours-opens-daily-at-7-00-am-include-the-note-conveniently-located-along-yellowhead-highway-for-easy-access",
-      "featureTitle": "Build a Location section with the heading 'Visit Us' showing: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' (as a clickable tel: link), and hours '🕒 Opens daily at 7:00 AM'. Include the note 'Conveniently located along Yellowhead Highway for easy access.'",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Location.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-call-to-action-section-at-the-bottom-of-the-page-with-the-heading-ready-to-dine-with-us-the-subtext-call-now-to-reserve-your-table-or-ask-about-today-s-specials-a-prominently-displayed-phone-number-1-250-251-5445-as-a-clickable-tel-link-and-the-closing-line-we-look-forward-to-welcoming-you",
-      "featureTitle": "Build a Call to Action section at the bottom of the page with the heading 'Ready to Dine With Us?', the subtext 'Call now to reserve your table or ask about today's specials.', a prominently displayed phone number '📞 +1 250-251-5445' as a clickable tel: link, and the closing line 'We look forward to welcoming you!'",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/CallToAction.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-render-the-generated-hero-background-image-hero-bg-dim-1440x800-jpg-and-restaurant-logo-eatery-logo-dim-300x300-png-as-static-assets-in-the-frontend-use-the-hero-background-image-in-the-hero-section-and-the-logo-in-the-site-header-navbar",
-      "featureTitle": "Render the generated hero background image (hero-bg.dim_1440x800.jpg) and restaurant logo (eatery-logo.dim_300x300.png) as static assets in the frontend. Use the hero background image in the Hero section and the logo in the site header/navbar.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Header.tsx",
-        "frontend/src/components/Hero.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
+        "REQ-22"
       ],
       "confidence": "high"
     }
