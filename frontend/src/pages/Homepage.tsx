@@ -1,22 +1,34 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
+import OpeningHours from '../components/OpeningHours';
 import Menu from '../components/Menu';
-import Experience from '../components/Experience';
+import OnlineOrdering from '../components/OnlineOrdering';
+import ReservationForm from '../components/ReservationForm';
 import Reviews from '../components/Reviews';
 import Location from '../components/Location';
-import CallToAction from '../components/CallToAction';
 
 export default function Homepage() {
   return (
     <>
       <Hero />
-      <AboutUs />
-      <Menu />
-      <Experience />
+      <section id="about">
+        <AboutUs />
+      </section>
+      <OpeningHours />
+      <section id="menu">
+        <Menu />
+      </section>
+      <section id="order">
+        <OnlineOrdering />
+      </section>
+      <section id="reservation">
+        <ReservationForm />
+      </section>
       <Reviews />
-      <Location />
-      <CallToAction />
+      <section id="contact">
+        <Location />
+      </section>
     </>
   );
 }

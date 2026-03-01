@@ -1,34 +1,64 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T12:20:10.776Z",
-  "summary": "The diff implements a comprehensive rebuild of the site as Luna's Kitchen, covering all eight requirements (REQ-14 through REQ-22). All major sections are implemented: sticky header, hero, about, menu, why choose us, reviews, location, CTA footer, and static asset usage. The implementation is thorough and closely matches the spec. One minor note: the file summaries mention that AboutPage.tsx, ContactPage.tsx, and MenuPage.tsx still exist as modified files with Eatery Burns Lake content in their summaries, but App.tsx no longer routes to them, so they are dead code rather than active branding.",
-  "missing_requirements": [],
+  "generatedAt": "2026-02-28T23:50:03.127Z",
+  "summary": "The diff implements nearly all requirements for the Bunsik Korean Restaurant website. The frontend has been rebuilt with the correct branding, palette, and sections. The backend Motoko actor implements storeReservation and getReservations. A few minor issues exist: the Online Ordering buttons link to tel: numbers instead of placeholder order URLs as specified, and there is a leftover 'Craving Authentic Mexican Flavor?' string in CallToAction.tsx suggesting old branding remains. The stable storage implementation in the backend uses a non-stable Map rather than a stable array, which may not satisfy the stable storage acceptance criterion.",
+  "missing_requirements": [
+    {
+      "id": "REQ-6",
+      "requirement": "Order Pickup and Order Delivery buttons should link to placeholder order URLs (e.g., '#order-pickup' and '#order-delivery') that can be updated later.",
+      "reason": "In OnlineOrdering.tsx, both buttons link to 'tel:+61269647310' (a phone number) instead of placeholder order URLs like '#order-pickup' and '#order-delivery' as specified.",
+      "evidence": [
+        "frontend/src/components/OnlineOrdering.tsx"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "requirement": "Reservation data must be persisted in stable storage (stable array).",
+      "reason": "In backend/main.mo, reservations uses Map.empty which is not declared as a stable variable. The spec requires a stable array for persistence across upgrades.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
   "hallucinated_features": [
     {
-      "description": "A caffeine.ai attribution with UTM tracking is mentioned in the Footer according to the frontend-file-summaries.txt file summary for Footer.tsx.",
-      "reason": "The build request does not mention any caffeine.ai attribution or UTM tracking in the footer. This appears to be an unasked-for addition.",
+      "description": "CallToAction.tsx contains 'Craving Authentic Mexican Flavor?' heading, which is unrelated branding not part of the Bunsik spec.",
+      "reason": "This text was not requested and contradicts REQ-1 which requires removal of all non-Bunsik branding.",
       "evidence": [
-        "frontend-file-summaries.txt",
+        "frontend/src/components/CallToAction.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Experience.tsx 'Why Choose Us?' section with five highlight cards was added as an extra section not requested in any requirement.",
+      "reason": "No requirement specifies a 'Why Choose Us?' or 'Experience' section. This is an unrequested addition.",
+      "evidence": [
+        "frontend/src/components/Experience.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Social media links (Facebook and Instagram icons) added to the Footer.",
+      "reason": "No requirement mentions social media links or icons in the footer or elsewhere.",
+      "evidence": [
         "frontend/src/components/Footer.tsx"
       ]
     },
     {
-      "description": "Residual Eatery Burns Lake page files (AboutPage.tsx, ContactPage.tsx, MenuPage.tsx) still exist in the project with Eatery Burns Lake content per their file summaries, even though they are no longer routed.",
-      "reason": "REQ-14 requires removing all Eatery Burns Lake pages and routing. While they are no longer routed, the files were not removed and still contain Eatery Burns Lake content per the file summaries.",
+      "description": "A backend migration module was added in migration.mo.",
+      "reason": "No requirement requested a migration module for the backend. This is an unrequested implementation detail.",
       "evidence": [
-        "frontend/src/pages/AboutPage.tsx",
-        "frontend/src/pages/ContactPage.tsx",
-        "frontend/src/pages/MenuPage.tsx",
-        "frontend-file-summaries.txt"
+        "backend/migration.mo"
       ]
     }
   ],
-  "confidence": 0.87,
+  "confidence": 0.82,
   "changed_files": [
+    "backend/main.mo",
+    "backend/migration.mo",
     "frontend-file-summaries.txt",
     "frontend/index.html",
-    "frontend/src/App.tsx",
     "frontend/src/components/AboutUs.tsx",
     "frontend/src/components/CallToAction.tsx",
     "frontend/src/components/Experience.tsx",
@@ -37,12 +67,13 @@
     "frontend/src/components/Hero.tsx",
     "frontend/src/components/Location.tsx",
     "frontend/src/components/Menu.tsx",
+    "frontend/src/components/OnlineOrdering.tsx",
+    "frontend/src/components/OpeningHours.tsx",
+    "frontend/src/components/ReservationForm.tsx",
     "frontend/src/components/Reviews.tsx",
+    "frontend/src/hooks/useQueries.ts",
     "frontend/src/index.css",
-    "frontend/src/pages/AboutPage.tsx",
-    "frontend/src/pages/ContactPage.tsx",
     "frontend/src/pages/Homepage.tsx",
-    "frontend/src/pages/MenuPage.tsx",
     "frontend/tailwind.config.js",
     "project_state.json"
   ]

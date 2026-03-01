@@ -1,120 +1,166 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const menuItems = [
+const categories = [
   {
-    name: 'Quesabirria Tacos',
-    description: 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.',
-    image: '/assets/generated/lunas-menu-quesabirria.dim_600x400.jpg',
-    tag: 'Fan Favorite',
-    tagColor: 'bg-chili-500',
+    id: 'street-food',
+    label: 'Korean Street Food',
+    emoji: '🌶️',
+    image: '/assets/generated/tteokbokki.dim_600x400.png',
+    items: [
+      { name: 'Rose Tteokbokki', price: '$12.50' },
+      { name: 'Tteokbokki', price: '$11.00' },
+      { name: 'Kimchi Pancake', price: '$28.60' },
+      { name: 'Seafood Pancake', price: '$31.20' },
+      { name: 'Gimbap', price: '$12.35' },
+      { name: 'Fried Dumplings (5pcs)', price: '$16.50' },
+    ],
   },
   {
-    name: 'Tacos',
-    description: 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.',
-    image: '/assets/generated/lunas-menu-tacos.dim_600x400.jpg',
-    tag: 'Classic',
-    tagColor: 'bg-salsa-500',
+    id: 'fried-chicken',
+    label: 'Korean Fried Chicken',
+    emoji: '🍗',
+    image: '/assets/generated/fried-chicken.dim_600x400.png',
+    items: [
+      { name: 'Original Fried Chicken', price: '$18.50' },
+      { name: 'Sweet Soy Chicken', price: '$19.50' },
+      { name: 'Hot & Spicy Chicken', price: '$19.50' },
+      { name: 'Snow Cheese Chicken', price: '$19.50' },
+      { name: 'Sweet & Spicy Chicken', price: '$19.50' },
+    ],
   },
   {
-    name: 'Burritos',
-    description: 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.',
-    image: '/assets/generated/lunas-menu-burritos.dim_600x400.jpg',
-    tag: 'Hearty',
-    tagColor: 'bg-chili-600',
+    id: 'signature',
+    label: 'Signature Meals',
+    emoji: '🍲',
+    image: '/assets/generated/bibimbap.dim_600x400.png',
+    items: [
+      { name: 'Bibimbap', price: '$27.30' },
+      { name: 'Sizzling Beef Bulgogi', price: '$29.90' },
+      { name: 'Kimchi Stew', price: '$29.90' },
+      { name: 'Galbi-Tang', price: '$33.90' },
+      { name: 'Cheese Spicy Chicken', price: '$33.90' },
+      { name: 'Chicken Katsu', price: '$29.90' },
+    ],
   },
   {
-    name: 'Quesadillas',
-    description: 'Golden, crispy tortillas filled with melted cheese and savory toppings.',
-    image: '/assets/generated/lunas-menu-quesadillas.dim_600x400.jpg',
-    tag: 'Crispy',
-    tagColor: 'bg-salsa-400',
-  },
-  {
-    name: 'Tacoburger',
-    description: 'Where the taco meets the burger — bold, juicy, and totally unique to Luna\'s Kitchen.',
-    image: '/assets/generated/lunas-menu-tacoburger.dim_600x400.jpg',
-    tag: 'Signature',
-    tagColor: 'bg-chili-500',
-  },
-  {
-    name: 'Burgers',
-    description: 'Handcrafted beef burgers with fresh toppings and house-made sauces.',
-    image: '/assets/generated/lunas-menu-burgers.dim_600x400.jpg',
-    tag: 'Juicy',
-    tagColor: 'bg-salsa-500',
+    id: 'cupbap',
+    label: 'CUPBAP Bowls',
+    emoji: '🥣',
+    image: '/assets/generated/bibimbap.dim_600x400.png',
+    items: [
+      { name: 'Hot & Spicy Chicken CUPBAP', price: '$17.55' },
+      { name: 'Sweet Soy Chicken CUPBAP', price: '$17.55' },
+      { name: 'Beef Bulgogi CUPBAP', price: '$18.20' },
+      { name: 'Spicy Pork CUPBAP', price: '$18.20' },
+    ],
   },
 ];
 
 export default function Menu() {
+  const [activeCategory, setActiveCategory] = useState('street-food');
+
+  const currentCategory = categories.find((c) => c.id === activeCategory) || categories[0];
+
   return (
-    <section id="menu" className="py-20 bg-ink-800">
+    <div className="py-20 bg-cream-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-10 bg-salsa-400/50" />
-            <span className="font-body text-salsa-400 text-xs tracking-[0.3em] uppercase font-bold">
-              From Our Kitchen
+            <div className="h-px w-10 bg-gochujang-500/50" />
+            <span className="font-body text-gochujang-500 text-xs tracking-[0.3em] uppercase font-bold">
+              Our Menu
             </span>
-            <div className="h-px w-10 bg-salsa-400/50" />
+            <div className="h-px w-10 bg-gochujang-500/50" />
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 uppercase">
-            Our Favorites
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal-700 mb-4">
+            Explore Our Menu
           </h2>
-          <p className="font-body text-ink-200 text-base max-w-xl mx-auto">
-            Bold flavors, fresh ingredients — these are the dishes Los Lunas keeps coming back for.
+          <p className="font-body text-charcoal-400 text-base max-w-xl mx-auto">
+            Authentic Korean flavors crafted with fresh ingredients and traditional recipes.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {menuItems.map((item) => (
-            <div
-              key={item.name}
-              className="group bg-ink-700 rounded-2xl overflow-hidden border border-ink-600/50 hover:border-salsa-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-spicy-xl"
+        {/* Category Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-body font-semibold text-sm transition-all duration-200 ${
+                activeCategory === cat.id
+                  ? 'bg-gochujang-500 text-white shadow-korean'
+                  : 'bg-white text-charcoal-500 border border-cream-300 hover:border-gochujang-300 hover:text-gochujang-500'
+              }`}
             >
-              {/* Image */}
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent" />
-                {/* Tag */}
-                <div className="absolute top-3 right-3">
-                  <span className={`font-body text-xs font-bold text-white ${item.tagColor} px-2.5 py-1 rounded-full tracking-wide`}>
-                    {item.tag}
-                  </span>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-5">
-                <h3 className="font-heading text-xl font-bold text-white mb-2 uppercase tracking-wide group-hover:text-salsa-400 transition-colors">
-                  {item.name}
-                </h3>
-                <p className="font-body text-ink-200 text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-
-              {/* Bottom accent */}
-              <div className="h-0.5 bg-gradient-to-r from-chili-500 to-salsa-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
+              <span>{cat.emoji}</span>
+              <span>{cat.label}</span>
+            </button>
           ))}
         </div>
 
-        {/* Price range note */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-ink-700/60 border border-salsa-400/30 rounded-full px-6 py-3">
-            <span className="text-salsa-400 text-lg">💰</span>
-            <span className="font-body text-cream-200 text-sm">
-              Affordable pricing: <strong className="text-white">$10–$20 per person</strong>
-            </span>
+        {/* Category Content */}
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
+          {/* Featured Image */}
+          <div className="relative rounded-3xl overflow-hidden shadow-korean-xl">
+            <img
+              src={currentCategory.image}
+              alt={currentCategory.label}
+              className="w-full h-72 sm:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/70 to-transparent" />
+            <div className="absolute bottom-5 left-5">
+              <span className="text-3xl">{currentCategory.emoji}</span>
+              <h3 className="font-heading text-white text-2xl font-bold mt-1">{currentCategory.label}</h3>
+            </div>
+          </div>
+
+          {/* Menu Items */}
+          <div className="bg-white rounded-3xl shadow-korean border border-cream-200 overflow-hidden">
+            <div className="bg-gochujang-500 px-6 py-4">
+              <h3 className="font-heading text-white text-xl font-bold flex items-center gap-2">
+                <span>{currentCategory.emoji}</span>
+                {currentCategory.label}
+              </h3>
+            </div>
+            <div className="divide-y divide-cream-200">
+              {currentCategory.items.map((item) => (
+                <div
+                  key={item.name}
+                  className="flex items-center justify-between px-6 py-4 hover:bg-cream-50 transition-colors"
+                >
+                  <span className="font-body text-charcoal-600 text-sm font-medium">{item.name}</span>
+                  <span className="font-body text-gochujang-500 text-sm font-bold ml-4 flex-shrink-0">
+                    {item.price}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
+        {/* All categories quick view on mobile */}
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => {
+                setActiveCategory(cat.id);
+                document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className={`text-left p-4 rounded-2xl border transition-all duration-200 ${
+                activeCategory === cat.id
+                  ? 'border-gochujang-400 bg-gochujang-50 shadow-korean'
+                  : 'border-cream-300 bg-white hover:border-gochujang-300'
+              }`}
+            >
+              <span className="text-2xl block mb-1">{cat.emoji}</span>
+              <p className="font-body text-charcoal-700 text-sm font-semibold">{cat.label}</p>
+              <p className="font-body text-charcoal-400 text-xs mt-0.5">{cat.items.length} items</p>
+            </button>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

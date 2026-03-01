@@ -1,239 +1,156 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "Modern, mobile-friendly website for Luna's Kitchen — a takeout restaurant in Los Lunas, New Mexico. Warm vibrant Mexican street-food theme with bold colors (deep red, orange, black, cream). Single-page site with Hero, About, Featured Menu, Why Choose Us, Reviews, Location & Hours, and CTA Footer sections.",
+  "projectStateVersion": 3,
+  "summary": "Restaurant website for Bunsik Korean Restaurant in Griffith NSW, Australia. Korean street food theme with warm red, black, and cream palette. Mobile-first design with hero section, about us, opening hours, full menu (Korean Street Food, Korean Fried Chicken, Signature Meals, CUPBAP Bowls), online ordering, table reservation, reviews, and location/contact sections.",
   "architectural_notes": [
-    "Business: Luna's Kitchen, 3470 NM-47, Los Lunas, NM 87031 | Phone: +1 505-488-4886 | Opens at 9:00 AM | Rating: 4.9 stars (137 reviews) | Price: $10–20",
-    "Theme: warm vibrant Mexican street-food style, bold colors (deep red, orange, black, cream), modern typography with Mexican-inspired accents",
-    "SEO target: 'Best Tacos in Los Lunas NM'; no AI chatbot; future-ready for online ordering integration"
+    "Mobile-first design with Korean street food inspired theme (warm red, black, cream palette)",
+    "Restaurant: Bunsik Korean Restaurant, Shop 1/2 Yambil St, Griffith NSW 2680, +61 2 6964 7310"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Vibrant close-up hero photo of quesabirria tacos with consommé dipping broth, warm orange-red lighting, rustic wooden table, steam rising, appetizing street-food atmosphere (lunas-hero-bg.dim_1440x800.jpg)\n- Luna's Kitchen circular logo with bold Mexican-inspired typography, deep red and orange colors, cream background, taco or pepper icon accent (lunas-logo.dim_300x300.png)\n- Close-up food photo of quesabirria tacos with melted cheese and consommé broth bowl, vibrant warm tones (lunas-menu-quesabirria.dim_600x400.jpg)\n- Close-up food photo of two street tacos with cilantro, onion, lime wedge on a warm wooden surface (lunas-menu-tacos.dim_600x400.jpg)\n- Close-up food photo of a large burrito stuffed with rice and beans, cut in half showing filling, warm tones (lunas-menu-burritos.dim_600x400.jpg)\n- Close-up food photo of a golden crispy quesadilla cut into wedges with a side of salsa, appetizing presentation (lunas-menu-quesadillas.dim_600x400.jpg)\n- Close-up food photo of a tacoburger — a beef burger patty served in a taco shell with fresh toppings, bold and colorful presentation (lunas-menu-tacoburger.dim_600x400.jpg)\n- Close-up food photo of a juicy handcrafted beef burger with fresh lettuce, tomato, and sauce on a brioche bun, warm lighting (lunas-menu-burgers.dim_600x400.jpg)",
+  "imageRequirements": "## Required Images\n- Wide hero background showing Korean fried chicken and tteokbokki dishes on a dark moody table setting with warm red accent lighting (hero-bg.dim_1920x1080.png)\n- Appetizing close-up of Rose Tteokbokki in a bowl with gochujang sauce and melted cheese (tteokbokki.dim_600x400.png)\n- Crispy golden Korean fried chicken pieces with dipping sauce on a dark plate (fried-chicken.dim_600x400.png)\n- Colorful Bibimbap bowl with assorted vegetables, egg, and sesame oil drizzle (bibimbap.dim_600x400.png)\n- Bunsik restaurant logo — bold Korean-style text 'Bunsik' in red and cream on black background (logo.dim_400x200.png)",
   "existing_features": [
     {
-      "id": "feature-apply-a-warm-rustic-visual-theme-throughout-the-entire-site-rich-amber-terracotta-deep-wood-brown-color-palette-warm-serif-or-slab-serif-headings-paired-with-readable-sans-serif-body-text-cozy-texture-inspired-backgrounds-subtle-noise-or-warm-gradient-and-consistent-spacing-that-feels-welcoming-and-inviting-enforce-this-theme-across-all-sections",
-      "title": "Apply a warm, rustic visual theme throughout the entire site: rich amber/terracotta/deep wood-brown color palette, warm serif or slab-serif headings paired with readable sans-serif body text, cozy texture-inspired backgrounds (subtle noise or warm gradient), and consistent spacing that feels welcoming and inviting. Enforce this theme across all sections.",
+      "id": "feature-rebuild-the-entire-frontend-as-the-bunsik-korean-restaurant-website-replace-all-existing-luna-s-kitchen-branding-content-colors-fonts-and-components-apply-a-korean-street-food-inspired-theme-with-a-warm-red-c0392b-tones-black-and-cream-color-palette-modern-clean-layout-and-mobile-first-responsive-design-use-legible-sans-serif-fonts-suitable-for-a-casual-premium-restaurant-update-index-html-meta-title-description-and-keywords-for-bunsik-korean-restaurant-in-griffith-nsw",
+      "title": "Rebuild the entire frontend as the Bunsik Korean Restaurant website. Replace all existing Luna's Kitchen branding, content, colors, fonts, and components. Apply a Korean street food inspired theme with a warm red (#C0392B tones), black, and cream color palette, modern clean layout, and mobile-first responsive design. Use legible sans-serif fonts suitable for a casual-premium restaurant. Update index.html meta title, description, and keywords for Bunsik Korean Restaurant in Griffith NSW.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-a-hero-section-at-the-top-of-the-page-with-the-headline-cozy-dining-experience-in-the-heart-of-burns-lake-subheading-enjoy-delicious-meals-warm-fireplace-seating-and-live-music-at-eatery-burns-lake-a-view-menu-button-that-scrolls-to-the-menu-section-and-a-call-now-button-that-triggers-tel-12502515445",
-      "title": "Build a Hero section at the top of the page with the headline '🔥 Cozy Dining Experience in the Heart of Burns Lake', subheading 'Enjoy delicious meals, warm fireplace seating, and live music at Eatery Burns Lake.', a 'View Menu' button that scrolls to the Menu section, and a 'Call Now' button that triggers tel:+12502515445.",
+      "id": "feature-create-a-full-screen-hero-section-with-headline-authentic-korean-street-food-in-griffith-subheadline-fresh-flavorful-made-with-love-and-three-cta-buttons-view-menu-smooth-scrolls-to-menu-section-order-online-scrolls-to-ordering-section-and-book-a-table-scrolls-to-reservation-section-the-background-must-show-generated-images-of-korean-fried-chicken-and-tteokbokki-with-a-dark-overlay-for-text-legibility",
+      "title": "Create a full-screen Hero section with: headline 'Authentic Korean Street Food in Griffith', subheadline 'Fresh • Flavorful • Made with Love', and three CTA buttons: 'View Menu' (smooth scrolls to menu section), 'Order Online' (scrolls to ordering section), and 'Book a Table' (scrolls to reservation section). The background must show generated images of Korean fried chicken and tteokbokki with a dark overlay for text legibility.",
       "reqIds": [
         "REQ-2"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-an-about-us-section-with-the-heading-welcome-to-eatery-burns-lake-the-description-text-about-the-yellowhead-highway-location-cozy-atmosphere-fireplace-seating-and-live-music-include-three-highlighted-features-rated-4-5-stars-by-our-guests-affordable-pricing-10-20-per-person-and-live-music-welcoming-environment",
-      "title": "Build an About Us section with the heading 'Welcome to Eatery Burns Lake', the description text about the Yellowhead Highway location, cozy atmosphere, fireplace seating, and live music. Include three highlighted features: '⭐ Rated 4.5 stars by our guests', '💲 Affordable pricing – $10–20 per person', and '🎵 Live music & welcoming environment'.",
+      "id": "feature-create-an-about-us-section-with-the-restaurant-story-text-bunsik-korean-restaurant-brings-the-taste-of-authentic-korean-street-food-and-traditional-meals-to-griffith-from-crispy-korean-fried-chicken-to-sizzling-bulgogi-and-comforting-stews-we-serve-bold-flavors-in-a-casual-family-friendly-atmosphere-location-address-shop-1-2-yambil-st-griffith-nsw-2680-located-in-griffin-plaza-and-phone-number-61-2-6964-7310",
+      "title": "Create an About Us section with: the restaurant story text ('Bunsik Korean Restaurant brings the taste of authentic Korean street food and traditional meals to Griffith. From crispy Korean fried chicken to sizzling bulgogi and comforting stews, we serve bold flavors in a casual, family-friendly atmosphere.'), location address ('Shop 1/2 Yambil St, Griffith NSW 2680 – Located in Griffin Plaza'), and phone number (+61 2 6964 7310).",
       "reqIds": [
         "REQ-3"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-a-menu-section-with-the-heading-our-menu-and-subheading-we-serve-a-variety-of-delicious-dishes-made-fresh-daily-display-four-menu-categories-as-visual-cards-or-list-items-breakfast-favorites-hearty-lunch-options-comfort-dinners-and-fresh-hot-chocolate-warm-beverages-include-a-price-note-most-meals-range-between-10-20-and-a-prompt-call-us-for-today-s-specials",
-      "title": "Build a Menu section with the heading 'Our Menu' and subheading 'We serve a variety of delicious dishes made fresh daily.' Display four menu categories as visual cards or list items: 'Breakfast favorites', 'Hearty lunch options', 'Comfort dinners', and 'Fresh hot chocolate & warm beverages'. Include a price note '💲 Most meals range between $10–20' and a prompt '👉 Call us for today's specials!'",
+      "id": "feature-create-an-opening-hours-section-displaying-the-full-weekly-schedule-sunday-11am-8pm-monday-thursday-11am-3pm-5pm-9pm-friday-11am-3pm-5pm-9pm-saturday-11am-9pm-highlight-the-current-day-visually",
+      "title": "Create an Opening Hours section displaying the full weekly schedule: Sunday 11am–8pm; Monday–Thursday 11am–3pm, 5pm–9pm; Friday 11am–3pm, 5pm–9pm; Saturday 11am–9pm. Highlight the current day visually.",
       "reqIds": [
         "REQ-4"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-a-why-visit-us-experience-section-with-four-feature-highlights-cozy-fireplace-seating-live-music-atmosphere-family-friendly-environment-and-easy-highway-access-location-include-the-closing-line-perfect-for-casual-dining-small-gatherings-or-a-relaxing-meal-in-burns-lake",
-      "title": "Build a 'Why Visit Us?' Experience section with four feature highlights: '🔥 Cozy fireplace seating', '🎶 Live music atmosphere', '👨‍👩‍👧‍👦 Family-friendly environment', and '🚗 Easy highway access location'. Include the closing line: 'Perfect for casual dining, small gatherings, or a relaxing meal in Burns Lake.'",
+      "id": "feature-create-a-menu-section-with-four-tabbed-or-visually-separated-categories-each-category-lists-all-items-with-name-and-price-exactly-as-specified-korean-street-food-rose-tteokbokki-12-50-tteokbokki-11-00-kimchi-pancake-28-60-seafood-pancake-31-20-gimbap-12-35-fried-dumplings-5pcs-16-50-korean-fried-chicken-original-18-50-sweet-soy-19-50-hot-spicy-19-50-snow-cheese-19-50-sweet-spicy-19-50-signature-meals-bibimbap-27-30-sizzling-beef-bulgogi-29-90-kimchi-stew-29-90-galbi-tang-33-90-cheese-spicy-chicken-33-90-chicken-katsu-29-90-cupbap-bowls-hot-spicy-chicken-cupbap-17-55-sweet-soy-chicken-cupbap-17-55-beef-bulgogi-cupbap-18-20-spicy-pork-cupbap-18-20",
+      "title": "Create a Menu section with four tabbed or visually separated categories. Each category lists all items with name and price exactly as specified: Korean Street Food (Rose Tteokbokki $12.50, Tteokbokki $11.00, Kimchi Pancake $28.60, Seafood Pancake $31.20, Gimbap $12.35, Fried Dumplings (5pcs) $16.50); Korean Fried Chicken (Original $18.50, Sweet Soy $19.50, Hot & Spicy $19.50, Snow Cheese $19.50, Sweet & Spicy $19.50); Signature Meals (Bibimbap $27.30, Sizzling Beef Bulgogi $29.90, Kimchi Stew $29.90, Galbi-Tang $33.90, Cheese Spicy Chicken $33.90, Chicken Katsu $29.90); CUPBAP Bowls (Hot & Spicy Chicken CUPBAP $17.55, Sweet Soy Chicken CUPBAP $17.55, Beef Bulgogi CUPBAP $18.20, Spicy Pork CUPBAP $18.20).",
       "reqIds": [
         "REQ-5"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-a-location-section-with-the-heading-visit-us-showing-address-321-yellowhead-hwy-burns-lake-bc-v8j-4k8-canada-phone-1-250-251-5445-as-a-clickable-tel-link-and-hours-opens-daily-at-7-00-am-include-the-note-conveniently-located-along-yellowhead-highway-for-easy-access",
-      "title": "Build a Location section with the heading 'Visit Us' showing: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' (as a clickable tel: link), and hours '🕒 Opens daily at 7:00 AM'. Include the note 'Conveniently located along Yellowhead Highway for easy access.'",
+      "id": "feature-create-an-online-ordering-section-with-two-prominent-buttons-order-pickup-and-order-delivery-include-descriptive-text-inviting-customers-to-order-online-the-buttons-should-be-styled-prominently-and-link-to-placeholder-order-urls-e-g-order-pickup-and-order-delivery-that-can-be-updated-later",
+      "title": "Create an Online Ordering section with two prominent buttons: 'Order Pickup' and 'Order Delivery'. Include descriptive text inviting customers to order online. The buttons should be styled prominently and link to placeholder order URLs (e.g., '#order-pickup' and '#order-delivery') that can be updated later.",
       "reqIds": [
         "REQ-6"
       ],
       "version": 1
     },
     {
-      "id": "feature-build-a-call-to-action-section-at-the-bottom-of-the-page-with-the-heading-ready-to-dine-with-us-the-subtext-call-now-to-reserve-your-table-or-ask-about-today-s-specials-a-prominently-displayed-phone-number-1-250-251-5445-as-a-clickable-tel-link-and-the-closing-line-we-look-forward-to-welcoming-you",
-      "title": "Build a Call to Action section at the bottom of the page with the heading 'Ready to Dine With Us?', the subtext 'Call now to reserve your table or ask about today's specials.', a prominently displayed phone number '📞 +1 250-251-5445' as a clickable tel: link, and the closing line 'We look forward to welcoming you!'",
+      "id": "feature-create-a-table-reservation-section-with-an-online-booking-form-collecting-name-text-input-phone-tel-input-date-date-picker-time-time-picker-and-number-of-guests-number-input-on-form-submission-store-the-reservation-in-the-backend-and-show-a-success-confirmation-message-to-the-user",
+      "title": "Create a Table Reservation section with an online booking form collecting: Name (text input), Phone (tel input), Date (date picker), Time (time picker), and Number of Guests (number input). On form submission, store the reservation in the backend and show a success confirmation message to the user.",
       "reqIds": [
         "REQ-7"
       ],
       "version": 1
     },
     {
-      "id": "feature-render-the-generated-hero-background-image-hero-bg-dim-1440x800-jpg-and-restaurant-logo-eatery-logo-dim-300x300-png-as-static-assets-in-the-frontend-use-the-hero-background-image-in-the-hero-section-and-the-logo-in-the-site-header-navbar",
-      "title": "Render the generated hero background image (hero-bg.dim_1440x800.jpg) and restaurant logo (eatery-logo.dim_300x300.png) as static assets in the frontend. Use the hero background image in the Hero section and the logo in the site header/navbar.",
+      "id": "feature-create-a-reviews-section-displaying-a-4-7-star-rating-prominently-e-g-4-7-out-of-5-and-a-carousel-or-scrollable-list-of-at-least-three-customer-testimonials-testimonials-should-reflect-authentic-korean-restaurant-dining-experiences",
+      "title": "Create a Reviews section displaying a 4.7-star rating prominently (e.g., '4.7 ★ out of 5'), and a carousel or scrollable list of at least three customer testimonials. Testimonials should reflect authentic Korean restaurant dining experiences.",
       "reqIds": [
         "REQ-8"
       ],
       "version": 1
     },
     {
-      "id": "feature-rebuild-the-site-as-a-multi-page-react-application-with-four-distinct-pages-homepage-menu-about-and-contact-implement-client-side-routing-so-each-page-is-accessible-via-its-own-route-menu-about-contact-update-the-header-navigation-to-include-links-to-all-four-pages",
-      "title": "Rebuild the site as a multi-page React application with four distinct pages: Homepage, Menu, About, and Contact. Implement client-side routing so each page is accessible via its own route (/, /menu, /about, /contact). Update the Header navigation to include links to all four pages.",
+      "id": "feature-create-a-location-contact-section-displaying-address-shop-1-2-yambil-st-griffith-nsw-2680-phone-61-2-6964-7310-an-embedded-google-map-iframe-for-the-griffin-plaza-location-and-info-badges-for-free-parking-lot-wheelchair-accessible-and-accepts-credit-debit-nfc-payments",
+      "title": "Create a Location & Contact section displaying: address (Shop 1/2 Yambil St, Griffith NSW 2680), phone (+61 2 6964 7310), an embedded Google Map iframe for the Griffin Plaza location, and info badges for: Free Parking Lot, Wheelchair Accessible, and Accepts Credit/Debit/NFC Payments.",
       "reqIds": [
         "REQ-9"
       ],
       "version": 1
     },
     {
-      "id": "feature-redesign-the-homepage-in-a-luxury-premium-style-with-the-following-content-1-hero-section-with-headline-fresh-comfort-food-handcrafted-coffee-in-the-heart-of-burns-lake-subheading-welcoming-copy-address-321-yellowhead-hwy-burns-lake-bc-phone-1-250-251-5445-a-view-menu-button-linking-to-menu-and-a-call-now-button-triggering-tel-12502515445-2-a-cozy-local-experience-feature-grid-with-icons-and-labels-fireplace-ambience-live-music-evenings-premium-coffee-specialty-drinks-homemade-6oz-gourmet-burgers-family-friendly-atmosphere-fully-wheelchair-accessible-free-street-parking-closing-with-perfect-for-breakfast-lunch-or-a-relaxed-casual-dinner-3-featured-favorites-section-with-four-dish-cards-classic-burger-23-homemade-6oz-beef-patty-fresh-toppings-served-with-crispy-fries-eatery-poutine-20-crispy-fries-homemade-gravy-cheese-curds-topped-with-beef-and-fresh-garnish-danish-meatball-sandwich-13-a-flavorful-local-favorite-crafted-with-care-chicken-caesar-wrap-16-crispy-chicken-bacon-romaine-house-caesar-dressing",
-      "title": "Redesign the Homepage (/) in a luxury/premium style with the following content: (1) Hero section with headline 'Fresh Comfort Food & Handcrafted Coffee in the Heart of Burns Lake', subheading welcoming copy, address '📍 321 Yellowhead Hwy, Burns Lake, BC', phone '📞 +1 250-251-5445', a 'View Menu' button linking to /menu, and a 'Call Now' button triggering tel:+12502515445. (2) 'A Cozy Local Experience' feature grid with icons and labels: 🔥 Fireplace Ambience, 🎵 Live Music Evenings, ☕ Premium Coffee & Specialty Drinks, 🍔 Homemade 6oz Gourmet Burgers, 👨‍👩‍👧 Family Friendly Atmosphere, ♿ Fully Wheelchair Accessible, 🚗 Free Street Parking — closing with 'Perfect for breakfast, lunch, or a relaxed casual dinner.' (3) 'Featured Favorites' section with four dish cards: Classic Burger ($23) — Homemade 6oz beef patty, fresh toppings, served with crispy fries; Eatery Poutine ($20) — Crispy fries, homemade gravy, cheese curds, topped with beef and fresh garnish; Danish Meatball Sandwich ($13) — A flavorful local favorite crafted with care; Chicken Caesar Wrap ($16) — Crispy chicken, bacon, romaine & house Caesar dressing.",
+      "id": "feature-create-a-site-wide-header-navigation-with-the-bunsik-logo-name-smooth-scroll-links-to-all-main-sections-menu-order-reservations-about-contact-and-a-mobile-hamburger-menu-create-a-footer-with-business-name-address-phone-opening-hours-summary-and-copyright",
+      "title": "Create a site-wide Header/Navigation with the Bunsik logo/name, smooth-scroll links to all main sections (Menu, Order, Reservations, About, Contact), and a mobile hamburger menu. Create a Footer with business name, address, phone, opening hours summary, and copyright.",
       "reqIds": [
         "REQ-10"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-dedicated-menu-page-menu-with-a-clean-premium-layout-and-the-following-categories-and-items-1-sandwiches-13-each-danish-meatball-flaeske-steg-cranberry-turkey-chicken-bacon-beef-dip-2-burgers-23-each-all-served-with-fries-classic-fun-guy-blue-cheese-3-snacks-sides-jalapeno-poppers-12-mozzarella-sticks-12-spinach-dip-10-fries-8-sweet-potato-fries-12-4-poutine-classic-16-eatery-poutine-20-5-salads-wraps-greek-bowl-19-chicken-caesar-salad-15-chipotle-wrap-16-chicken-caesar-wrap-16-6-coffee-beverages-drip-coffee-3-75-americano-6-50-latte-6-75-mocha-7-25-cappuccino-6-75-affogato-7-75-with-note-seasonal-specialty-drinks-available",
-      "title": "Build a dedicated Menu page (/menu) with a clean premium layout and the following categories and items: (1) Sandwiches – $13 each: Danish Meatball, Flaeske Steg, Cranberry Turkey, Chicken Bacon, Beef Dip. (2) Burgers – $23 each (all served with fries): Classic, Fun Guy, Blue Cheese. (3) Snacks & Sides: Jalapeno Poppers $12, Mozzarella Sticks $12, Spinach Dip $10, Fries $8, Sweet Potato Fries $12. (4) Poutine: Classic $16, Eatery Poutine $20. (5) Salads & Wraps: Greek Bowl $19, Chicken Caesar Salad $15, Chipotle Wrap $16, Chicken Caesar Wrap $16. (6) Coffee & Beverages: Drip Coffee $3.75, Americano $6.50, Latte $6.75, Mocha $7.25, Cappuccino $6.75, Affogato $7.75 — with note 'Seasonal & specialty drinks available.'",
-      "reqIds": [
-        "REQ-11"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-dedicated-about-page-about-with-an-our-story-section-containing-the-copy-eatery-burns-lake-is-proud-to-serve-the-burns-lake-community-with-freshly-prepared-meals-and-a-welcoming-atmosphere-whether-you-re-stopping-in-for-a-morning-coffee-enjoying-a-quick-lunch-or-relaxing-with-friends-our-goal-is-simple-quality-food-friendly-service-and-a-comfortable-dining-experience-with-live-music-a-cozy-fireplace-and-family-friendly-seating-we-strive-to-create-a-space-where-everyone-feels-at-home",
-      "title": "Build a dedicated About page (/about) with an 'Our Story' section containing the copy: 'Eatery Burns Lake is proud to serve the Burns Lake community with freshly prepared meals and a welcoming atmosphere. Whether you're stopping in for a morning coffee, enjoying a quick lunch, or relaxing with friends, our goal is simple — quality food, friendly service, and a comfortable dining experience. With live music, a cozy fireplace, and family-friendly seating, we strive to create a space where everyone feels at home.'",
-      "reqIds": [
-        "REQ-12"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-dedicated-contact-page-contact-with-the-following-information-address-321-yellowhead-hwy-burns-lake-bc-v8j-4k8-canada-phone-1-250-251-5445-as-a-clickable-tel-12502515445-link-weekly-hours-displayed-as-monday-7am-2pm-tuesday-9am-2pm-wednesday-7am-2pm-thursday-7am-2pm-friday-7am-2pm-saturday-closed-sunday-closed-and-a-note-free-street-parking-available",
-      "title": "Build a dedicated Contact page (/contact) with the following information: address '📍 321 Yellowhead Hwy, Burns Lake, BC V8J 4K8, Canada', phone '📞 +1 250-251-5445' as a clickable tel:+12502515445 link, weekly hours displayed as: Monday 7am–2pm, Tuesday 9am–2pm, Wednesday 7am–2pm, Thursday 7am–2pm, Friday 7am–2pm, Saturday Closed, Sunday Closed, and a note 'Free street parking available.'",
-      "reqIds": [
-        "REQ-13"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-completely-rebuild-the-site-for-luna-s-kitchen-replace-all-eatery-burns-lake-content-branding-and-styling-apply-a-warm-vibrant-mexican-street-food-visual-theme-with-a-bold-color-palette-of-deep-red-orange-black-and-cream-use-modern-typography-with-authentic-mexican-inspired-accents-update-the-html-title-to-luna-s-kitchen-best-tacos-in-los-lunas-nm-the-site-should-be-a-single-page-layout-no-sub-routes-needed-with-a-sticky-header-showing-the-luna-s-kitchen-logo-name-and-a-call-now-nav-button-linking-to-tel-15054884886-remove-all-eatery-burns-lake-pages-and-routing",
-      "title": "Completely rebuild the site for Luna's Kitchen. Replace all Eatery Burns Lake content, branding, and styling. Apply a warm, vibrant Mexican street-food visual theme with a bold color palette of deep red, orange, black, and cream. Use modern typography with authentic Mexican-inspired accents. Update the HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM'. The site should be a single-page layout (no sub-routes needed) with a sticky header showing the Luna's Kitchen logo/name and a 'Call Now' nav button linking to tel:+15054884886. Remove all Eatery Burns Lake pages and routing.",
-      "reqIds": [
-        "REQ-14"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-full-screen-hero-section-at-the-top-of-the-page-using-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-display-the-headline-authentic-flavor-fresh-ingredients-made-with-love-and-subheadline-los-lunas-favorite-spot-for-tacos-burritos-burgers-include-three-cta-buttons-call-now-linking-to-tel-15054884886-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-and-order-takeout-styled-as-a-future-ready-placeholder-button",
-      "title": "Build a full-screen Hero section at the top of the page using the generated hero background image (lunas-hero-bg.dim_1440x800.jpg). Display the headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as a future-ready placeholder button).",
-      "reqIds": [
-        "REQ-15"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-an-about-section-with-a-heading-such-as-our-story-and-a-short-story-style-paragraph-describing-luna-s-kitchen-as-a-locally-loved-takeout-restaurant-in-los-lunas-new-mexico-known-for-bold-authentic-mexican-flavors-fresh-daily-ingredients-and-warm-friendly-service-mention-it-is-a-community-favorite-and-a-go-to-spot-for-tacos-burritos-and-more",
-      "title": "Build an About section with a heading such as 'Our Story' and a short story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and a go-to spot for tacos, burritos, and more.",
-      "reqIds": [
-        "REQ-16"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-featured-menu-section-with-the-heading-featured-menu-or-our-favorites-display-six-visually-attractive-food-cards-using-the-generated-food-card-images-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-for-the-following-items-with-short-appetizing-descriptions-1-quesabirria-tacos-slow-braised-beef-birria-melty-cheese-consomm-dipping-broth-a-true-mexican-classic-2-tacos-seasoned-meats-fresh-cilantro-onion-and-a-squeeze-of-lime-on-warm-tortillas-3-burritos-stuffed-with-rice-beans-cheese-and-your-choice-of-protein-big-flavors-big-portions-4-quesadillas-golden-crispy-tortillas-filled-with-melted-cheese-and-savory-toppings-5-tacoburger-where-the-taco-meets-the-burger-bold-juicy-and-totally-unique-to-luna-s-kitchen-6-burgers-handcrafted-beef-burgers-with-fresh-toppings-and-house-made-sauces",
-      "title": "Build a Featured Menu section with the heading 'Featured Menu' or 'Our Favorites'. Display six visually attractive food cards using the generated food card images (lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) for the following items with short appetizing descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.'",
-      "reqIds": [
-        "REQ-17"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-why-choose-us-section-highlighting-five-key-selling-points-with-icons-4-9-star-customer-rating-137-reviews-affordable-pricing-10-20-per-person-fast-takeout-service-fresh-ingredients-used-daily-and-family-friendly-atmosphere",
-      "title": "Build a 'Why Choose Us' section highlighting five key selling points with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere.",
-      "reqIds": [
-        "REQ-18"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-reviews-section-displaying-three-sample-customer-testimonials-each-testimonial-should-include-a-customer-name-star-rating-5-stars-and-a-review-quote-sample-reviews-1-maria-g-the-quesabirria-tacos-are-absolutely-incredible-the-consomm-is-so-flavorful-best-mexican-food-in-los-lunas-by-far-2-james-r-huge-portions-amazing-prices-the-burritos-are-stuffed-to-the-brim-and-taste-homemade-we-come-here-every-week-3-sofia-l-super-friendly-staff-and-the-food-is-always-fresh-the-tacoburger-is-something-you-have-to-try-completely-unique",
-      "title": "Build a Reviews section displaying three sample customer testimonials. Each testimonial should include a customer name, star rating (5 stars), and a review quote. Sample reviews: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!'",
-      "reqIds": [
-        "REQ-19"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-location-hours-section-with-the-heading-find-us-display-the-address-3470-nm-47-los-lunas-nm-87031-united-states-the-phone-number-1-505-488-4886-as-a-clickable-tel-15054884886-link-and-business-hours-showing-opens-at-9-00-am-with-a-closed-now-status-indicator-include-an-embedded-google-maps-iframe-pointing-to-the-address-3470-nm-47-los-lunas-nm-87031-the-map-iframe-src-should-use-https-maps-google-com-maps-q-3470-nm-47-los-lunas-nm-87031-output-embed",
-      "title": "Build a Location & Hours section with the heading 'Find Us'. Display the address '📍 3470 NM-47, Los Lunas, NM 87031, United States', the phone number '📞 +1 505-488-4886' as a clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with a 'Closed now' status indicator. Include an embedded Google Maps iframe pointing to the address (3470 NM-47, Los Lunas, NM 87031). The map iframe src should use: https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed",
-      "reqIds": [
-        "REQ-20"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-build-a-call-to-action-footer-section-just-above-the-site-footer-with-the-heading-craving-authentic-mexican-flavor-and-a-subtext-prompt-like-come-visit-us-or-call-ahead-for-fast-fresh-takeout-include-two-buttons-call-now-linking-to-tel-15054884886-and-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-below-this-render-the-main-site-footer-with-social-media-icon-links-facebook-instagram-placeholder-hrefs-a-copyright-line-2024-luna-s-kitchen-all-rights-reserved-and-the-address-in-small-text",
-      "title": "Build a Call-to-Action Footer section just above the site footer with the heading 'Craving Authentic Mexican Flavor?' and a subtext prompt like 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Below this, render the main site footer with social media icon links (Facebook, Instagram — placeholder hrefs), a copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address in small text.",
-      "reqIds": [
-        "REQ-21"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-render-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-and-the-six-food-card-images-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-and-the-restaurant-logo-lunas-logo-dim-300x300-png-as-static-assets-from-frontend-public-assets-generated-use-the-hero-image-in-the-hero-section-the-food-images-in-the-featured-menu-cards-and-the-logo-in-the-site-header",
-      "title": "Render the generated hero background image (lunas-hero-bg.dim_1440x800.jpg) and the six food card images (lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) and the restaurant logo (lunas-logo.dim_300x300.png) as static assets from frontend/public/assets/generated. Use the hero image in the Hero section, the food images in the Featured Menu cards, and the logo in the site header.",
-      "reqIds": [
-        "REQ-22"
       ],
       "version": 1
     }
   ],
   "new_feature_requests": [
     {
-      "id": "AR-11",
-      "summary": "Hero section with headline 'Authentic Flavor. Fresh Ingredients. Made with Love.', subheadline about tacos/burritos/burgers, and CTA buttons: Call Now, Get Directions, Order Takeout",
+      "id": "AR-1",
+      "summary": "Hero section with headline, subheadline, CTA buttons, and food background images",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-12",
-      "summary": "About section with story-style paragraph about Luna's Kitchen as a locally loved takeout spot known for bold flavors, fresh ingredients, and friendly service",
+      "id": "AR-2",
+      "summary": "About Us section with restaurant story, location, and phone",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-13",
-      "summary": "Featured Menu section with food cards for: Quesabirria Tacos, Tacos, Burritos, Quesadillas, Tacoburger, Burgers — each with short appetizing descriptions",
+      "id": "AR-3",
+      "summary": "Opening hours section with full weekly schedule",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-14",
-      "summary": "Why Choose Us section highlighting 4.9-star rating, affordable pricing ($10–20), fast takeout, fresh ingredients, family-friendly atmosphere",
+      "id": "AR-4",
+      "summary": "Menu section with 4 categories and all items/prices",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-15",
-      "summary": "Reviews section with sample customer testimonials about great flavor, generous portions, and friendly service",
+      "id": "AR-5",
+      "summary": "Online ordering with pickup and delivery buttons and integrated ordering system",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-16",
-      "summary": "Location & Hours section with address (3470 NM-47, Los Lunas, NM 87031), embedded Google Maps, business hours (Opens at 9:00 AM), and click-to-call phone +1 505-488-4886",
+      "id": "AR-6",
+      "summary": "Table reservation form with name, phone, date, time, and guest count",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-17",
-      "summary": "CTA Footer 'Craving Authentic Mexican Flavor?' with Call Now and Get Directions buttons, social media icons, and copyright footer",
+      "id": "AR-7",
+      "summary": "Reviews section with 4.7 star rating and customer testimonials carousel",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Location & contact section with embedded Google Map, parking, accessibility, and payment info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Implement the Motoko backend actor with a storeReservation function that accepts name, phone, date, time, and guestCount fields and persists them in stable storage. Expose a getReservations query function for admin review.",
+      "reqIds": [
+        "REQ-11"
+      ],
       "status": "pending"
     }
   ],
   "gameProjectType": "none",
-  "projectName": "Eatery Burns Lake Website",
+  "projectName": "Bunsik Korean Restaurant",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

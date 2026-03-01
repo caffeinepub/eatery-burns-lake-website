@@ -2,37 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-completely-rebuild-the-site-for-luna-s-kitchen-replace-all-eatery-burns-lake-content-branding-and-styling-apply-a-warm-vibrant-mexican-street-food-visual-theme-with-a-bold-color-palette-of-deep-red-orange-black-and-cream-use-modern-typography-with-authentic-mexican-inspired-accents-update-the-html-title-to-luna-s-kitchen-best-tacos-in-los-lunas-nm-the-site-should-be-a-single-page-layout-no-sub-routes-needed-with-a-sticky-header-showing-the-luna-s-kitchen-logo-name-and-a-call-now-nav-button-linking-to-tel-15054884886-remove-all-eatery-burns-lake-pages-and-routing",
-      "featureTitle": "Completely rebuild the site for Luna's Kitchen. Replace all Eatery Burns Lake content, branding, and styling. Apply a warm, vibrant Mexican street-food visual theme with a bold color palette of deep red, orange, black, and cream. Use modern typography with authentic Mexican-inspired accents. Update the HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM'. The site should be a single-page layout (no sub-routes needed) with a sticky header showing the Luna's Kitchen logo/name and a 'Call Now' nav button linking to tel:+15054884886. Remove all Eatery Burns Lake pages and routing.",
+      "featureId": "feature-rebuild-the-entire-frontend-as-the-bunsik-korean-restaurant-website-replace-all-existing-luna-s-kitchen-branding-content-colors-fonts-and-components-apply-a-korean-street-food-inspired-theme-with-a-warm-red-c0392b-tones-black-and-cream-color-palette-modern-clean-layout-and-mobile-first-responsive-design-use-legible-sans-serif-fonts-suitable-for-a-casual-premium-restaurant-update-index-html-meta-title-description-and-keywords-for-bunsik-korean-restaurant-in-griffith-nsw",
+      "featureTitle": "Rebuild the entire frontend as the Bunsik Korean Restaurant website. Replace all existing Luna's Kitchen branding, content, colors, fonts, and components. Apply a Korean street food inspired theme with a warm red (#C0392B tones), black, and cream color palette, modern clean layout, and mobile-first responsive design. Use legible sans-serif fonts suitable for a casual-premium restaurant. Update index.html meta title, description, and keywords for Bunsik Korean Restaurant in Griffith NSW.",
       "files": [
-        "frontend/index.html",
-        "frontend/src/App.tsx",
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/Header.tsx",
-        "frontend/src/index.css",
-        "frontend/src/pages/AboutPage.tsx",
-        "frontend/src/pages/ContactPage.tsx",
-        "frontend/src/pages/MenuPage.tsx",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0",
-        "blob-storage@4.0.0"
-      ],
-      "testIds": [
-        "REQ-14"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-full-screen-hero-section-at-the-top-of-the-page-using-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-display-the-headline-authentic-flavor-fresh-ingredients-made-with-love-and-subheadline-los-lunas-favorite-spot-for-tacos-burritos-burgers-include-three-cta-buttons-call-now-linking-to-tel-15054884886-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-and-order-takeout-styled-as-a-future-ready-placeholder-button",
-      "featureTitle": "Build a full-screen Hero section at the top of the page using the generated hero background image (lunas-hero-bg.dim_1440x800.jpg). Display the headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as a future-ready placeholder button).",
-      "files": [
-        "frontend/src/components/Hero.tsx",
         "frontend/src/pages/Homepage.tsx"
       ],
       "components": [
@@ -44,16 +16,15 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-15"
+        "REQ-1"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-an-about-section-with-a-heading-such-as-our-story-and-a-short-story-style-paragraph-describing-luna-s-kitchen-as-a-locally-loved-takeout-restaurant-in-los-lunas-new-mexico-known-for-bold-authentic-mexican-flavors-fresh-daily-ingredients-and-warm-friendly-service-mention-it-is-a-community-favorite-and-a-go-to-spot-for-tacos-burritos-and-more",
-      "featureTitle": "Build an About section with a heading such as 'Our Story' and a short story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and a go-to spot for tacos, burritos, and more.",
+      "featureId": "feature-create-a-full-screen-hero-section-with-headline-authentic-korean-street-food-in-griffith-subheadline-fresh-flavorful-made-with-love-and-three-cta-buttons-view-menu-smooth-scrolls-to-menu-section-order-online-scrolls-to-ordering-section-and-book-a-table-scrolls-to-reservation-section-the-background-must-show-generated-images-of-korean-fried-chicken-and-tteokbokki-with-a-dark-overlay-for-text-legibility",
+      "featureTitle": "Create a full-screen Hero section with: headline 'Authentic Korean Street Food in Griffith', subheadline 'Fresh • Flavorful • Made with Love', and three CTA buttons: 'View Menu' (smooth scrolls to menu section), 'Order Online' (scrolls to ordering section), and 'Book a Table' (scrolls to reservation section). The background must show generated images of Korean fried chicken and tteokbokki with a dark overlay for text legibility.",
       "files": [
-        "frontend/src/components/AboutUs.tsx",
-        "frontend/src/pages/Homepage.tsx"
+        "frontend/src/components/Hero.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -64,16 +35,15 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-16"
+        "REQ-2"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-a-featured-menu-section-with-the-heading-featured-menu-or-our-favorites-display-six-visually-attractive-food-cards-using-the-generated-food-card-images-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-for-the-following-items-with-short-appetizing-descriptions-1-quesabirria-tacos-slow-braised-beef-birria-melty-cheese-consomm-dipping-broth-a-true-mexican-classic-2-tacos-seasoned-meats-fresh-cilantro-onion-and-a-squeeze-of-lime-on-warm-tortillas-3-burritos-stuffed-with-rice-beans-cheese-and-your-choice-of-protein-big-flavors-big-portions-4-quesadillas-golden-crispy-tortillas-filled-with-melted-cheese-and-savory-toppings-5-tacoburger-where-the-taco-meets-the-burger-bold-juicy-and-totally-unique-to-luna-s-kitchen-6-burgers-handcrafted-beef-burgers-with-fresh-toppings-and-house-made-sauces",
-      "featureTitle": "Build a Featured Menu section with the heading 'Featured Menu' or 'Our Favorites'. Display six visually attractive food cards using the generated food card images (lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) for the following items with short appetizing descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.'",
+      "featureId": "feature-create-an-about-us-section-with-the-restaurant-story-text-bunsik-korean-restaurant-brings-the-taste-of-authentic-korean-street-food-and-traditional-meals-to-griffith-from-crispy-korean-fried-chicken-to-sizzling-bulgogi-and-comforting-stews-we-serve-bold-flavors-in-a-casual-family-friendly-atmosphere-location-address-shop-1-2-yambil-st-griffith-nsw-2680-located-in-griffin-plaza-and-phone-number-61-2-6964-7310",
+      "featureTitle": "Create an About Us section with: the restaurant story text ('Bunsik Korean Restaurant brings the taste of authentic Korean street food and traditional meals to Griffith. From crispy Korean fried chicken to sizzling bulgogi and comforting stews, we serve bold flavors in a casual, family-friendly atmosphere.'), location address ('Shop 1/2 Yambil St, Griffith NSW 2680 – Located in Griffin Plaza'), and phone number (+61 2 6964 7310).",
       "files": [
-        "frontend/src/components/Menu.tsx",
-        "frontend/src/pages/Homepage.tsx"
+        "frontend/src/components/AboutUs.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -84,16 +54,15 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-17"
+        "REQ-3"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-a-why-choose-us-section-highlighting-five-key-selling-points-with-icons-4-9-star-customer-rating-137-reviews-affordable-pricing-10-20-per-person-fast-takeout-service-fresh-ingredients-used-daily-and-family-friendly-atmosphere",
-      "featureTitle": "Build a 'Why Choose Us' section highlighting five key selling points with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere.",
+      "featureId": "feature-create-an-opening-hours-section-displaying-the-full-weekly-schedule-sunday-11am-8pm-monday-thursday-11am-3pm-5pm-9pm-friday-11am-3pm-5pm-9pm-saturday-11am-9pm-highlight-the-current-day-visually",
+      "featureTitle": "Create an Opening Hours section displaying the full weekly schedule: Sunday 11am–8pm; Monday–Thursday 11am–3pm, 5pm–9pm; Friday 11am–3pm, 5pm–9pm; Saturday 11am–9pm. Highlight the current day visually.",
       "files": [
-        "frontend/src/components/Experience.tsx",
-        "frontend/src/pages/Homepage.tsx"
+        "frontend/src/components/OpeningHours.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -104,77 +73,14 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-18"
+        "REQ-4"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-build-a-reviews-section-displaying-three-sample-customer-testimonials-each-testimonial-should-include-a-customer-name-star-rating-5-stars-and-a-review-quote-sample-reviews-1-maria-g-the-quesabirria-tacos-are-absolutely-incredible-the-consomm-is-so-flavorful-best-mexican-food-in-los-lunas-by-far-2-james-r-huge-portions-amazing-prices-the-burritos-are-stuffed-to-the-brim-and-taste-homemade-we-come-here-every-week-3-sofia-l-super-friendly-staff-and-the-food-is-always-fresh-the-tacoburger-is-something-you-have-to-try-completely-unique",
-      "featureTitle": "Build a Reviews section displaying three sample customer testimonials. Each testimonial should include a customer name, star rating (5 stars), and a review quote. Sample reviews: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!'",
+      "featureId": "feature-create-a-menu-section-with-four-tabbed-or-visually-separated-categories-each-category-lists-all-items-with-name-and-price-exactly-as-specified-korean-street-food-rose-tteokbokki-12-50-tteokbokki-11-00-kimchi-pancake-28-60-seafood-pancake-31-20-gimbap-12-35-fried-dumplings-5pcs-16-50-korean-fried-chicken-original-18-50-sweet-soy-19-50-hot-spicy-19-50-snow-cheese-19-50-sweet-spicy-19-50-signature-meals-bibimbap-27-30-sizzling-beef-bulgogi-29-90-kimchi-stew-29-90-galbi-tang-33-90-cheese-spicy-chicken-33-90-chicken-katsu-29-90-cupbap-bowls-hot-spicy-chicken-cupbap-17-55-sweet-soy-chicken-cupbap-17-55-beef-bulgogi-cupbap-18-20-spicy-pork-cupbap-18-20",
+      "featureTitle": "Create a Menu section with four tabbed or visually separated categories. Each category lists all items with name and price exactly as specified: Korean Street Food (Rose Tteokbokki $12.50, Tteokbokki $11.00, Kimchi Pancake $28.60, Seafood Pancake $31.20, Gimbap $12.35, Fried Dumplings (5pcs) $16.50); Korean Fried Chicken (Original $18.50, Sweet Soy $19.50, Hot & Spicy $19.50, Snow Cheese $19.50, Sweet & Spicy $19.50); Signature Meals (Bibimbap $27.30, Sizzling Beef Bulgogi $29.90, Kimchi Stew $29.90, Galbi-Tang $33.90, Cheese Spicy Chicken $33.90, Chicken Katsu $29.90); CUPBAP Bowls (Hot & Spicy Chicken CUPBAP $17.55, Sweet Soy Chicken CUPBAP $17.55, Beef Bulgogi CUPBAP $18.20, Spicy Pork CUPBAP $18.20).",
       "files": [
-        "frontend/src/components/Reviews.tsx",
-        "frontend/src/pages/Homepage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0",
-        "blob-storage@4.0.0"
-      ],
-      "testIds": [
-        "REQ-19"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-location-hours-section-with-the-heading-find-us-display-the-address-3470-nm-47-los-lunas-nm-87031-united-states-the-phone-number-1-505-488-4886-as-a-clickable-tel-15054884886-link-and-business-hours-showing-opens-at-9-00-am-with-a-closed-now-status-indicator-include-an-embedded-google-maps-iframe-pointing-to-the-address-3470-nm-47-los-lunas-nm-87031-the-map-iframe-src-should-use-https-maps-google-com-maps-q-3470-nm-47-los-lunas-nm-87031-output-embed",
-      "featureTitle": "Build a Location & Hours section with the heading 'Find Us'. Display the address '📍 3470 NM-47, Los Lunas, NM 87031, United States', the phone number '📞 +1 505-488-4886' as a clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with a 'Closed now' status indicator. Include an embedded Google Maps iframe pointing to the address (3470 NM-47, Los Lunas, NM 87031). The map iframe src should use: https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed",
-      "files": [
-        "frontend/src/components/Location.tsx",
-        "frontend/src/pages/Homepage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0",
-        "blob-storage@4.0.0"
-      ],
-      "testIds": [
-        "REQ-20"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-call-to-action-footer-section-just-above-the-site-footer-with-the-heading-craving-authentic-mexican-flavor-and-a-subtext-prompt-like-come-visit-us-or-call-ahead-for-fast-fresh-takeout-include-two-buttons-call-now-linking-to-tel-15054884886-and-get-directions-linking-to-https-maps-google-com-q-3470-nm-47-los-lunas-nm-87031-below-this-render-the-main-site-footer-with-social-media-icon-links-facebook-instagram-placeholder-hrefs-a-copyright-line-2024-luna-s-kitchen-all-rights-reserved-and-the-address-in-small-text",
-      "featureTitle": "Build a Call-to-Action Footer section just above the site footer with the heading 'Craving Authentic Mexican Flavor?' and a subtext prompt like 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Below this, render the main site footer with social media icon links (Facebook, Instagram — placeholder hrefs), a copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address in small text.",
-      "files": [
-        "frontend/src/components/CallToAction.tsx",
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/pages/Homepage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0",
-        "blob-storage@4.0.0"
-      ],
-      "testIds": [
-        "REQ-21"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-render-the-generated-hero-background-image-lunas-hero-bg-dim-1440x800-jpg-and-the-six-food-card-images-lunas-menu-quesabirria-dim-600x400-jpg-lunas-menu-tacos-dim-600x400-jpg-lunas-menu-burritos-dim-600x400-jpg-lunas-menu-quesadillas-dim-600x400-jpg-lunas-menu-tacoburger-dim-600x400-jpg-lunas-menu-burgers-dim-600x400-jpg-and-the-restaurant-logo-lunas-logo-dim-300x300-png-as-static-assets-from-frontend-public-assets-generated-use-the-hero-image-in-the-hero-section-the-food-images-in-the-featured-menu-cards-and-the-logo-in-the-site-header",
-      "featureTitle": "Render the generated hero background image (lunas-hero-bg.dim_1440x800.jpg) and the six food card images (lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg) and the restaurant logo (lunas-logo.dim_300x300.png) as static assets from frontend/public/assets/generated. Use the hero image in the Hero section, the food images in the Featured Menu cards, and the logo in the site header.",
-      "files": [
-        "frontend/src/components/Header.tsx",
-        "frontend/src/components/Hero.tsx",
         "frontend/src/components/Menu.tsx"
       ],
       "components": [
@@ -186,7 +92,103 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-22"
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-online-ordering-section-with-two-prominent-buttons-order-pickup-and-order-delivery-include-descriptive-text-inviting-customers-to-order-online-the-buttons-should-be-styled-prominently-and-link-to-placeholder-order-urls-e-g-order-pickup-and-order-delivery-that-can-be-updated-later",
+      "featureTitle": "Create an Online Ordering section with two prominent buttons: 'Order Pickup' and 'Order Delivery'. Include descriptive text inviting customers to order online. The buttons should be styled prominently and link to placeholder order URLs (e.g., '#order-pickup' and '#order-delivery') that can be updated later.",
+      "files": [
+        "frontend/src/components/OnlineOrdering.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-table-reservation-section-with-an-online-booking-form-collecting-name-text-input-phone-tel-input-date-date-picker-time-time-picker-and-number-of-guests-number-input-on-form-submission-store-the-reservation-in-the-backend-and-show-a-success-confirmation-message-to-the-user",
+      "featureTitle": "Create a Table Reservation section with an online booking form collecting: Name (text input), Phone (tel input), Date (date picker), Time (time picker), and Number of Guests (number input). On form submission, store the reservation in the backend and show a success confirmation message to the user.",
+      "files": [
+        "frontend/src/components/ReservationForm.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-reviews-section-displaying-a-4-7-star-rating-prominently-e-g-4-7-out-of-5-and-a-carousel-or-scrollable-list-of-at-least-three-customer-testimonials-testimonials-should-reflect-authentic-korean-restaurant-dining-experiences",
+      "featureTitle": "Create a Reviews section displaying a 4.7-star rating prominently (e.g., '4.7 ★ out of 5'), and a carousel or scrollable list of at least three customer testimonials. Testimonials should reflect authentic Korean restaurant dining experiences.",
+      "files": [
+        "frontend/src/components/Reviews.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-location-contact-section-displaying-address-shop-1-2-yambil-st-griffith-nsw-2680-phone-61-2-6964-7310-an-embedded-google-map-iframe-for-the-griffin-plaza-location-and-info-badges-for-free-parking-lot-wheelchair-accessible-and-accepts-credit-debit-nfc-payments",
+      "featureTitle": "Create a Location & Contact section displaying: address (Shop 1/2 Yambil St, Griffith NSW 2680), phone (+61 2 6964 7310), an embedded Google Map iframe for the Griffin Plaza location, and info badges for: Free Parking Lot, Wheelchair Accessible, and Accepts Credit/Debit/NFC Payments.",
+      "files": [
+        "frontend/src/components/Location.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-site-wide-header-navigation-with-the-bunsik-logo-name-smooth-scroll-links-to-all-main-sections-menu-order-reservations-about-contact-and-a-mobile-hamburger-menu-create-a-footer-with-business-name-address-phone-opening-hours-summary-and-copyright",
+      "featureTitle": "Create a site-wide Header/Navigation with the Bunsik logo/name, smooth-scroll links to all main sections (Menu, Order, Reservations, About, Contact), and a mobile hamburger menu. Create a Footer with business name, address, phone, opening hours summary, and copyright.",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
       ],
       "confidence": "high"
     }

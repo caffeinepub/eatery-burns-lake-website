@@ -1,19 +1,21 @@
 # Specification
 
 ## Summary
-**Goal:** Completely rebuild the existing restaurant website as Luna's Kitchen — a single-page Mexican takeout restaurant site for Los Lunas, NM, replacing all Eatery Burns Lake content and branding.
+**Goal:** Rebuild the entire website as the Bunsik Korean Restaurant website, replacing all Luna's Kitchen branding with a Korean street food inspired theme, full menu, reservation system, and supporting sections.
 
 **Planned changes:**
-- Replace all Eatery Burns Lake branding, content, styling, and routing with Luna's Kitchen identity
-- Apply a warm Mexican street-food theme using deep red, orange, black, and cream color palette with Mexican-inspired typography
-- Set HTML title to "Luna's Kitchen – Best Tacos in Los Lunas NM"
-- Add sticky header with Luna's Kitchen logo and a "Call Now" button (tel:+15054884886)
-- Build full-screen Hero section with hero background image, headline/subheadline, and three CTA buttons (Call Now, Get Directions, Order Takeout placeholder)
-- Build "Our Story" About section with a short story-style paragraph about Luna's Kitchen
-- Build Featured Menu section with six food cards (Quesabirria Tacos, Tacos, Burritos, Quesadillas, Tacoburger, Burgers) each with image and description
-- Build "Why Choose Us" section with five highlights (4.9-star rating/137 reviews, $10–20 pricing, fast takeout, fresh ingredients, family-friendly)
-- Build Reviews section with three customer testimonials (name, 5-star rating, quote)
-- Build "Find Us" Location & Hours section with address, clickable phone number, hours/status, and embedded Google Maps iframe
-- Build CTA section ("Craving Authentic Mexican Flavor?") with Call Now and Get Directions buttons
-- Build site footer with Facebook/Instagram social icons, copyright line, and address
-- Use all generated images (hero, logo, six food card images) as static assets
+- Replace all Luna's Kitchen branding, colors, fonts, and content with Bunsik Korean Restaurant branding using a warm red (#C0392B), black, and cream palette with appropriate sans-serif fonts
+- Update index.html meta title, description, and keywords for Bunsik Korean Restaurant in Griffith NSW
+- Create a full-screen Hero section with headline "Authentic Korean Street Food in Griffith", subheadline "Fresh • Flavorful • Made with Love", and three CTA buttons (View Menu, Order Online, Book a Table) with smooth scroll, using the hero background image with dark overlay
+- Create an About Us section with restaurant story text, address (Shop 1/2 Yambil St, Griffith NSW 2680, Griffin Plaza), and tappable phone number (+61 2 6964 7310)
+- Create an Opening Hours section displaying the full weekly schedule with the current day highlighted
+- Create a Menu section with four tabbed/separated categories: Korean Street Food, Korean Fried Chicken, Signature Meals, and CUPBAP Bowls — all items and prices exactly as specified
+- Create an Online Ordering section with prominent "Order Pickup" and "Order Delivery" buttons linking to placeholder URLs
+- Create a Table Reservation section with a form (Name, Phone, Date, Time, Number of Guests) that submits to the backend and shows a success message
+- Create a Reviews section with a 4.7-star rating and at least three customer testimonials in a carousel/scrollable list
+- Create a Location & Contact section with embedded Google Map iframe, address, tappable phone, and amenity badges (Free Parking, Wheelchair Accessible, Accepts Credit/Debit/NFC)
+- Create a fixed Header/Navigation with Bunsik branding, smooth-scroll nav links, and mobile hamburger menu
+- Create a Footer with business name, address, phone, opening hours summary, and copyright
+- Implement Motoko backend actor with `storeReservation` (name, phone, date, time, guestCount) persisted in stable storage and `getReservations` query function
+
+**User-visible outcome:** Users can browse the full Bunsik Korean Restaurant website, explore the menu, check opening hours, order online (pickup or delivery), book a table, read reviews, and find location/contact details — all in a mobile-friendly Korean street food themed design.

@@ -1,246 +1,211 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Luna's Kitchen — Mexican Takeout Restaurant Website Frontend Implementation",
+  "title": "Bunsik Korean Restaurant Website Frontend Rebuild",
   "requirements": [
     {
-      "id": "REQ-14",
-      "summary": "Replace all Eatery Burns Lake branding with Luna's Kitchen Mexican street-food theme, apply warm vibrant color palette (deep red, orange, black, cream), update HTML title, and implement single-page layout with sticky header",
+      "id": "REQ-1",
+      "summary": "Replace all Luna's Kitchen branding with Bunsik Korean Restaurant theme using warm red (#C0392B), black, and cream color palette with Korean street food styling",
       "acceptanceCriteria": [
-        "All Eatery Burns Lake branding is removed",
-        "Color palette uses deep red, orange, black, and cream tones",
-        "HTML title reads 'Luna's Kitchen – Best Tacos in Los Lunas NM'",
-        "Sticky header shows Luna's Kitchen name/logo and a Call Now button"
+        "No Luna's Kitchen branding, text, or color variables remain anywhere in the frontend",
+        "Tailwind config reflects Bunsik's red/black/cream brand palette",
+        "Google Fonts import uses fonts appropriate for the Korean street food premium casual style",
+        "index.html title and meta tags reference Bunsik Korean Restaurant and Griffith NSW",
+        "All pages and components are fully responsive and look great on mobile screens"
       ],
       "file_operations": [
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Update HTML title to 'Luna's Kitchen – Best Tacos in Los Lunas NM' and remove all Eatery Burns Lake references"
+          "description": "Update meta title to 'Bunsik Korean Restaurant | Authentic Korean Street Food in Griffith NSW', update meta description to promote Korean fried chicken, tteokbokki, and bulgogi in Griffith, and update keywords to 'Korean restaurant Griffith, Korean fried chicken, tteokbokki, bibimbap, bulgogi, Griffith NSW'."
         },
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Replace Eatery Burns Lake color palette with Luna's Kitchen Mexican street-food theme colors: deep red, orange, black, and cream. Update CSS custom properties for primary, secondary, accent, and background colors using OKLCH values. Apply modern typography with Mexican-inspired accents."
+          "description": "Replace Google Fonts imports with legible sans-serif fonts suitable for casual-premium Korean restaurant (e.g., Inter, Poppins). Update all CSS custom properties to use Bunsik's warm red (#C0392B tones), black (#000000, #1a1a1a), and cream (#F5F5DC, #FAF0E6) color palette. Remove all Luna's Kitchen chili/salsa color references. Ensure mobile-first responsive styles."
         },
         {
           "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Update Tailwind theme colors to match Luna's Kitchen brand palette (deep red, orange, black, cream) and configure Mexican-inspired font families"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Remove all multi-page routing (menu, about, contact routes). Convert to single-page layout rendering only the Homepage component without TanStack Router route definitions. Keep RootLayout wrapper for Header and Footer."
-        },
-        {
-          "path": "frontend/src/components/Header.tsx",
-          "operation": "modify",
-          "description": "Replace Eatery Burns Lake branding with Luna's Kitchen logo (frontend/public/assets/generated/lunas-logo.dim_300x300.png). Remove all navigation links except the 'Call Now' button linking to tel:+15054884886. Apply sticky positioning and Luna's Kitchen brand colors."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Replace all Eatery Burns Lake content with Luna's Kitchen branding. Remove navigation links (no longer needed for single-page layout). This footer will be enhanced by REQ-21."
-        },
-        {
-          "path": "frontend/src/pages/MenuPage.tsx",
-          "operation": "delete",
-          "description": "Remove MenuPage as the site is now single-page with no routing"
-        },
-        {
-          "path": "frontend/src/pages/AboutPage.tsx",
-          "operation": "delete",
-          "description": "Remove AboutPage as the site is now single-page with no routing"
-        },
-        {
-          "path": "frontend/src/pages/ContactPage.tsx",
-          "operation": "delete",
-          "description": "Remove ContactPage as the site is now single-page with no routing"
+          "description": "Replace Luna's Kitchen color palette (chili, salsa) with Bunsik brand colors: primary red (#C0392B and variants), black (#000000, #1a1a1a), and cream (#F5F5DC, #FAF0E6). Update fontFamily to use the new sans-serif fonts. Maintain container settings, dark mode, and plugin integrations for responsive design."
         }
       ]
     },
     {
-      "id": "REQ-15",
-      "summary": "Build full-screen Hero section with generated hero background image, headline, subheadline, and three CTA buttons (Call Now, Get Directions, Order Takeout)",
+      "id": "REQ-2",
+      "summary": "Create full-screen Hero section with Bunsik headline, subheadline, three CTA buttons, and Korean food background images",
       "acceptanceCriteria": [
-        "Hero section fills the full viewport height",
-        "Hero background image is displayed",
-        "Headline and subheadline text are correct",
-        "Call Now button triggers tel:+15054884886",
-        "Get Directions button links to Google Maps for the correct address",
-        "Order Takeout button is present and styled"
+        "Hero section is full viewport height",
+        "Headline, subheadline, and three buttons are visible on both mobile and desktop",
+        "All three buttons trigger smooth scroll to their respective sections",
+        "Background displays the fried chicken and tteokbokki hero image with a semi-transparent dark overlay"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Hero.tsx",
           "operation": "modify",
-          "description": "Build full-screen Hero section using the generated hero background image frontend/public/assets/generated/lunas-hero-bg.dim_1440x800.jpg. Display headline 'Authentic Flavor. Fresh Ingredients. Made with Love.' and subheadline 'Los Lunas' Favorite Spot for Tacos, Burritos & Burgers.' Include three CTA buttons: 'Call Now' linking to tel:+15054884886, 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031, and 'Order Takeout' (styled as future-ready placeholder). Apply Luna's Kitchen brand colors and ensure full viewport height coverage."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Replace existing Eatery Burns Lake Hero section with Luna's Kitchen Hero component. Import and render the updated Hero component at the top of the page."
+          "description": "Replace Luna's Kitchen hero content with Bunsik branding. Set headline to 'Authentic Korean Street Food in Griffith', subheadline to 'Fresh • Flavorful • Made with Love'. Replace existing CTA buttons with three new buttons: 'View Menu' (smooth scroll to #menu), 'Order Online' (smooth scroll to #order), and 'Book a Table' (smooth scroll to #reservation). Update background to use the generated hero image at frontend/public/assets/generated/hero-bg.dim_1920x1080.png showing Korean fried chicken and tteokbokki with dark overlay. Ensure full viewport height and mobile responsiveness."
         }
       ]
     },
     {
-      "id": "REQ-16",
-      "summary": "Build About section with story-style paragraph describing Luna's Kitchen as a locally loved Los Lunas takeout restaurant",
+      "id": "REQ-3",
+      "summary": "Create About Us section with Bunsik restaurant story, Griffin Plaza address, and phone number",
       "acceptanceCriteria": [
-        "About section is present on the page",
-        "Contains a story-style paragraph mentioning Luna's Kitchen, Los Lunas NM, bold flavors, fresh ingredients, and friendly service"
+        "About Us section displays the full story paragraph",
+        "Address and Griffin Plaza reference are shown",
+        "Phone number is displayed and tappable as a tel: link on mobile"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/AboutUs.tsx",
           "operation": "modify",
-          "description": "Build About section with heading 'Our Story'. Create a story-style paragraph describing Luna's Kitchen as a locally loved takeout restaurant in Los Lunas, New Mexico, known for bold authentic Mexican flavors, fresh daily ingredients, and warm friendly service. Mention it is a community favorite and go-to spot for tacos, burritos, and more. Apply Luna's Kitchen brand styling."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Add AboutUs component to Homepage after the Hero section. Import and render the updated AboutUs component."
+          "description": "Replace Luna's Kitchen content with Bunsik story: 'Bunsik Korean Restaurant brings the taste of authentic Korean street food and traditional meals to Griffith. From crispy Korean fried chicken to sizzling bulgogi and comforting stews, we serve bold flavors in a casual, family-friendly atmosphere.' Display address 'Shop 1/2 Yambil St, Griffith NSW 2680 – Located in Griffin Plaza' and phone '+61 2 6964 7310' as a tel: link. Replace existing food image with a Korean dish image. Maintain two-column responsive layout."
         }
       ]
     },
     {
-      "id": "REQ-17",
-      "summary": "Build Featured Menu section with six food cards displaying generated food images and appetizing descriptions",
+      "id": "REQ-4",
+      "summary": "Create Opening Hours section displaying Bunsik's full weekly schedule with current day highlighted",
       "acceptanceCriteria": [
-        "Six food cards are displayed in a responsive grid",
-        "Each card shows a food image, item name, and appetizing description",
-        "All six items are present: Quesabirria Tacos, Tacos, Burritos, Quesadillas, Tacoburger, Burgers"
+        "All seven days and their hours are shown",
+        "The current day of the week is highlighted",
+        "Section is clearly readable on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/OpeningHours.tsx",
+          "operation": "create",
+          "description": "Create a new Opening Hours component displaying the weekly schedule: Sunday 11am–8pm; Monday–Thursday 11am–3pm, 5pm–9pm; Friday 11am–3pm, 5pm–9pm; Saturday 11am–9pm. Use JavaScript Date.getDay() to detect the current day and apply visual highlighting (e.g., bold text, accent color background). Render each day in a card or list item with mobile-friendly styling using Bunsik's brand colors."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Menu section with four categories displaying all Bunsik menu items and prices exactly as specified",
+      "acceptanceCriteria": [
+        "All four categories are clearly labeled",
+        "Every item and its price is shown exactly as specified",
+        "Categories can be navigated via tabs or scroll sections",
+        "Menu section is easily readable on mobile"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Menu.tsx",
           "operation": "modify",
-          "description": "Build Featured Menu section with heading 'Featured Menu' or 'Our Favorites'. Display six food cards in a responsive grid using the generated images: frontend/public/assets/generated/lunas-menu-quesabirria.dim_600x400.jpg, frontend/public/assets/generated/lunas-menu-tacos.dim_600x400.jpg, frontend/public/assets/generated/lunas-menu-burritos.dim_600x400.jpg, frontend/public/assets/generated/lunas-menu-quesadillas.dim_600x400.jpg, frontend/public/assets/generated/lunas-menu-tacoburger.dim_600x400.jpg, frontend/public/assets/generated/lunas-menu-burgers.dim_600x400.jpg. Include the following items with descriptions: (1) Quesabirria Tacos — 'Slow-braised beef birria, melty cheese, consommé dipping broth. A true Mexican classic.'; (2) Tacos — 'Seasoned meats, fresh cilantro, onion, and a squeeze of lime on warm tortillas.'; (3) Burritos — 'Stuffed with rice, beans, cheese, and your choice of protein. Big flavors, big portions.'; (4) Quesadillas — 'Golden, crispy tortillas filled with melted cheese and savory toppings.'; (5) Tacoburger — 'Where the taco meets the burger — bold, juicy, and totally unique to Luna's Kitchen.'; (6) Burgers — 'Handcrafted beef burgers with fresh toppings and house-made sauces.' Apply Luna's Kitchen brand styling with warm vibrant colors."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Add Menu component to Homepage after the About section. Import and render the updated Menu component."
+          "description": "Replace Luna's Kitchen menu with Bunsik's four categories: Korean Street Food (Rose Tteokbokki $12.50, Tteokbokki $11.00, Kimchi Pancake $28.60, Seafood Pancake $31.20, Gimbap $12.35, Fried Dumplings 5pcs $16.50); Korean Fried Chicken (Original $18.50, Sweet Soy $19.50, Hot & Spicy $19.50, Snow Cheese $19.50, Sweet & Spicy $19.50); Signature Meals (Bibimbap $27.30, Sizzling Beef Bulgogi $29.90, Kimchi Stew $29.90, Galbi-Tang $33.90, Cheese Spicy Chicken $33.90, Chicken Katsu $29.90); CUPBAP Bowls (Hot & Spicy Chicken CUPBAP $17.55, Sweet Soy Chicken CUPBAP $17.55, Beef Bulgogi CUPBAP $18.20, Spicy Pork CUPBAP $18.20). Implement tabs or scroll sections for category navigation. Use generated menu images: frontend/public/assets/generated/tteokbokki.dim_600x400.png, frontend/public/assets/generated/fried-chicken.dim_600x400.png, and frontend/public/assets/generated/bibimbap.dim_600x400.png for featured items. Ensure mobile-responsive grid layout."
         }
       ]
     },
     {
-      "id": "REQ-18",
-      "summary": "Build Why Choose Us section highlighting five key selling points with icons",
+      "id": "REQ-6",
+      "summary": "Create Online Ordering section with prominent pickup and delivery buttons",
       "acceptanceCriteria": [
-        "Section heading 'Why Choose Us' or similar is present",
-        "All five highlights are displayed with icons",
-        "4.9 stars and 137 reviews are mentioned",
-        "Price range $10–20 is mentioned"
+        "Two distinct buttons for pickup and delivery are visible in their own section",
+        "Buttons are large and tappable on mobile",
+        "Section has a clear heading and supporting copy"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Experience.tsx",
-          "operation": "modify",
-          "description": "Build Why Choose Us section with five key highlights displayed with icons: ⭐ 4.9-star customer rating (137 reviews), 💲 Affordable pricing – $10–20 per person, 🚀 Fast takeout service, 🌿 Fresh ingredients used daily, and 👨‍👩‍👧‍👦 Family-friendly atmosphere. Use a responsive grid layout and apply Luna's Kitchen brand colors."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Add Experience component to Homepage after the Menu section. Import and render the updated Experience component."
+          "path": "frontend/src/components/OnlineOrdering.tsx",
+          "operation": "create",
+          "description": "Create a new Online Ordering section with heading 'Order Online' and descriptive text inviting customers to order. Render two prominent CTA buttons: 'Order Pickup' linking to '#order-pickup' and 'Order Delivery' linking to '#order-delivery'. Style buttons with Bunsik's brand colors, ensure large touch targets for mobile, and center the section content."
         }
       ]
     },
     {
-      "id": "REQ-19",
-      "summary": "Build Reviews section displaying three customer testimonials with names, star ratings, and review quotes",
+      "id": "REQ-7",
+      "summary": "Create Table Reservation form that collects booking details and stores them in the backend",
       "acceptanceCriteria": [
-        "Reviews section is present with at least three testimonials",
-        "Each testimonial shows customer name, star rating, and review text",
-        "Reviews mention flavor, portions, and friendly service"
+        "Form includes all five fields with appropriate input types",
+        "All fields are required and validated before submission",
+        "Reservation data is persisted in the Motoko backend",
+        "A success message is displayed after successful submission",
+        "Form is fully usable on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReservationForm.tsx",
+          "operation": "create",
+          "description": "Create a reservation form component with five required fields: Name (text input), Phone (tel input), Date (date picker), Time (time picker), and Number of Guests (number input). Implement form validation ensuring all fields are filled. On submission, call the backend storeReservation method from backend.d.ts with the collected data (name: string, phone: string, date: string, time: string, guestCount: bigint). Display a success confirmation message after the backend call succeeds. Handle errors gracefully. Use shadcn-ui form components and ensure mobile-friendly input controls."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create Reviews section displaying 4.7-star rating and customer testimonials carousel",
+      "acceptanceCriteria": [
+        "4.7 star rating is displayed prominently with star icons",
+        "At least three testimonial cards are shown",
+        "Carousel or horizontal scroll works on mobile",
+        "Testimonials include reviewer name and review text"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Reviews.tsx",
-          "operation": "create",
-          "description": "Create Reviews section displaying three customer testimonials. Each testimonial includes customer name, 5-star rating, and review quote: (1) 'Maria G.' — 'The quesabirria tacos are absolutely incredible! The consommé is so flavorful. Best Mexican food in Los Lunas by far!'; (2) 'James R.' — 'Huge portions, amazing prices. The burritos are stuffed to the brim and taste homemade. We come here every week!'; (3) 'Sofia L.' — 'Super friendly staff and the food is always fresh. The tacoburger is something you have to try — completely unique!' Use card layout with star icons and apply Luna's Kitchen brand styling."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
           "operation": "modify",
-          "description": "Add Reviews component to Homepage after the Experience section. Import and render the new Reviews component."
+          "description": "Replace Luna's Kitchen reviews with Bunsik Korean restaurant testimonials. Display '4.7 ★ out of 5' rating prominently at the top. Replace the three existing review cards with Korean restaurant-themed testimonials (e.g., praising Korean fried chicken, bulgogi, tteokbokki, authentic flavors, family atmosphere). Each card should include reviewer name, review text, and star rating. Maintain or enhance the carousel/horizontal scroll functionality for mobile. Use Bunsik's brand styling."
         }
       ]
     },
     {
-      "id": "REQ-20",
-      "summary": "Build Location & Hours section with address, phone, business hours, and embedded Google Maps iframe",
+      "id": "REQ-9",
+      "summary": "Create Location & Contact section with address, phone, Google Map, and amenity badges",
       "acceptanceCriteria": [
-        "Address 3470 NM-47, Los Lunas, NM 87031 is displayed",
-        "Phone number is a clickable tel:+15054884886 link",
-        "Business hours show Opens at 9:00 AM with Closed now status",
-        "Google Maps iframe is embedded and visible"
+        "Google Map iframe is embedded and shows the correct address",
+        "Address and phone number are displayed and phone is a tappable tel: link",
+        "Three amenity badges (parking, accessibility, payments) are visible",
+        "Section is responsive on mobile"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Location.tsx",
           "operation": "modify",
-          "description": "Build Location & Hours section with heading 'Find Us'. Display address '📍 3470 NM-47, Los Lunas, NM 87031, United States', phone number '📞 +1 505-488-4886' as clickable tel:+15054884886 link, and business hours showing 'Opens at 9:00 AM' with 'Closed now' status indicator. Include embedded Google Maps iframe with src='https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed'. Apply Luna's Kitchen brand styling."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Add Location component to Homepage after the Reviews section. Import and render the updated Location component."
+          "description": "Replace Luna's Kitchen location details with Bunsik information. Display address 'Shop 1/2 Yambil St, Griffith NSW 2680', phone '+61 2 6964 7310' as a tel: link. Embed a Google Maps iframe pointing to Griffin Plaza, Griffith NSW. Add three amenity info badges: 'Free Parking Lot', 'Wheelchair Accessible', and 'Accepts Credit/Debit/NFC Payments' using icons and text. Maintain the card-based layout and ensure mobile responsiveness."
         }
       ]
     },
     {
-      "id": "REQ-21",
-      "summary": "Build Call-to-Action Footer section with heading, CTA buttons, and main site footer with social links and copyright",
+      "id": "REQ-10",
+      "summary": "Update Header navigation and Footer with Bunsik branding, smooth-scroll links, and business information",
       "acceptanceCriteria": [
-        "CTA section heading 'Craving Authentic Mexican Flavor?' is present",
-        "Call Now button triggers tel:+15054884886",
-        "Get Directions button links to Google Maps",
-        "Footer includes Facebook and Instagram social icons",
-        "Copyright notice is present"
+        "Header is fixed at the top and includes nav links to all sections",
+        "Mobile hamburger menu opens and closes correctly",
+        "Footer includes address, phone, and abbreviated hours",
+        "Both header and footer use the Bunsik brand color palette"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CallToAction.tsx",
+          "path": "frontend/src/components/Header.tsx",
           "operation": "modify",
-          "description": "Build Call-to-Action Footer section with heading 'Craving Authentic Mexican Flavor?' and subtext 'Come visit us or call ahead for fast, fresh takeout.' Include two buttons: 'Call Now' linking to tel:+15054884886 and 'Get Directions' linking to https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031. Apply Luna's Kitchen brand styling with vibrant colors."
+          "description": "Replace Luna's Kitchen branding with Bunsik logo/name. Update navigation links to smooth-scroll to sections: Menu (#menu), Order (#order), Reservations (#reservation), About (#about), and Contact (#contact). Update the call CTA button to use Bunsik's phone number '+61 2 6964 7310'. Ensure the mobile hamburger menu works correctly with the new links. Apply Bunsik's warm red, black, and cream brand colors to the header styling. Reference the generated logo at frontend/public/assets/generated/logo.dim_400x200.png."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update main site footer to include social media icon links (Facebook and Instagram with placeholder hrefs), copyright line '© 2024 Luna's Kitchen. All rights reserved.', and the address '3470 NM-47, Los Lunas, NM 87031' in small text. Remove navigation links. Apply Luna's Kitchen brand colors."
-        },
-        {
-          "path": "frontend/src/pages/Homepage.tsx",
-          "operation": "modify",
-          "description": "Add CallToAction component to Homepage after the Location section and before the Footer. Import and render the updated CallToAction component."
+          "description": "Replace Luna's Kitchen footer content with Bunsik information. Display business name 'Bunsik Korean Restaurant', address 'Shop 1/2 Yambil St, Griffith NSW 2680', phone '+61 2 6964 7310' as a tel: link, and abbreviated opening hours summary (e.g., 'Mon-Fri: 11am-9pm, Sat: 11am-9pm, Sun: 11am-8pm'). Update copyright to Bunsik. Apply Bunsik's brand color palette. Maintain social media link structure if applicable, or remove if not needed."
         }
       ]
     },
     {
-      "id": "REQ-22",
-      "summary": "Ensure all generated images are properly referenced as static assets from frontend/public/assets/generated in the appropriate components",
+      "id": "REQ-1",
+      "summary": "Wire all new sections and components into the Homepage layout and App routing",
       "acceptanceCriteria": [
-        "Hero background image is rendered in the Hero section",
-        "Each of the six food cards displays its corresponding image",
-        "Luna's Kitchen logo appears in the site header"
+        "All new sections are rendered in the correct order on the homepage",
+        "Smooth scrolling works from header navigation to all sections",
+        "No orphaned components remain unreferenced",
+        "Page renders correctly on both mobile and desktop"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Hero.tsx",
+          "path": "frontend/src/pages/Homepage.tsx",
           "operation": "modify",
-          "description": "Verify that the hero background image frontend/public/assets/generated/lunas-hero-bg.dim_1440x800.jpg is correctly referenced and rendered as the Hero section background"
+          "description": "Replace the existing section composition with Bunsik sections in this order: Hero, AboutUs, OpeningHours, Menu, OnlineOrdering, ReservationForm, Reviews, Location. Remove CallToAction and Experience components if they no longer fit the Bunsik design. Ensure each section has an appropriate id attribute matching the header navigation targets (e.g., id='menu', id='order', id='reservation', id='about', id='contact'). Maintain responsive layout and spacing."
         },
         {
-          "path": "frontend/src/components/Menu.tsx",
+          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Verify that all six food card images are correctly referenced from frontend/public/assets/generated: lunas-menu-quesabirria.dim_600x400.jpg, lunas-menu-tacos.dim_600x400.jpg, lunas-menu-burritos.dim_600x400.jpg, lunas-menu-quesadillas.dim_600x400.jpg, lunas-menu-tacoburger.dim_600x400.jpg, lunas-menu-burgers.dim_600x400.jpg"
-        },
-        {
-          "path": "frontend/src/components/Header.tsx",
-          "operation": "modify",
-          "description": "Verify that the Luna's Kitchen logo frontend/public/assets/generated/lunas-logo.dim_300x300.png is correctly referenced and displayed in the site header"
+          "description": "Verify that App.tsx still correctly renders Header, Homepage, and Footer. No routing changes needed since the site remains a single-page application. Ensure the component imports reflect the updated Bunsik components."
         }
       ]
     }

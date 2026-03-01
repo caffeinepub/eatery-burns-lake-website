@@ -1,34 +1,24 @@
 import React from 'react';
-import { MapPin, Phone, Clock } from 'lucide-react';
-
-const hours = [
-  { day: 'Monday', time: '9:00 AM – 8:00 PM' },
-  { day: 'Tuesday', time: '9:00 AM – 8:00 PM' },
-  { day: 'Wednesday', time: '9:00 AM – 8:00 PM' },
-  { day: 'Thursday', time: '9:00 AM – 8:00 PM' },
-  { day: 'Friday', time: '9:00 AM – 9:00 PM' },
-  { day: 'Saturday', time: '9:00 AM – 9:00 PM' },
-  { day: 'Sunday', time: '10:00 AM – 7:00 PM' },
-];
+import { MapPin, Phone, Car, Accessibility, CreditCard } from 'lucide-react';
 
 export default function Location() {
   return (
-    <section id="location" className="py-20 bg-ink-800">
+    <div className="py-20 bg-cream-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-10 bg-salsa-400/50" />
-            <span className="font-body text-salsa-400 text-xs tracking-[0.3em] uppercase font-bold">
+            <div className="h-px w-10 bg-gochujang-500/50" />
+            <span className="font-body text-gochujang-500 text-xs tracking-[0.3em] uppercase font-bold">
               Come Visit Us
             </span>
-            <div className="h-px w-10 bg-salsa-400/50" />
+            <div className="h-px w-10 bg-gochujang-500/50" />
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 uppercase">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal-700 mb-4">
             Find Us
           </h2>
-          <p className="font-body text-ink-200 text-base max-w-xl mx-auto">
-            We're conveniently located in Los Lunas, New Mexico. Stop by for fresh, hot takeout!
+          <p className="font-body text-charcoal-400 text-base max-w-xl mx-auto">
+            We're located in Griffin Plaza, Griffith NSW. Come in for a delicious Korean meal!
           </p>
         </div>
 
@@ -36,22 +26,22 @@ export default function Location() {
           {/* Info Cards */}
           <div className="flex flex-col gap-5">
             {/* Address */}
-            <div className="bg-ink-700 rounded-2xl p-6 border border-ink-600/50 flex items-start gap-4">
-              <div className="w-12 h-12 bg-chili-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <MapPin size={22} className="text-chili-400" />
+            <div className="bg-white rounded-2xl p-6 border border-cream-200 shadow-korean flex items-start gap-4">
+              <div className="w-12 h-12 bg-gochujang-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <MapPin size={22} className="text-gochujang-500" />
               </div>
               <div>
-                <h3 className="font-heading text-white text-lg uppercase mb-1">Address</h3>
-                <p className="font-body text-ink-200 text-sm leading-relaxed">
-                  3470 NM-47<br />
-                  Los Lunas, NM 87031<br />
-                  United States
+                <h3 className="font-heading text-charcoal-700 text-lg font-bold mb-1">Address</h3>
+                <p className="font-body text-charcoal-500 text-sm leading-relaxed">
+                  Shop 1/2 Yambil St<br />
+                  Griffith NSW 2680<br />
+                  Located in Griffin Plaza
                 </p>
                 <a
-                  href="https://maps.google.com/?q=3470+NM-47,+Los+Lunas,+NM+87031"
+                  href="https://maps.google.com/?q=Shop+1+2+Yambil+St+Griffith+NSW+2680"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-2 font-body text-salsa-400 text-sm hover:text-salsa-300 transition-colors font-semibold"
+                  className="inline-block mt-2 font-body text-gochujang-500 text-sm hover:text-gochujang-400 transition-colors font-semibold"
                 >
                   Open in Google Maps →
                 </a>
@@ -59,56 +49,65 @@ export default function Location() {
             </div>
 
             {/* Phone */}
-            <div className="bg-ink-700 rounded-2xl p-6 border border-ink-600/50 flex items-start gap-4">
-              <div className="w-12 h-12 bg-chili-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Phone size={22} className="text-chili-400" />
+            <div className="bg-white rounded-2xl p-6 border border-cream-200 shadow-korean flex items-start gap-4">
+              <div className="w-12 h-12 bg-gochujang-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Phone size={22} className="text-gochujang-500" />
               </div>
               <div>
-                <h3 className="font-heading text-white text-lg uppercase mb-1">Phone</h3>
+                <h3 className="font-heading text-charcoal-700 text-lg font-bold mb-1">Phone</h3>
                 <a
-                  href="tel:+15054884886"
-                  className="font-body text-salsa-400 text-lg font-bold hover:text-salsa-300 transition-colors"
+                  href="tel:+61269647310"
+                  className="font-body text-gochujang-500 text-lg font-bold hover:text-gochujang-400 transition-colors"
                 >
-                  +1 505-488-4886
+                  +61 2 6964 7310
                 </a>
-                <p className="font-body text-ink-300 text-sm mt-1">Call ahead for fast pickup!</p>
+                <p className="font-body text-charcoal-400 text-sm mt-1">Call us to place an order or make a reservation!</p>
               </div>
             </div>
 
-            {/* Hours */}
-            <div className="bg-ink-700 rounded-2xl p-6 border border-ink-600/50">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-chili-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock size={22} className="text-chili-400" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-white text-lg uppercase">Hours</h3>
-                  <div className="flex items-center gap-2 mt-0.5">
-                    <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-                    <span className="font-body text-red-400 text-xs font-semibold">Closed Now</span>
-                    <span className="font-body text-ink-300 text-xs">· Opens at 9:00 AM</span>
+            {/* Amenities */}
+            <div className="bg-white rounded-2xl p-6 border border-cream-200 shadow-korean">
+              <h3 className="font-heading text-charcoal-700 text-lg font-bold mb-4">Amenities</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gochujang-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Car size={18} className="text-gochujang-500" />
+                  </div>
+                  <div>
+                    <p className="font-body text-charcoal-700 text-sm font-semibold">Free Parking Lot</p>
+                    <p className="font-body text-charcoal-400 text-xs">Ample free parking at Griffin Plaza</p>
                   </div>
                 </div>
-              </div>
-              <div className="space-y-2">
-                {hours.map((h) => (
-                  <div key={h.day} className="flex justify-between items-center py-1 border-b border-ink-600/30 last:border-0">
-                    <span className="font-body text-ink-200 text-sm">{h.day}</span>
-                    <span className="font-body text-cream-200 text-sm font-semibold">{h.time}</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gochujang-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Accessibility size={18} className="text-gochujang-500" />
                   </div>
-                ))}
+                  <div>
+                    <p className="font-body text-charcoal-700 text-sm font-semibold">Wheelchair Accessible</p>
+                    <p className="font-body text-charcoal-400 text-xs">Fully accessible entrance and facilities</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gochujang-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <CreditCard size={18} className="text-gochujang-500" />
+                  </div>
+                  <div>
+                    <p className="font-body text-charcoal-700 text-sm font-semibold">Accepts Credit/Debit/NFC Payments</p>
+                    <p className="font-body text-charcoal-400 text-xs">Visa, Mastercard, EFTPOS, Apple Pay & more</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Map */}
-          <div className="rounded-2xl overflow-hidden border border-ink-600/50 shadow-spicy-xl min-h-[400px]">
+          <div className="rounded-2xl overflow-hidden border border-cream-200 shadow-korean-xl min-h-[400px]">
             <iframe
-              title="Luna's Kitchen Location"
-              src="https://maps.google.com/maps?q=3470+NM-47,+Los+Lunas,+NM+87031&output=embed"
+              title="Bunsik Korean Restaurant Location"
+              src="https://maps.google.com/maps?q=Shop+1+2+Yambil+St+Griffith+NSW+2680&output=embed"
               width="100%"
               height="100%"
-              style={{ minHeight: '400px', border: 0 }}
+              style={{ minHeight: '480px', border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -116,6 +115,6 @@ export default function Location() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

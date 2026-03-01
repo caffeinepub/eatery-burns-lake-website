@@ -16,9 +16,10 @@ export default {
         },
         extend: {
             fontFamily: {
-                heading: ['Oswald', 'Impact', 'sans-serif'],
-                body: ['Nunito', 'system-ui', 'sans-serif'],
-                sans: ['Nunito', 'system-ui', 'sans-serif'],
+                heading: ['Poppins', 'system-ui', 'sans-serif'],
+                body: ['Poppins', 'system-ui', 'sans-serif'],
+                korean: ['Noto Sans KR', 'system-ui', 'sans-serif'],
+                sans: ['Poppins', 'system-ui', 'sans-serif'],
             },
             colors: {
                 border: 'oklch(var(--border))',
@@ -71,50 +72,48 @@ export default {
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
                 },
-                /* Luna's Kitchen brand palette */
-                chili: {
-                    50:  'oklch(0.97 0.02 22)',
-                    100: 'oklch(0.92 0.05 22)',
-                    200: 'oklch(0.82 0.10 22)',
-                    300: 'oklch(0.68 0.15 22)',
-                    400: 'oklch(0.55 0.18 22)',
-                    500: 'oklch(0.42 0.18 22)',
-                    600: 'oklch(0.35 0.16 22)',
-                    700: 'oklch(0.28 0.13 22)',
-                    800: 'oklch(0.20 0.09 22)',
-                    900: 'oklch(0.14 0.06 22)',
+                /* Bunsik Korean Restaurant brand palette */
+                /* Warm red */
+                gochujang: {
+                    50:  'oklch(0.97 0.015 25)',
+                    100: 'oklch(0.92 0.04 25)',
+                    200: 'oklch(0.82 0.09 25)',
+                    300: 'oklch(0.68 0.14 25)',
+                    400: 'oklch(0.56 0.18 25)',
+                    500: 'oklch(0.44 0.20 25)',
+                    600: 'oklch(0.37 0.18 25)',
+                    700: 'oklch(0.29 0.14 25)',
+                    800: 'oklch(0.20 0.09 25)',
+                    900: 'oklch(0.13 0.05 25)',
                 },
-                salsa: {
-                    50:  'oklch(0.97 0.03 48)',
-                    100: 'oklch(0.93 0.07 48)',
-                    200: 'oklch(0.87 0.11 48)',
-                    300: 'oklch(0.80 0.15 48)',
-                    400: 'oklch(0.72 0.18 48)',
-                    500: 'oklch(0.64 0.18 46)',
-                    600: 'oklch(0.55 0.17 44)',
-                    700: 'oklch(0.45 0.15 42)',
-                    800: 'oklch(0.35 0.12 40)',
-                    900: 'oklch(0.25 0.09 38)',
-                },
+                /* Cream / warm white */
                 cream: {
                     50:  'oklch(0.99 0.005 80)',
-                    100: 'oklch(0.97 0.018 80)',
-                    200: 'oklch(0.94 0.025 78)',
-                    300: 'oklch(0.90 0.03 75)',
-                    400: 'oklch(0.85 0.035 72)',
-                    500: 'oklch(0.78 0.04 68)',
+                    100: 'oklch(0.97 0.012 75)',
+                    200: 'oklch(0.94 0.020 73)',
+                    300: 'oklch(0.90 0.028 70)',
+                    400: 'oklch(0.85 0.032 68)',
+                    500: 'oklch(0.78 0.038 65)',
                 },
-                ink: {
-                    50:  'oklch(0.92 0.01 30)',
-                    100: 'oklch(0.80 0.02 28)',
-                    200: 'oklch(0.65 0.03 28)',
-                    300: 'oklch(0.50 0.03 28)',
-                    400: 'oklch(0.35 0.03 28)',
-                    500: 'oklch(0.22 0.03 28)',
-                    600: 'oklch(0.16 0.03 28)',
-                    700: 'oklch(0.12 0.02 28)',
-                    800: 'oklch(0.09 0.02 28)',
-                    900: 'oklch(0.06 0.01 28)',
+                /* Near-black / charcoal */
+                charcoal: {
+                    50:  'oklch(0.92 0.008 28)',
+                    100: 'oklch(0.80 0.015 28)',
+                    200: 'oklch(0.65 0.020 28)',
+                    300: 'oklch(0.50 0.022 28)',
+                    400: 'oklch(0.35 0.020 28)',
+                    500: 'oklch(0.22 0.018 28)',
+                    600: 'oklch(0.16 0.015 28)',
+                    700: 'oklch(0.12 0.012 28)',
+                    800: 'oklch(0.09 0.010 28)',
+                    900: 'oklch(0.06 0.008 28)',
+                },
+                /* Gold accent */
+                gold: {
+                    300: 'oklch(0.88 0.12 75)',
+                    400: 'oklch(0.82 0.14 68)',
+                    500: 'oklch(0.75 0.15 62)',
+                    600: 'oklch(0.65 0.14 58)',
                 },
             },
             borderRadius: {
@@ -127,10 +126,10 @@ export default {
             },
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
-                spicy: '0 4px 24px -4px rgba(120, 30, 10, 0.22)',
-                'spicy-lg': '0 8px 40px -8px rgba(120, 30, 10, 0.32)',
-                'spicy-xl': '0 16px 60px -12px rgba(120, 30, 10, 0.40)',
-                glow: '0 0 30px rgba(200, 80, 20, 0.30)',
+                korean: '0 4px 24px -4px rgba(160, 30, 20, 0.22)',
+                'korean-lg': '0 8px 40px -8px rgba(160, 30, 20, 0.32)',
+                'korean-xl': '0 16px 60px -12px rgba(160, 30, 20, 0.40)',
+                glow: '0 0 30px rgba(180, 40, 20, 0.28)',
             },
             keyframes: {
                 'accordion-down': {
@@ -145,11 +144,16 @@ export default {
                     from: { opacity: '0', transform: 'translateY(20px)' },
                     to: { opacity: '1', transform: 'translateY(0)' }
                 },
+                'slide-in': {
+                    from: { opacity: '0', transform: 'translateX(-20px)' },
+                    to: { opacity: '1', transform: 'translateX(0)' }
+                },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
                 'fade-up': 'fade-up 0.6s ease-out forwards',
+                'slide-in': 'slide-in 0.5s ease-out forwards',
             }
         }
     },
