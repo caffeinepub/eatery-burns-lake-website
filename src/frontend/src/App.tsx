@@ -1,35 +1,55 @@
-import React, { useState } from "react";
-import AboutSection from "./components/AboutSection";
-import ChefsSpecials from "./components/ChefsSpecials";
-import ContactSection from "./components/ContactSection";
-import GallerySection from "./components/GallerySection";
-import HeroSection from "./components/HeroSection";
-import MenuSection from "./components/MenuSection";
-import Navigation from "./components/Navigation";
-import ReservationModal from "./components/ReservationModal";
-import ReviewsSection from "./components/ReviewsSection";
-import SiteFooter from "./components/SiteFooter";
+import {
+  Outlet,
+  RouterProvider,
+  createRootRoute,
+  createRoute,
+  createRouter,
+} from "@tanstack/react-router";
+import Layout from "./components/Layout";
+import AboutPage from "./pages/AboutPage";
+import MenuPage from "./pages/MenuPage";
+import HomeView from "./views/HomeView";
+
+const rootRoute = createRootRoute({
+  component: () => <Outlet />,
+});
+
+const layoutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  id: "layout",
+  component: Layout,
+});
+
+const homeRoute = createRoute({
+  getParentRoute: () => layoutRoute,
+  path: "/",
+  component: HomeView,
+});
+
+const menuRoute = createRoute({
+  getParentRoute: () => layoutRoute,
+  path: "/menu",
+  component: MenuPage,
+});
+
+const aboutRoute = createRoute({
+  getParentRoute: () => layoutRoute,
+  path: "/about",
+  component: AboutPage,
+});
+
+const routeTree = rootRoute.addChildren([
+  layoutRoute.addChildren([homeRoute, menuRoute, aboutRoute]),
+]);
+
+const router = createRouter({ routeTree });
+
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router;
+  }
+}
 
 export default function App() {
-  const [reservationOpen, setReservationOpen] = useState(false);
-
-  return (
-    <div className="min-h-screen flex flex-col bg-ivory-100">
-      <Navigation onReserveClick={() => setReservationOpen(true)} />
-      <main className="flex-1">
-        <HeroSection onReserveClick={() => setReservationOpen(true)} />
-        <AboutSection />
-        <MenuSection />
-        <GallerySection />
-        <ReviewsSection />
-        <ChefsSpecials />
-        <ContactSection />
-      </main>
-      <SiteFooter />
-      <ReservationModal
-        open={reservationOpen}
-        onOpenChange={setReservationOpen}
-      />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }

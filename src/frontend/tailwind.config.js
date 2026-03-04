@@ -16,11 +16,11 @@ export default {
         },
         extend: {
             fontFamily: {
-                heading: ['"Playfair Display"', 'Georgia', 'serif'],
-                display: ['"Playfair Display"', 'Georgia', 'serif'],
-                body: ['"General Sans"', 'system-ui', 'sans-serif'],
-                sans: ['"General Sans"', 'system-ui', 'sans-serif'],
-                serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                heading: ['"Fraunces"', 'Georgia', 'serif'],
+                display: ['"Fraunces"', 'Georgia', 'serif'],
+                body: ['"Outfit"', 'system-ui', 'sans-serif'],
+                sans: ['"Outfit"', 'system-ui', 'sans-serif'],
+                serif: ['"Fraunces"', 'Georgia', 'serif'],
             },
             colors: {
                 border: 'oklch(var(--border))',
@@ -74,73 +74,66 @@ export default {
                     ring: 'oklch(var(--sidebar-ring))'
                 },
 
-                /* ILONA Pasta brand palette */
-                /* Terracotta / Burgundy */
-                terracotta: {
-                    50:  'oklch(0.97 0.018 32)',
-                    100: 'oklch(0.93 0.04 32)',
-                    200: 'oklch(0.82 0.09 32)',
-                    300: 'oklch(0.68 0.13 32)',
-                    400: 'oklch(0.55 0.16 32)',
-                    500: 'oklch(0.42 0.17 32)',
-                    600: 'oklch(0.35 0.15 32)',
-                    700: 'oklch(0.27 0.12 32)',
-                    800: 'oklch(0.19 0.08 32)',
-                    900: 'oklch(0.12 0.05 32)',
+                /* Op's Kitchen brand palette */
+                /* Soft warm red */
+                crimson: {
+                    50:  'oklch(0.97 0.018 27)',
+                    100: 'oklch(0.93 0.04 27)',
+                    200: 'oklch(0.82 0.09 27)',
+                    300: 'oklch(0.68 0.14 27)',
+                    400: 'oklch(0.55 0.17 27)',
+                    500: 'oklch(0.48 0.18 27)',
+                    600: 'oklch(0.40 0.16 27)',
+                    700: 'oklch(0.31 0.13 27)',
+                    800: 'oklch(0.22 0.09 27)',
+                    900: 'oklch(0.14 0.05 27)',
                 },
-                /* Warm ivory / cream */
-                ivory: {
-                    50:  'oklch(0.99 0.005 82)',
-                    100: 'oklch(0.97 0.018 78)',
-                    200: 'oklch(0.95 0.028 76)',
-                    300: 'oklch(0.91 0.038 74)',
-                    400: 'oklch(0.86 0.042 72)',
-                    500: 'oklch(0.80 0.045 70)',
+                /* Warm cream / ivory */
+                cream: {
+                    50:  'oklch(0.99 0.004 82)',
+                    100: 'oklch(0.972 0.012 82)',
+                    200: 'oklch(0.955 0.022 78)',
+                    300: 'oklch(0.935 0.032 75)',
+                    400: 'oklch(0.91 0.040 72)',
+                    500: 'oklch(0.87 0.046 70)',
                 },
-                /* Olive green */
-                olive: {
-                    300: 'oklch(0.70 0.10 138)',
-                    400: 'oklch(0.62 0.11 138)',
-                    500: 'oklch(0.55 0.10 138)',
-                    600: 'oklch(0.46 0.09 138)',
-                    700: 'oklch(0.37 0.08 138)',
+                /* Near-black ink */
+                ink: {
+                    50:  'oklch(0.90 0.010 28)',
+                    100: 'oklch(0.76 0.018 28)',
+                    200: 'oklch(0.62 0.022 28)',
+                    300: 'oklch(0.48 0.020 28)',
+                    400: 'oklch(0.35 0.016 28)',
+                    500: 'oklch(0.24 0.014 28)',
+                    600: 'oklch(0.18 0.012 28)',
+                    700: 'oklch(0.15 0.015 25)',
+                    800: 'oklch(0.11 0.010 25)',
+                    900: 'oklch(0.07 0.008 25)',
                 },
-                /* Rich dark brown / charcoal */
-                espresso: {
-                    50:  'oklch(0.91 0.012 34)',
-                    100: 'oklch(0.78 0.025 34)',
-                    200: 'oklch(0.62 0.030 34)',
-                    300: 'oklch(0.48 0.030 34)',
-                    400: 'oklch(0.34 0.025 34)',
-                    500: 'oklch(0.22 0.020 34)',
-                    600: 'oklch(0.16 0.015 34)',
-                    700: 'oklch(0.11 0.012 34)',
-                    800: 'oklch(0.08 0.010 34)',
-                    900: 'oklch(0.05 0.008 34)',
-                },
-                /* Gold accent */
-                gold: {
-                    300: 'oklch(0.88 0.12 80)',
-                    400: 'oklch(0.80 0.14 72)',
-                    500: 'oklch(0.72 0.15 68)',
-                    600: 'oklch(0.62 0.14 62)',
+                /* Warm gray */
+                stone: {
+                    100: 'oklch(0.95 0.010 72)',
+                    200: 'oklch(0.91 0.014 70)',
+                    300: 'oklch(0.84 0.016 68)',
+                    400: 'oklch(0.72 0.018 65)',
+                    500: 'oklch(0.62 0.018 62)',
                 },
             },
             borderRadius: {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
                 sm: 'calc(var(--radius) - 4px)',
-                '2xl': '1rem',
-                '3xl': '1.5rem',
+                '2xl': '0.75rem',
+                '3xl': '1.25rem',
                 '4xl': '2rem',
             },
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
-                warm: '0 4px 24px -4px rgba(120, 50, 30, 0.20)',
-                'warm-lg': '0 8px 40px -8px rgba(120, 50, 30, 0.28)',
-                'warm-xl': '0 16px 60px -12px rgba(120, 50, 30, 0.36)',
-                glow: '0 0 30px rgba(140, 60, 30, 0.25)',
-                'terracotta': '0 4px 20px rgba(100, 40, 20, 0.22)',
+                warm: '0 4px 24px -4px rgba(80, 20, 10, 0.18)',
+                'warm-lg': '0 8px 40px -8px rgba(80, 20, 10, 0.24)',
+                'warm-xl': '0 16px 60px -12px rgba(80, 20, 10, 0.30)',
+                card: '0 2px 16px rgba(0,0,0,0.08)',
+                'card-hover': '0 8px 32px rgba(0,0,0,0.14)',
             },
             keyframes: {
                 'accordion-down': {
@@ -159,22 +152,12 @@ export default {
                     from: { opacity: '0' },
                     to: { opacity: '1' }
                 },
-                'slide-right': {
-                    from: { opacity: '0', transform: 'translateX(-20px)' },
-                    to: { opacity: '1', transform: 'translateX(0)' }
-                },
-                'scale-in': {
-                    from: { opacity: '0', transform: 'scale(0.96)' },
-                    to: { opacity: '1', transform: 'scale(1)' }
-                },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
                 'fade-up': 'fade-up 0.7s ease-out forwards',
                 'fade-in': 'fade-in 0.5s ease-out forwards',
-                'slide-right': 'slide-right 0.6s ease-out forwards',
-                'scale-in': 'scale-in 0.5s ease-out forwards',
             }
         }
     },

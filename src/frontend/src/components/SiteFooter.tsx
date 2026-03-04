@@ -1,193 +1,120 @@
+import { Link } from "@tanstack/react-router";
 import { Clock, Heart, MapPin, Phone } from "lucide-react";
-import React from "react";
-import { SiFacebook, SiInstagram } from "react-icons/si";
-
-const scrollTo = (id: string) => {
-  if (id === "home") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    return;
-  }
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth" });
-};
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
   const hostname =
-    typeof window !== "undefined" ? window.location.hostname : "ilona-pasta";
+    typeof window !== "undefined" ? window.location.hostname : "ops-kitchen";
 
   return (
-    <footer className="bg-espresso-800 text-espresso-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-6">
-        <div className="grid md:grid-cols-4 gap-10 mb-10">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <div className="mb-4">
-              <span className="font-heading text-ivory-50 font-bold text-2xl tracking-tight">
-                ILONA
-              </span>
-              <br />
-              <span className="font-body text-gold-400 text-xs tracking-[0.3em] uppercase">
-                Pasta
-              </span>
-            </div>
-            <p className="font-body text-espresso-200 text-sm leading-relaxed mb-5">
-              Napier's hidden gem for authentic, handmade Italian pasta. A
-              family kitchen with genuine heart.
-            </p>
-            <div className="flex items-center gap-3">
-              <a
-                href="https://instagram.com/ilonapastanz"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ILONA Pasta on Instagram"
-                className="w-9 h-9 rounded-full bg-espresso-600 hover:bg-terracotta-500 flex items-center justify-center transition-colors duration-200"
-              >
-                <SiInstagram size={15} className="text-ivory-100" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ILONA PASTA on Facebook"
-                className="w-9 h-9 rounded-full bg-espresso-600 hover:bg-terracotta-500 flex items-center justify-center transition-colors duration-200"
-              >
-                <SiFacebook size={15} className="text-ivory-100" />
-              </a>
-            </div>
-          </div>
+    <footer className="bg-ink-800 text-cream-200">
+      {/* Top accent line */}
+      <div className="h-[3px] bg-crimson-500" />
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-body text-ivory-50 font-semibold text-sm uppercase tracking-widest mb-4">
-              Quick Links
-            </h4>
-            <ul className="space-y-2.5">
-              {[
-                { label: "Home", id: "home" },
-                { label: "About", id: "about" },
-                { label: "Menu", id: "menu" },
-                { label: "Gallery", id: "gallery" },
-                { label: "Reviews", id: "reviews" },
-                { label: "Contact", id: "contact" },
-              ].map((link) => (
-                <li key={link.id}>
-                  <button
-                    type="button"
-                    onClick={() => scrollTo(link.id)}
-                    className="font-body text-espresso-200 text-sm hover:text-gold-400 transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div className="lg:col-span-2">
+            <p className="font-serif text-2xl font-bold text-cream-50 mb-1">
+              Op's Kitchen
+            </p>
+            <p className="font-outfit text-xs text-stone-400 tracking-widest uppercase mb-4">
+              Authentic Japanese Takeout · Havelock North
+            </p>
+            <span className="block w-12 h-[2px] bg-crimson-500 mb-5" />
+            <p className="font-outfit text-sm text-cream-300 leading-relaxed max-w-xs">
+              Freshly made dumplings, ramen & bao in the heart of Havelock
+              North. Rated 4.7 stars by our wonderful community.
+            </p>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-body text-ivory-50 font-semibold text-sm uppercase tracking-widest mb-4">
-              Contact
-            </h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2.5">
-                <MapPin
-                  size={14}
-                  className="text-terracotta-400 mt-0.5 flex-shrink-0"
-                />
-                <span className="font-body text-espresso-200 text-sm leading-snug">
-                  80A Emerson Street
+            <h3 className="font-serif text-base font-semibold text-cream-100 mb-4">
+              Visit Us
+            </h3>
+            <div className="space-y-3 font-outfit text-sm text-cream-300">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 text-crimson-400 shrink-0" />
+                <span>
+                  Shop 20 Village Court
                   <br />
-                  Napier South, 4110 NZ
+                  Te Mata Road
+                  <br />
+                  Havelock North 4130, NZ
                 </span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone
-                  size={14}
-                  className="text-terracotta-400 flex-shrink-0"
-                />
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-crimson-400 shrink-0" />
                 <a
-                  href="tel:+64211860029"
-                  className="font-body text-espresso-200 text-sm hover:text-gold-400 transition-colors"
+                  href="tel:+6468777766"
+                  className="hover:text-crimson-400 transition-colors"
                 >
-                  +64 21 186 0029
+                  +64 6 877 7766
                 </a>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <Clock
-                  size={14}
-                  className="text-terracotta-400 mt-0.5 flex-shrink-0"
-                />
-                <span className="font-body text-espresso-200 text-sm leading-snug">
-                  Dinner from 5:30 PM
-                  <br />
-                  Last Order 9 PM · Mon–Sun
-                </span>
-              </li>
-            </ul>
+              </div>
+              <div className="flex items-start gap-2">
+                <Clock className="w-4 h-4 mt-0.5 text-crimson-400 shrink-0" />
+                <div>
+                  <p>Wed–Sat: 11am–2:30pm</p>
+                  <p>&amp; 4:30pm–7pm</p>
+                  <p className="text-stone-500 mt-1">Sun–Tue: Closed</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Hours */}
+          {/* Navigation */}
           <div>
-            <h4 className="font-body text-ivory-50 font-semibold text-sm uppercase tracking-widest mb-4">
-              Hours
-            </h4>
-            <div className="space-y-2">
-              <div className="flex justify-between font-body text-sm">
-                <span className="text-espresso-300">Opens</span>
-                <span className="text-ivory-100">5:30 PM</span>
-              </div>
-              <div className="flex justify-between font-body text-sm">
-                <span className="text-espresso-300">Last Lunch</span>
-                <span className="text-ivory-100">2:00 PM</span>
-              </div>
-              <div className="flex justify-between font-body text-sm">
-                <span className="text-espresso-300">Last Dinner</span>
-                <span className="text-ivory-100">9:00 PM</span>
-              </div>
-              <div className="flex justify-between font-body text-sm">
-                <span className="text-espresso-300">Days</span>
-                <span className="text-ivory-100">Mon – Sun</span>
-              </div>
-            </div>
-
-            <div className="mt-4 bg-terracotta-500/10 border border-terracotta-500/20 rounded-sm px-3 py-2">
-              <p className="font-body text-terracotta-300 text-xs">
-                ⭐ Popular at 7 PM — not too busy
-              </p>
-            </div>
+            <h3 className="font-serif text-base font-semibold text-cream-100 mb-4">
+              Pages
+            </h3>
+            <nav className="flex flex-col gap-2 font-outfit text-sm">
+              {[
+                { to: "/", label: "Home" },
+                { to: "/menu", label: "Menu" },
+                { to: "/about", label: "About Us" },
+              ].map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  data-ocid="footer.link"
+                  className="text-cream-300 hover:text-crimson-400 transition-colors w-fit"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <a
+                href="https://maps.google.com/?q=Shop+20+Village+Court,+Te+Mata+Road,+Havelock+North+4130"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-ocid="footer.link"
+                className="text-cream-300 hover:text-crimson-400 transition-colors w-fit"
+              >
+                Get Directions ↗
+              </a>
+            </nav>
           </div>
         </div>
 
-        {/* SEO hidden text */}
-        <p className="sr-only">
-          Napier Italian Restaurant | Best Pasta in Napier | Family-Run Italian
-          Restaurant Napier NZ
-        </p>
-
-        {/* Divider + Bottom */}
-        <div className="border-t border-espresso-600/40 pt-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="font-body text-espresso-300 text-sm">
-              © {year} ILONA Pasta. All rights reserved.
-            </p>
-            <p className="font-body text-espresso-300 text-sm flex items-center gap-1.5">
-              Built with{" "}
-              <Heart
-                size={12}
-                className="text-terracotta-400 fill-terracotta-400 mx-0.5"
-              />{" "}
-              using{" "}
-              <a
-                href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold-400 hover:text-gold-300 transition-colors"
-              >
-                caffeine.ai
-              </a>
-            </p>
-          </div>
+        {/* Bottom bar */}
+        <div className="mt-12 pt-6 border-t border-ink-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="font-outfit text-xs text-stone-500">
+            © {year} Op's Kitchen. All rights reserved.
+          </p>
+          <p className="font-outfit text-xs text-stone-500 flex items-center gap-1">
+            Built with{" "}
+            <Heart className="w-3 h-3 text-crimson-500 fill-crimson-500 mx-0.5" />{" "}
+            using{" "}
+            <a
+              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-crimson-400 hover:text-crimson-300 transition-colors ml-0.5"
+            >
+              caffeine.ai
+            </a>
+          </p>
         </div>
       </div>
     </footer>

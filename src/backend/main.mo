@@ -3,9 +3,9 @@ import Text "mo:core/Text";
 import Iter "mo:core/Iter";
 
 import MixinStorage "blob-storage/Mixin";
-import Migration "migration";
 
-(with migration = Migration.run)
+
+
 actor {
   include MixinStorage();
 
